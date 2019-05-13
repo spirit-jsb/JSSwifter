@@ -15,6 +15,8 @@
 		509DF57C2289666E00C4B54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DF5752289666E00C4B54F /* AppDelegate.swift */; };
 		509DF57E2289670300C4B54F /* JSSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; };
 		509DF57F2289670300C4B54F /* JSSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		509DF588228967A400C4B54F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF587228967A400C4B54F /* Foundation.framework */; };
+		509DF58A228967AA00C4B54F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF589228967AA00C4B54F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		509DF5732289666E00C4B54F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		509DF5752289666E00C4B54F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		509DF5772289666E00C4B54F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509DF587228967A400C4B54F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		509DF589228967AA00C4B54F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509DF58A228967AA00C4B54F /* UIKit.framework in Frameworks */,
+				509DF588228967A400C4B54F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 				509DF5642289666600C4B54F /* Sources */,
 				509DF5692289666E00C4B54F /* Demo */,
 				509DF544228965DA00C4B54F /* Products */,
+				509DF586228967A400C4B54F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,7 @@
 		509DF5642289666600C4B54F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				509DF5832289677200C4B54F /* Core */,
 				509DF5652289666600C4B54F /* JSSwifter.h */,
 				509DF5662289666600C4B54F /* Info.plist */,
 			);
@@ -159,6 +167,38 @@
 				509DF5772289666E00C4B54F /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		509DF5832289677200C4B54F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				509DF5842289678200C4B54F /* Foundation */,
+				509DF5852289678D00C4B54F /* UIKit */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		509DF5842289678200C4B54F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		509DF5852289678D00C4B54F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		509DF586228967A400C4B54F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509DF589228967AA00C4B54F /* UIKit.framework */,
+				509DF587228967A400C4B54F /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +483,7 @@
 		509DF54C228965DA00C4B54F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -467,6 +508,7 @@
 		509DF54D228965DA00C4B54F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

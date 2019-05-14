@@ -14,9 +14,22 @@
 
 ## 基本使用
 
-- [x] DispatchQueue
-- [x] UIColor
+<details>
+<summary>Foundation Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/DispatchQueue%2BJSSwifter.swift"><code>DispatchQueue Extensions</code></a></li>
 
+</details>
+
+<details>
+<summary>UIKit Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+
+</details>
+</p>
 
 基本使用方法请参考测试示例代码。
 
@@ -37,6 +50,42 @@
 ```ruby
 pod 'JSSwifter', '~> 0.0.2'
 ```
+
+## 更新计划
+### Foundation
+- [ ] Array
+- [ ] Bundle
+- [ ] Data
+- [ ] Date
+- [ ] Dictionary
+- [ ] KeyedUnarchiver
+- [ ] NotificationCenter
+- [ ] Number
+- [ ] String
+- [ ] Thread
+- [ ] Timer
+- [x] DispatchQueue
+
+### UIKit
+- [ ] UIApplication
+- [ ] UIBarButtonItem
+- [ ] UIBezierPath
+- [x] UIColor
+- [ ] UIControl
+- [ ] UIDevice
+- [ ] UIFont
+- [ ] UIGestureRecognizer
+- [ ] UIImage
+- [ ] UIScreen
+- [ ] UIScrollView
+- [ ] UITableView
+- [ ] UICollectionView
+- [ ] UITextField
+- [ ] UITextView
+- [ ] UIView
+
+### Quartz
+- [ ] CALayer
 
 ## 作者
 

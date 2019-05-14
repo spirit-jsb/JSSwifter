@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'JSSwifter'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.summary          = '一个简便易用的 Swift Extension 库。'
   
     s.description      = <<-DESC

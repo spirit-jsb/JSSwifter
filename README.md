@@ -13,6 +13,11 @@
 如需要运行示例项目，请 `clone` 当前 `repo` 到本地，然后从根目录下执行 `JSSwifter.xcodeproj`，打开项目后切换 `Scheme` 至 `JSSwifter-Tests`，`CMD+U` 即可运行测试示例代码。
 
 ## 基本使用
+
+- [x] DispatchQueue
+- [x] UIColor
+
+
 基本使用方法请参考测试示例代码。
 
 ## Swift 版本依赖
@@ -30,7 +35,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.1'
+pod 'JSSwifter', '~> 0.0.2'
 ```
 
 ## 作者

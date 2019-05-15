@@ -248,7 +248,7 @@ public extension Data {
         }
         
         let op = algorithm.op
-        let alg = CCAlgorithm(kCCAlgorithmAES128)
+        let alg = CCAlgorithm(kCCAlgorithmAES)
         let options = CCOptions(kCCOptionPKCS7Padding)
         let keyBytes = key.bytes
         let keyLength = key.count

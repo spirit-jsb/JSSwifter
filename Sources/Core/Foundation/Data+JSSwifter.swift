@@ -237,7 +237,7 @@ public extension Data {
         if key.count != 16 && key.count != 24 && key.count != 32 {
             throw Aes256Error.invalidKeySize
         }
-        if iv.count != 0 && iv.count != 16 {
+        if iv.count != 16 {
             throw Aes256Error.invalidVectorSize
         }
         

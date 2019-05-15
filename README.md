@@ -19,6 +19,7 @@
 </br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/DispatchQueue%2BJSSwifter.swift"><code>DispatchQueue Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Data%2BJSSwifter.swift"><code>Data Extensions</code></a></li>
 
 </details>
 
@@ -27,6 +28,8 @@
 </br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UITableView%2BJSSwifter.swift"><code>UITableView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
 
 </details>
 </p>
@@ -48,14 +51,14 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.2'
+pod 'JSSwifter', '~> 0.0.3'
 ```
 
 ## 更新计划
 ### Foundation
 - [ ] Array
 - [ ] Bundle
-- [ ] Data
+- [x] Data
 - [ ] Date
 - [ ] Dictionary
 - [ ] KeyedUnarchiver
@@ -78,8 +81,8 @@ pod 'JSSwifter', '~> 0.0.2'
 - [ ] UIImage
 - [ ] UIScreen
 - [ ] UIScrollView
-- [ ] UITableView
-- [ ] UICollectionView
+- [x] UITableView
+- [x] UICollectionView
 - [ ] UITextField
 - [ ] UITextView
 - [ ] UIView

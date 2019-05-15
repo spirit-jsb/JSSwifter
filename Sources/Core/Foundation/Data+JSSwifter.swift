@@ -55,7 +55,7 @@ public struct GzipError: Swift.Error {
 }
 
 public enum HmacError: Swift.Error {
-    case invalidKeySize
+    case invalidKey
 }
 
 public enum Aes256Error: Swift.Error {
@@ -196,13 +196,13 @@ public extension Data {
         return cryptoString
     }
     
-    func hmacData(usingAlgorithm algorithm: HmacAlgorithm, withKey key: Data) throws -> Data {
+    func hmacData(usingAlgorithm algorithm: HmacAlgorithm, withKey key: Data) -> Data {
         return self.hmacDigest(usingAlgorithm: algorithm, withKey: key)
     }
     
     func hmacString(usingAlgorithm algorithm: HmacAlgorithm, withKey key: String) throws -> String {
         guard let dataKey = key.data(using: .utf8) else {
-            throw HmacError.invalidKeySize
+            throw HmacError.invalidKey
         }
         
         let hmacData = self.hmacDigest(usingAlgorithm: algorithm, withKey: dataKey)

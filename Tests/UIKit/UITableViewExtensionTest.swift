@@ -34,6 +34,18 @@ class UITableViewExtensionTest: XCTestCase {
         XCTAssertNotNil(cell)
         XCTAssertNotNil(headerFooterView)
     }
+    
+    func test_register_dequeue() {
+        let tableView = UITableView(frame: .zero, style: .plain)
+        
+        tableView.registerCell(TestTableViewCell.self)
+        tableView.registerHeaderFooterView(TestTableViewHeaderFooterView.self)
+        
+        let cell = tableView.dequeueCell() as TestTableViewCell
+        let headerFooterView = tableView.dequeueHeaderFooterView() as TestTableViewHeaderFooterView
+        XCTAssertNotNil(cell)
+        XCTAssertNotNil(headerFooterView)
+    }
 }
 
 private class TestTableViewCell: UITableViewCell {  }

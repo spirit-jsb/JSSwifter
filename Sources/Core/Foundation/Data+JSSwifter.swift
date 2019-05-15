@@ -54,6 +54,20 @@ public struct GzipError: Swift.Error {
     }
 }
 
+public enum HmacError: Swift.Error {
+    case invalidKeySize
+}
+
+public enum Aes256Error: Swift.Error {
+    case invalidKeySize
+    case invalidVectorSize
+    case unknown(code: Int32)
+}
+
+public enum BundleError: Swift.Error {
+    case invalidPath
+}
+
 public extension Data {
     
     // MARK:
@@ -182,13 +196,13 @@ public extension Data {
         return cryptoString
     }
     
-    func hmacData(usingAlgorithm algorithm: HmacAlgorithm, withKey key: Data) -> Data {
+    func hmacData(usingAlgorithm algorithm: HmacAlgorithm, withKey key: Data) throws -> Data {
         return self.hmacDigest(usingAlgorithm: algorithm, withKey: key)
     }
     
-    func hmacString(usingAlgorithm algorithm: HmacAlgorithm, withKey key: String) -> String {
+    func hmacString(usingAlgorithm algorithm: HmacAlgorithm, withKey key: String) throws -> String {
         guard let dataKey = key.data(using: .utf8) else {
-            return ""
+            throw HmacError.invalidKeySize
         }
         
         let hmacData = self.hmacDigest(usingAlgorithm: algorithm, withKey: dataKey)
@@ -219,12 +233,12 @@ public extension Data {
         return String(format: "%08x", UInt32(result))
     }
     
-    func aes256(usingAlgorithm algorithm: Aes256Algorithm, withKey key: Data, withVector iv: Data) -> Data? {
+    func aes256(usingAlgorithm algorithm: Aes256Algorithm, withKey key: Data, withVector iv: Data) throws -> Data {
         if key.count != 16 && key.count != 24 && key.count != 32 {
-            return nil
+            throw Aes256Error.invalidKeySize
         }
         if iv.count != 0 && iv.count != 16 {
-            return nil
+            throw Aes256Error.invalidVectorSize
         }
         
         let bufferSize = self.count + kCCBlockSizeAES128
@@ -245,7 +259,11 @@ public extension Data {
         
         let cryptStatus = CCCrypt(op, alg, options, keyBytes, keyLength, ivBytes, dataBytes, dataInLength, &bufferBytes, bufferSize, &encryptedSize)
         
-        return cryptStatus == kCCSuccess ? Data(bytes: bufferBytes, count: encryptedSize) : nil
+        guard Int(cryptStatus) == kCCSuccess else {
+            throw Aes256Error.unknown(code: cryptStatus)
+        }
+        
+        return Data(bytes: bufferBytes, count: encryptedSize)
     }
     
     func utf8String() -> String? {
@@ -376,13 +394,12 @@ public extension Data {
         return uncompressed
     }
     
-    static func dataForResourceName(_ name: String) -> Data? {
+    static func dataForResourceName(_ name: String) throws -> Data {
         guard let path = Bundle.main.path(forResource: name, ofType: "") else {
-            return nil
+            throw BundleError.invalidPath
         }
         let url = URL(fileURLWithPath: path)
-        let data = try? Data(contentsOf: url)
-        return data
+        return try Data(contentsOf: url)
     }
     
     // MARK:

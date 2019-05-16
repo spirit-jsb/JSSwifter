@@ -216,7 +216,7 @@ class DataExtensionTest: XCTestCase {
             let encrypt = try messageData.aes256(usingAlgorithm: .encrypt, withKey: keyData, withVector: ivData)
             XCTAssertEqual(encrypt.base64EncodedString(), "rANsz2aqcPoQGI76LJF3KQ==")
             let decrypt = try encrypt.aes256(usingAlgorithm: .decrypt, withKey: keyData, withVector: ivData)
-            XCTAssertEqual(decrypt.utf8String(), "password")
+            XCTAssertEqual(decrypt.string(encoding: .utf8), "password")
         }
         catch {
             XCTFail("Caught AES Test Error")
@@ -236,7 +236,7 @@ class DataExtensionTest: XCTestCase {
             let encrypt = try messageData.aes256(usingAlgorithm: .encrypt, withKey: keyData, withVector: ivData)
             XCTAssertEqual(encrypt.base64EncodedString(), "y6RFrihifgG9Vei4pchqEw==")
             let decrypt = try encrypt.aes256(usingAlgorithm: .decrypt, withKey: keyData, withVector: ivData)
-            XCTAssertEqual(decrypt.utf8String(), "password")
+            XCTAssertEqual(decrypt.string(encoding: .utf8), "password")
         }
         catch {
             XCTFail("Caught AES Test Error")
@@ -256,7 +256,7 @@ class DataExtensionTest: XCTestCase {
             let encrypt = try messageData.aes256(usingAlgorithm: .encrypt, withKey: keyData, withVector: ivData)
             XCTAssertEqual(encrypt.base64EncodedString(), "T35SeSmeKjMd3ID0Y2HDjg==")
             let decrypt = try encrypt.aes256(usingAlgorithm: .decrypt, withKey: keyData, withVector: ivData)
-            XCTAssertEqual(decrypt.utf8String(), "password")
+            XCTAssertEqual(decrypt.string(encoding: .utf8), "password")
         }
         catch {
             XCTFail("Caught AES Test Error")
@@ -266,7 +266,7 @@ class DataExtensionTest: XCTestCase {
     func test_utf8_string() {
         let test: [UInt8] = [112, 97, 115, 115, 119, 111, 114, 100] // password
         let testData = Data(test)
-        XCTAssertEqual(testData.utf8String(), "password")
+        XCTAssertEqual(testData.string(encoding: .utf8), "password")
     }
     
     func test_hex_string() {
@@ -311,7 +311,7 @@ class DataExtensionTest: XCTestCase {
             let deflate = try data.gzipDeflate()
             let inflate = try deflate.gzipInflate()
 
-            let inflateString = inflate.utf8String()
+            let inflateString = inflate.string(encoding: .utf8)
             
             XCTAssertNotEqual(deflate, data)
             XCTAssertEqual(inflateString, string)

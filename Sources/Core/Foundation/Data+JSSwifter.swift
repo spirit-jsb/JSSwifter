@@ -266,8 +266,8 @@ public extension Data {
         return Data(bytes: bufferBytes, count: encryptedSize)
     }
     
-    func utf8String() -> String? {
-        return String(data: self, encoding: .utf8)
+    func string(encoding: String.Encoding) -> String? {
+        return String(data: self, encoding: encoding)
     }
     
     func hexString() -> String {
@@ -281,13 +281,8 @@ public extension Data {
         return hexString
     }
     
-    func jsonValueDecoded() throws -> Any {
-        do {
-            let value = try JSONSerialization.jsonObject(with: self, options: [])
-            return value
-        } catch {
-            throw error
-        }
+    func jsonValueDecoded(options: JSONSerialization.ReadingOptions = []) throws -> Any {
+        return try JSONSerialization.jsonObject(with: self, options: options)
     }
     
     func gzipDeflate(level: CompressionLevel = .default) throws -> Data {

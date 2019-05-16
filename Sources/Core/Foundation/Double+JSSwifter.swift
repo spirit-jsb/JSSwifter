@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreGraphics
+import Darwin
 
 public extension Double {
     

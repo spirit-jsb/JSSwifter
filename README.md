@@ -20,6 +20,7 @@
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/DispatchQueue%2BJSSwifter.swift"><code>DispatchQueue Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Data%2BJSSwifter.swift"><code>Data Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Date%2BJSSwifter.swift"><code>Date Extensions</code></a></li>
 
 </details>
 
@@ -51,7 +52,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.3'
+pod 'JSSwifter', '~> 0.0.4'
 ```
 
 ## 更新计划
@@ -59,7 +60,7 @@ pod 'JSSwifter', '~> 0.0.3'
 - [ ] Array
 - [ ] Bundle
 - [x] Data
-- [ ] Date
+- [x] Date
 - [ ] Dictionary
 - [ ] KeyedUnarchiver
 - [ ] NotificationCenter

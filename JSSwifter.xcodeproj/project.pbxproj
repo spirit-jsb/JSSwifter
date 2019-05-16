@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50317BBC228D920300808D1A /* FloatExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50317BBB228D920300808D1A /* FloatExtensionTest.swift */; };
+		50317BBE228D921000808D1A /* DoubleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50317BBD228D921000808D1A /* DoubleExtensionTest.swift */; };
 		505E5B3F228AECE5009BB9EE /* Data+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B3E228AECE5009BB9EE /* Data+JSSwifter.swift */; };
 		505E5B41228B0D8E009BB9EE /* Date+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B40228B0D8E009BB9EE /* Date+JSSwifter.swift */; };
 		505E5B43228B0DAE009BB9EE /* UIView+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B42228B0DAE009BB9EE /* UIView+JSSwifter.swift */; };
@@ -30,10 +32,10 @@
 		509DF57C2289666E00C4B54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DF5752289666E00C4B54F /* AppDelegate.swift */; };
 		509DF57E2289670300C4B54F /* JSSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; };
 		509DF57F2289670300C4B54F /* JSSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		509DF588228967A400C4B54F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF587228967A400C4B54F /* Foundation.framework */; };
-		509DF58A228967AA00C4B54F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF589228967AA00C4B54F /* UIKit.framework */; };
 		509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */; };
 		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
+		50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */; };
+		50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25706228D713A001B3B96 /* Double+JSSwifter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +70,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		50317BBB228D920300808D1A /* FloatExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtensionTest.swift; sourceTree = "<group>"; };
+		50317BBD228D921000808D1A /* DoubleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionTest.swift; sourceTree = "<group>"; };
 		505E5B3E228AECE5009BB9EE /* Data+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSSwifter.swift"; sourceTree = "<group>"; };
 		505E5B40228B0D8E009BB9EE /* Date+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+JSSwifter.swift"; sourceTree = "<group>"; };
 		505E5B42228B0DAE009BB9EE /* UIView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+JSSwifter.swift"; sourceTree = "<group>"; };
 		505E5B44228B0DBF009BB9EE /* UITableView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+JSSwifter.swift"; sourceTree = "<group>"; };
 		505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+JSSwifter.swift"; sourceTree = "<group>"; };
 		505E5B4A228B0DF3009BB9EE /* UIScrollView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+JSSwifter.swift"; sourceTree = "<group>"; };
-		505E5B4C228BB2C3009BB9EE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensionTest.swift; sourceTree = "<group>"; };
 		505E5B54228BDC76009BB9EE /* test.txt.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = test.txt.gz; sourceTree = "<group>"; };
 		505E5B56228C0AF1009BB9EE /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
@@ -95,10 +98,10 @@
 		509DF5732289666E00C4B54F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		509DF5752289666E00C4B54F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		509DF5772289666E00C4B54F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		509DF587228967A400C4B54F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		509DF589228967AA00C4B54F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
+		50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+JSSwifter.swift"; sourceTree = "<group>"; };
+		50C25706228D713A001B3B96 /* Double+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+JSSwifter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509DF58A228967AA00C4B54F /* UIKit.framework in Frameworks */,
-				509DF588228967A400C4B54F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +157,8 @@
 				508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */,
 				505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */,
 				50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */,
+				50317BBB228D920300808D1A /* FloatExtensionTest.swift */,
+				50317BBD228D921000808D1A /* DoubleExtensionTest.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -277,6 +280,8 @@
 				509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */,
 				505E5B3E228AECE5009BB9EE /* Data+JSSwifter.swift */,
 				505E5B40228B0D8E009BB9EE /* Date+JSSwifter.swift */,
+				50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */,
+				50C25706228D713A001B3B96 /* Double+JSSwifter.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -296,9 +301,6 @@
 		509DF586228967A400C4B54F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				505E5B4C228BB2C3009BB9EE /* libz.tbd */,
-				509DF589228967AA00C4B54F /* UIKit.framework */,
-				509DF587228967A400C4B54F /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -452,6 +454,8 @@
 				508A26CB228A4E6D009A94FB /* DispatchQueueExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				508A26CF228AA547009A94FB /* UIColorExtensionTest.swift in Sources */,
+				50317BBC228D920300808D1A /* FloatExtensionTest.swift in Sources */,
+				50317BBE228D921000808D1A /* DoubleExtensionTest.swift in Sources */,
 				505E5B4F228BB353009BB9EE /* DataExtensionTest.swift in Sources */,
 				505E5B5B228C11BB009BB9EE /* UICollectionViewExtensionTest.swift in Sources */,
 				505E5B59228C11AA009BB9EE /* UITableViewExtensionTest.swift in Sources */,
@@ -462,7 +466,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */,
 				509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */,
+				50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */,
 				505E5B43228B0DAE009BB9EE /* UIView+JSSwifter.swift in Sources */,
 				505E5B41228B0D8E009BB9EE /* Date+JSSwifter.swift in Sources */,
 				505E5B4B228B0DF3009BB9EE /* UIScrollView+JSSwifter.swift in Sources */,
@@ -521,7 +527,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sibo.jian.JSSwifter-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -542,7 +551,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,6 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sibo.jian.JSSwifter-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

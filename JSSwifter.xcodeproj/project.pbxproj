@@ -33,6 +33,7 @@
 		509DF588228967A400C4B54F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF587228967A400C4B54F /* Foundation.framework */; };
 		509DF58A228967AA00C4B54F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF589228967AA00C4B54F /* UIKit.framework */; };
 		509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */; };
+		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		509DF587228967A400C4B54F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		509DF589228967AA00C4B54F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+JSSwifter.swift"; sourceTree = "<group>"; };
+		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */,
 				505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */,
+				50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				508A26CB228A4E6D009A94FB /* DispatchQueueExtensionTest.swift in Sources */,
+				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				508A26CF228AA547009A94FB /* UIColorExtensionTest.swift in Sources */,
 				505E5B4F228BB353009BB9EE /* DataExtensionTest.swift in Sources */,
 				505E5B5B228C11BB009BB9EE /* UICollectionViewExtensionTest.swift in Sources */,

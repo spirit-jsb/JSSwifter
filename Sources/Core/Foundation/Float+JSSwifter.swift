@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import CoreGraphics
-import Darwin
 
 public extension Float {
     

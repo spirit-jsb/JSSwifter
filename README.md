@@ -44,10 +44,10 @@
 <summary>CoreGraphics Extensions</summary>
 </br>
 <ul>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/CGColor%2BJSSwifter.swift"><code>CGColor Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/CGPoint%2BJSSwifter.swift"><code>CGPoint Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/CGSize%2BJSSwifter.swift"><code>CGSize Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGColor%2BJSSwifter.swift"><code>CGColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGPoint%2BJSSwifter.swift"><code>CGPoint Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGSize%2BJSSwifter.swift"><code>CGSize Extensions</code></a></li>
 
 </details>
 </p>

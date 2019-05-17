@@ -10,54 +10,79 @@ import XCTest
 @testable import JSSwifter
 
 class UICollectionViewExtensionTest: XCTestCase {
-
-    func test_register() {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-        let indexPath = IndexPath(item: 0, section: 0)
+    
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    let emptyCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
+    override func setUp() {
+        super.setUp()
         
-        collectionView.registerCell(TestCollectionViewCell.self)
-        collectionView.registerReusableView(kind: UICollectionView.elementKindSectionHeader, TestCollectionReusableView.self)
-        collectionView.registerReusableView(kind: UICollectionView.elementKindSectionFooter, TestCollectionReusableView.self)
+        self.collectionView.dataSource = self
+        self.collectionView.reloadData()
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TestCollectionViewCell", for: indexPath) as? TestCollectionViewCell
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "TestCollectionReusableViewUICollectionElementKindSectionHeader", for: indexPath) as? TestCollectionReusableView
-        let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "TestCollectionReusableViewUICollectionElementKindSectionFooter", for: indexPath) as? TestCollectionReusableView
-        XCTAssertNotNil(cell)
-        XCTAssertNotNil(header)
-        XCTAssertNotNil(footer)
+        self.emptyCollectionView.dataSource = self
+        self.emptyCollectionView.reloadData()
     }
     
-    func test_dequeue() {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-        let indexPath = IndexPath(item: 0, section: 0)
-        
-        collectionView.register(TestCollectionViewCell.self, forCellWithReuseIdentifier: "TestCollectionViewCell")
-        collectionView.register(TestCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "TestCollectionReusableViewUICollectionElementKindSectionHeader")
-        collectionView.register(TestCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "TestCollectionReusableViewUICollectionElementKindSectionFooter")
-
-        let cell = collectionView.dequeueCell(indexPath: indexPath) as TestCollectionViewCell
-        let header = collectionView.dequeueReusableView(kind: UICollectionView.elementKindSectionHeader, indexPath: indexPath) as TestCollectionReusableView
-        let footer = collectionView.dequeueReusableView(kind: UICollectionView.elementKindSectionFooter, indexPath: indexPath) as TestCollectionReusableView
-        XCTAssertNotNil(cell)
-        XCTAssertNotNil(header)
-        XCTAssertNotNil(footer)
+    func test_index_path_for_last_item() {
+        XCTAssertEqual(self.collectionView.indexPathForLastItem, IndexPath(item: 0, section: 1))
+    }
+    
+    func test_last_section() {
+        XCTAssertEqual(self.collectionView.lastSection, 1)
+        XCTAssertEqual(self.emptyCollectionView.lastSection, 0)
+    }
+    
+    func test_number_of_items() {
+        XCTAssertEqual(self.collectionView.numberOfItems(), 5)
+        XCTAssertEqual(self.emptyCollectionView.numberOfItems(), 0)
+    }
+    
+    func test_index_path_for_last_item_in_section() {
+        XCTAssertNil(self.collectionView.indexPathForLastItem(inSection: -1))
+        XCTAssertNil(self.collectionView.indexPathForLastItem(inSection: 2))
+        XCTAssertEqual(self.collectionView.indexPathForLastItem(inSection: 0), IndexPath(item: 4, section: 0))
+    }
+    
+    func test_reload_data() {
+        var completionCalled = false
+        self.collectionView.reloadData {
+            completionCalled = true
+            XCTAssertTrue(completionCalled)
+        }
     }
     
     func test_register_dequeue() {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         let indexPath = IndexPath(item: 0, section: 0)
         
-        collectionView.registerCell(TestCollectionViewCell.self)
-        collectionView.registerReusableView(kind: UICollectionView.elementKindSectionHeader, TestCollectionReusableView.self)
-        collectionView.registerReusableView(kind: UICollectionView.elementKindSectionFooter, TestCollectionReusableView.self)
+        self.collectionView.register(TestCollectionViewCell.self)
+        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionHeader, TestCollectionReusableView.self)
+        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionFooter, TestCollectionReusableView.self)
         
-        let cell = collectionView.dequeueCell(indexPath: indexPath) as TestCollectionViewCell
-        let header = collectionView.dequeueReusableView(kind: UICollectionView.elementKindSectionHeader, indexPath: indexPath) as TestCollectionReusableView
-        let footer = collectionView.dequeueReusableView(kind: UICollectionView.elementKindSectionFooter, indexPath: indexPath) as TestCollectionReusableView
+        let cell = collectionView.dequeueReusableCell(for: indexPath) as TestCollectionViewCell
+        let header = collectionView.dequeueReusableSupplementaryView(ofkind: UICollectionView.elementKindSectionHeader, for: indexPath) as TestCollectionReusableView
+        let footer = collectionView.dequeueReusableSupplementaryView(ofkind: UICollectionView.elementKindSectionFooter, for: indexPath) as TestCollectionReusableView
+        
         XCTAssertNotNil(cell)
         XCTAssertNotNil(header)
         XCTAssertNotNil(footer)
     }
+}
+
+extension UICollectionViewExtensionTest: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return (collectionView == self.collectionView) ? 2 : 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return (collectionView == self.collectionView) ? (section == 0 ? 5 : 0) : 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+
 }
 
 private class TestCollectionViewCell: UICollectionViewCell {  }

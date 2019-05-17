@@ -58,6 +58,16 @@ public extension UICollectionView {
         })
     }
     
+    func isValidIndexPath(_ indexPath: IndexPath) -> Bool {
+        return indexPath.section < self.numberOfSections && indexPath.item < self.numberOfItems(inSection: indexPath.section)
+    }
+    
+    func safeScrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
+        guard indexPath.section < self.numberOfSections else { return }
+        guard indexPath.item < self.numberOfItems(inSection: indexPath.section) else { return }
+        self.scrollToItem(at: indexPath, at: scrollPosition, animated: animated)
+    }
+    
     func register<T: UICollectionViewCell>(cellClass: T.Type) {
         let reusable = ReusableIdentifier<T>()
         self.register(T.self, forCellWithReuseIdentifier: reusable.identifier)

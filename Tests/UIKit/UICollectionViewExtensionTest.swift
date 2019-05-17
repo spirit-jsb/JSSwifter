@@ -52,6 +52,38 @@ class UICollectionViewExtensionTest: XCTestCase {
         }
     }
     
+    func test_is_valid_index_path() {
+        let validIndexPath = IndexPath(row: 0, section: 0)
+        XCTAssertTrue(self.collectionView.isValidIndexPath(validIndexPath))
+        let invalidIndexPath = IndexPath(row: 10, section: 0)
+        XCTAssertFalse(self.collectionView.isValidIndexPath(invalidIndexPath))
+    }
+    
+    func test_safe_scroll_to_item_index_path() {
+        let validIndexPathTop = IndexPath(row: 0, section: 0)
+        
+        self.collectionView.contentOffset = CGPoint(x: 0.0, y: 100.0)
+        XCTAssertNotEqual(self.collectionView.contentOffset, .zero)
+        
+        self.collectionView.safeScrollToItem(at: validIndexPathTop, at: .top, animated: false)
+        XCTAssertEqual(self.collectionView.contentOffset, .zero)
+        
+        let validIndexPathBottom = IndexPath(row: 3, section: 0)
+        let bottomOffset = CGPoint(x: 0.0, y: self.collectionView.contentSize.height - self.collectionView.bounds.size.height)
+        
+        self.collectionView.contentOffset = CGPoint(x: 0.0, y: 200.0)
+        XCTAssertNotEqual(self.collectionView.contentOffset, bottomOffset)
+        
+        self.collectionView.safeScrollToItem(at: validIndexPathBottom, at: .bottom, animated: false)
+        XCTAssertEqual(bottomOffset.y, self.collectionView.contentOffset.y, accuracy: 2.0)
+        
+        let invalidIndexPath = IndexPath(row: 23, section: 21)
+        self.collectionView.contentOffset = .zero
+        
+        self.collectionView.safeScrollToItem(at: invalidIndexPath, at: .bottom, animated: false)
+        XCTAssertEqual(self.collectionView.contentOffset, .zero)
+    }
+    
     func test_register_dequeue() {
         let indexPath = IndexPath(item: 0, section: 0)
         

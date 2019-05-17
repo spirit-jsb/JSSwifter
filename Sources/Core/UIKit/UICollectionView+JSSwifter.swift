@@ -58,12 +58,12 @@ public extension UICollectionView {
         })
     }
     
-    func register<T: UICollectionViewCell>(_: T.Type) {
+    func register<T: UICollectionViewCell>(cellClass: T.Type) {
         let reusable = ReusableIdentifier<T>()
         self.register(T.self, forCellWithReuseIdentifier: reusable.identifier)
     }
     
-    func register<T: UICollectionReusableView>(supplementaryViewOfKind kind: String, _: T.Type) {
+    func register<T: UICollectionReusableView>(supplementaryViewOfKind kind: String, viewClass: T.Type) {
         let reusable = ReusableIdentifier<T>()
         guard kind == UICollectionView.elementKindSectionHeader || kind == UICollectionView.elementKindSectionFooter else {
             fatalError("No Supplementary View Of Kind (\(kind))")

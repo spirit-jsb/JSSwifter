@@ -55,9 +55,9 @@ class UICollectionViewExtensionTest: XCTestCase {
     func test_register_dequeue() {
         let indexPath = IndexPath(item: 0, section: 0)
         
-        self.collectionView.register(TestCollectionViewCell.self)
-        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionHeader, TestCollectionReusableView.self)
-        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionFooter, TestCollectionReusableView.self)
+        self.collectionView.register(cellClass: TestCollectionViewCell.self)
+        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionHeader, viewClass: TestCollectionReusableView.self)
+        self.collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionFooter, viewClass: TestCollectionReusableView.self)
         
         let cell = collectionView.dequeueReusableCell(for: indexPath) as TestCollectionViewCell
         let header = collectionView.dequeueReusableSupplementaryView(ofkind: UICollectionView.elementKindSectionHeader, for: indexPath) as TestCollectionReusableView

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'JSSwifter'
-    s.version          = '0.0.4'
+    s.version          = '0.0.5'
     s.summary          = '一个简便易用的 Swift Extension 库。'
   
     s.description      = <<-DESC
@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/spirit-jsb/JSSwifter.git', :tag => s.version.to_s }
     
     s.source_files = 'Sources/**/*.swift'
-    s.frameworks = 'UIKit', 'Foundation'
-    
+        
     s.requires_arc = true
   
 end

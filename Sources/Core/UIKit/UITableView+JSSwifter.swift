@@ -62,7 +62,7 @@ public extension UITableView {
     }
     
     func isValidIndexPath(_ indexPath: IndexPath) -> Bool {
-        return indexPath.section < self.numberOfSections && indexPath.row > self.numberOfRows(inSection: indexPath.section)
+        return indexPath.section < self.numberOfSections && indexPath.row < self.numberOfRows(inSection: indexPath.section)
     }
     
     func safeScrollToRow(at indexPath: IndexPath, at scrollPosition: UITableView.ScrollPosition, animated: Bool) {

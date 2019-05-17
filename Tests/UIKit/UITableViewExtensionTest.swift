@@ -73,7 +73,7 @@ class UITableViewExtensionTest: XCTestCase {
         XCTAssertFalse(self.tableView.isValidIndexPath(invalidIndexPath))
     }
     
-    func test_safe_scroll_to_index_path() {
+    func test_safe_scroll_to_row_index_path() {
         let validIndexPathTop = IndexPath(row: 0, section: 0)
         
         self.tableView.contentOffset = CGPoint(x: 0.0, y: 100.0)
@@ -94,7 +94,7 @@ class UITableViewExtensionTest: XCTestCase {
         let invalidIndexPath = IndexPath(row: 23, section: 21)
         self.tableView.contentOffset = .zero
         
-        tableView.safeScrollToRow(at: invalidIndexPath, at: .bottom, animated: false)
+        self.tableView.safeScrollToRow(at: invalidIndexPath, at: .bottom, animated: false)
         XCTAssertEqual(self.tableView.contentOffset, .zero)
     }
 

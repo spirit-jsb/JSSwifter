@@ -19,7 +19,7 @@ class FileManagerExtensionTest: XCTestCase {
         XCTAssertNotNil(url)
         
         XCTAssertTrue(path!.contains("Document"))
-        XCTAssertTrue(url!.absoluteString.contains("Document"))
+        XCTAssertTrue(url!.lastPathComponent.contains("Document"))
     }
     
     func test_library() {
@@ -30,7 +30,7 @@ class FileManagerExtensionTest: XCTestCase {
         XCTAssertNotNil(url)
         
         XCTAssertTrue(path!.contains("Library"))
-        XCTAssertTrue(url!.absoluteString.contains("Library"))
+        XCTAssertTrue(url!.lastPathComponent.contains("Library"))
     }
     
     func test_caches() {
@@ -41,6 +41,6 @@ class FileManagerExtensionTest: XCTestCase {
         XCTAssertNotNil(url)
         
         XCTAssertTrue(path!.contains("Caches"))
-        XCTAssertTrue(url!.absoluteString.contains("Caches"))
+        XCTAssertTrue(url!.lastPathComponent.contains("Caches"))
     }
 }

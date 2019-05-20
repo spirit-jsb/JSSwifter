@@ -303,6 +303,34 @@ class DataExtensionTest: XCTestCase {
         XCTAssertNil(decoded)
     }
     
+    func test_plist_value_decoded() throws {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.plist", withExtension: nil) else {
+            return
+        }
+        let data = try Data(contentsOf: url)
+        let decoded = try data.plistValueDecoded()
+        XCTAssertTrue(decoded is [String])
+        XCTAssertEqual((decoded as! [String]).count, 3)
+    }
+    
+    func test_plist_value_decoded_error() {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.txt.gz", withExtension: nil) else {
+            return
+        }
+
+        var decoded: Any? = nil
+
+        do {
+            let data = try Data(contentsOf: url)
+            decoded = try data.plistValueDecoded()
+        }
+        catch let error {
+            XCTAssertNotNil(error)
+        }
+
+        XCTAssertNil(decoded)
+    }
+    
     func test_gzip() throws {
         for _ in 0..<10 {
             let string = String.lorem(length: Int.random(in: 1..<100_000))

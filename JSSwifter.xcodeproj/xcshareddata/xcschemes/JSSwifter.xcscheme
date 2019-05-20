@@ -26,9 +26,39 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "509DF542228965DA00C4B54F"
+            BuildableName = "JSSwifter.framework"
+            BlueprintName = "JSSwifter"
+            ReferencedContainer = "container:JSSwifter.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "508A26B6228A4DD2009A94FB"
+               BuildableName = "JSSwifter-Tests.xctest"
+               BlueprintName = "JSSwifter-Tests"
+               ReferencedContainer = "container:JSSwifter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "509DF542228965DA00C4B54F"
+            BuildableName = "JSSwifter.framework"
+            BlueprintName = "JSSwifter"
+            ReferencedContainer = "container:JSSwifter.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

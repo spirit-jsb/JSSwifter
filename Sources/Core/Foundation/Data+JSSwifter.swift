@@ -285,6 +285,10 @@ public extension Data {
         return try JSONSerialization.jsonObject(with: self, options: options)
     }
     
+    func plistValueDecoded(options: PropertyListSerialization.ReadOptions = []) throws -> Any {
+        return try PropertyListSerialization.propertyList(from: self, options: options, format: nil)
+    }
+    
     func gzipDeflate(level: CompressionLevel = .default) throws -> Data {
         guard !self.isEmpty else {
             return self

@@ -12,9 +12,14 @@ import XCTest
 class ArrayExtensionTest: XCTestCase {
     
     func test_safe() {
-        let array = [0, 1, 2, 3, 4]
-        XCTAssertNotEqual(array[safe: 3], 2)
+        var array = [0, 1, 2, 3, 4]
+        XCTAssertEqual(array[safe: 3], 3)
         XCTAssertNil(array[safe: 5])
+        
+        array[safe: 2] = 10
+        XCTAssertEqual(array[safe: 2], 10)
+        array[safe: 10] = 100
+        XCTAssertEqual(array, [0, 1, 10, 3, 100])
     }
 
     func test_prepend() {
@@ -182,7 +187,7 @@ class ArrayExtensionTest: XCTestCase {
         }
         catch let error {
             XCTAssertNotNil(error)
-            XCTAssertEqual((error as! ArrayError), ArrayError.invalidType)
+            XCTAssertEqual((error as! ArrayError), ArrayError.invalidJSONObject)
         }
         XCTAssertNil(data)
     }

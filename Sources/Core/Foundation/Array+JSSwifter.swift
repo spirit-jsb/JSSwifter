@@ -12,13 +12,22 @@ public enum ArrayError: Swift.Error {
     case invalidData
     case invalidString
     case invalidType
+    case invalidJSONObject
 }
 
 public extension Array {
     
     // MARK:
     subscript(safe index: Int) -> Element? {
-        return self.indices ~= index ? self[index] : nil
+        set {
+            let safeIndex = self.indices ~= index ? index : (self.indices.endIndex - 1)
+            if let safeValue = newValue {
+                self[safeIndex] = safeValue
+            }
+        }
+        get {
+            return self.indices ~= index ? self[index] : nil
+        }
     }
     
     mutating func prepend(_ newElement: Element) {
@@ -70,7 +79,7 @@ public extension Array {
     
     func jsonData(_ options: JSONSerialization.WritingOptions = []) throws -> Data {
         guard JSONSerialization.isValidJSONObject(self) else {
-            throw ArrayError.invalidType
+            throw ArrayError.invalidJSONObject
         }
         return try JSONSerialization.data(withJSONObject: self, options: options)
     }

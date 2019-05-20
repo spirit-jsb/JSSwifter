@@ -26,6 +26,8 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Int%2BJSSwifter.swift"><code>Int Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Calendar%2BJSSwifter.swift"><code>Calendar Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/FileManager%2BJSSwifter.swift"><code>FileManager Extensions</code></a></li>
 
 </details>
 
@@ -37,6 +39,7 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UITableView%2BJSSwifter.swift"><code>UITableView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIScrollView%2BJSSwifter.swift"><code>UIScrollView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
 
 </details>
 
@@ -48,6 +51,14 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGPoint%2BJSSwifter.swift"><code>CGPoint Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGSize%2BJSSwifter.swift"><code>CGSize Extensions</code></a></li>
+
+</details>
+
+<details>
+<summary>CoreLocation Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreLocation/CLLocation%2BJSSwifter.swift"><code>CLLocation Extensions</code></a></li>
 
 </details>
 </p>
@@ -69,12 +80,12 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.5'
+pod 'JSSwifter', '~> 0.0.6'
 ```
 
 ## 更新计划
 ### Foundation
-- [ ] Array
+- [x] Array
 - [ ] Bundle
 - [x] Data
 - [x] Date
@@ -91,9 +102,10 @@ pod 'JSSwifter', '~> 0.0.5'
 - [x] Double
 - [x] Bool
 - [x] Calendar
+- [x] FileManager
 
 ### UIKit
-- [ ] UIApplication
+- [x] UIApplication
 - [ ] UIBarButtonItem
 - [ ] UIBezierPath
 - [x] UIColor
@@ -115,6 +127,9 @@ pod 'JSSwifter', '~> 0.0.5'
 - [x] CGFloat
 - [x] CGPoint
 - [x] CGSize
+
+### CoreLocation
+- [x] CLLocation
 
 ### Quartz
 - [ ] CALayer

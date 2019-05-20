@@ -111,6 +111,99 @@ class ArrayExtensionTest: XCTestCase {
         array = (array as! [String]).withoutDuplicates()
         XCTAssertEqual((array as! [String]), ["h", "e", "l", "o"])
     }
+    
+    func test_json_decoded() throws {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.json", withExtension: nil) else {
+            return
+        }
+        let data = try Data(contentsOf: url)
+        let jsonArray = try [String].jsonArray(with: data)
+        XCTAssertEqual(jsonArray.count, 3)
+    }
+    
+    func test_json_decoded_error() {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.json", withExtension: nil) else {
+            return
+        }
+        
+        var jsonArray: Any? = nil
+        
+        do {
+            let data = try Data(contentsOf: url)
+            jsonArray = try [Int].jsonArray(with: data)
+        }
+        catch let error {
+            XCTAssertNotNil(error)
+            XCTAssertEqual((error as! ArrayError), ArrayError.invalidType)
+        }
+        
+        XCTAssertNil(jsonArray)
+    }
+    
+    func test_plist_decoded() throws {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.plist", withExtension: nil) else {
+            return
+        }
+        let data = try Data(contentsOf: url)
+        let plistArray = try [String].plistArray(with: data)
+        XCTAssertEqual(plistArray.count, 3)
+    }
+    
+    func test_plist_decoded_error() {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "test.plist", withExtension: nil) else {
+            return
+        }
+        
+        var plistArray: Any? = nil
+        
+        do {
+            let data = try Data(contentsOf: url)
+            plistArray = try [Int].plistArray(with: data)
+        }
+        catch let error {
+            XCTAssertNotNil(error)
+            XCTAssertEqual((error as! ArrayError), ArrayError.invalidType)
+        }
+        
+        XCTAssertNil(plistArray)
+    }
+    
+    func test_json_encoded() throws {
+        let jsonArray = [1, 2, 3]
+        let data = try jsonArray.jsonData()
+        XCTAssertFalse(data.isEmpty)
+    }
+    
+    func test_json_encoded_error() {
+        let jsonArray = [Person(name: "James", age: nil), Person(name: "Peter", age: 29)]
+        var data: Data? = nil
+        do {
+            data = try jsonArray.jsonData()
+        }
+        catch let error {
+            XCTAssertNotNil(error)
+            XCTAssertEqual((error as! ArrayError), ArrayError.invalidType)
+        }
+        XCTAssertNil(data)
+    }
+    
+    func test_plist_encoded() throws {
+        let plistArray = ["1", "2", "3"]
+        let data = try plistArray.plistData()
+        XCTAssertFalse(data.isEmpty)
+    }
+    
+    func test_plist_encoded_error() {
+        let plistArray = [Person(name: "James", age: nil), Person(name: "Peter", age: 29)]
+        var data: Data? = nil
+        do {
+            data = try plistArray.plistData()
+        }
+        catch let error {
+            XCTAssertNotNil(error)
+        }
+        XCTAssertNil(data)
+    }
 }
 
 private struct Person: Equatable {

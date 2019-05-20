@@ -10,6 +10,12 @@ import XCTest
 @testable import JSSwifter
 
 class ArrayExtensionTest: XCTestCase {
+    
+    func test_safe() {
+        let array = [0, 1, 2, 3, 4]
+        XCTAssertNotEqual(array[safe: 3], 2)
+        XCTAssertNil(array[safe: 5])
+    }
 
     func test_prepend() {
         var array = [2, 3, 4, 5]

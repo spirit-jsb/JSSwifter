@@ -8,6 +8,12 @@
 
 import Foundation
 
+public enum ArrayError: Swift.Error {
+    case invalidData
+    case invalidString
+    case invalidType
+}
+
 public extension Array {
     
     // MARK:
@@ -60,6 +66,39 @@ public extension Array {
     mutating func sort<T: Comparable>(by path: KeyPath<Element, T>, ascending: Bool = true) -> [Element] {
         self = self.sorted(by: path, ascending: ascending)
         return self
+    }
+    
+    func jsonData(_ options: JSONSerialization.WritingOptions = []) throws -> Data {
+        guard JSONSerialization.isValidJSONObject(self) else {
+            throw ArrayError.invalidType
+        }
+        return try JSONSerialization.data(withJSONObject: self, options: options)
+    }
+    
+    func plistData(_ options: PropertyListSerialization.WriteOptions = 0) throws -> Data {
+        return try PropertyListSerialization.data(fromPropertyList: self, format: .xml, options: options)
+    }
+    
+    static func jsonArray(with data: Data?, options: JSONSerialization.ReadingOptions = []) throws -> [Element] {
+        guard let jsonData = data, !jsonData.isEmpty else {
+            throw ArrayError.invalidData
+        }
+        let json = try jsonData.jsonValueDecoded(options: options)
+        guard let jsonArray = json as? [Element] else {
+            throw ArrayError.invalidType
+        }
+        return jsonArray
+    }
+    
+    static func plistArray(with data: Data?, options: PropertyListSerialization.ReadOptions = []) throws -> [Element] {
+        guard let plistData = data, !plistData.isEmpty else {
+            throw ArrayError.invalidData
+        }
+        let plist = try plistData.plistValueDecoded(options: options)
+        guard let plistArray = plist as? [Element] else {
+            throw ArrayError.invalidType
+        }
+        return plistArray
     }
 }
 

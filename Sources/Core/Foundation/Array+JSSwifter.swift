@@ -11,6 +11,10 @@ import Foundation
 public extension Array {
     
     // MARK:
+    subscript(safe index: Int) -> Element? {
+        return self.indices ~= index ? self[index] : nil
+    }
+    
     mutating func prepend(_ newElement: Element) {
         self.insert(newElement, at: 0)
     }

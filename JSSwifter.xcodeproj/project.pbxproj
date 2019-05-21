@@ -59,6 +59,20 @@
 		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
 		50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */; };
 		50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25706228D713A001B3B96 /* Double+JSSwifter.swift */; };
+		50FA2B4922938CDD007C7E9E /* DictionaryExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */; };
+		50FA2B4E22938D26007C7E9E /* test.dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 50FA2B4A22938D18007C7E9E /* test.dict.json */; };
+		50FA2B4F22938D29007C7E9E /* test.dict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FA2B4C22938D22007C7E9E /* test.dict.plist */; };
+		50FA2B512293A564007C7E9E /* Locale+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */; };
+		50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B522293A617007C7E9E /* LocaleExtensionTest.swift */; };
+		50FA2B552293A696007C7E9E /* UserDefaults+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */; };
+		50FA2B572293A9E9007C7E9E /* UserDefaultsExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B562293A9E9007C7E9E /* UserDefaultsExtensionTest.swift */; };
+		50FA2B5A2293C15D007C7E9E /* MKMapView+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B592293C15D007C7E9E /* MKMapView+JSSwifter.swift */; };
+		50FA2B5D2293C46B007C7E9E /* MKMapViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B5C2293C46B007C7E9E /* MKMapViewExtensionTest.swift */; };
+		50FA2B5F2293C7EB007C7E9E /* UIStackView+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B5E2293C7EB007C7E9E /* UIStackView+JSSwifter.swift */; };
+		50FA2B612293C994007C7E9E /* UIStackViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B602293C994007C7E9E /* UIStackViewExtensionTest.swift */; };
+		50FA2B632293D4BB007C7E9E /* UIViewController+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B622293D4BB007C7E9E /* UIViewController+JSSwifter.swift */; };
+		50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B642293DEC8007C7E9E /* UIViewControllerExtensionTest.swift */; };
+		50FA2B672293E33E007C7E9E /* UIView+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B662293E33E007C7E9E /* UIView+JSSwifter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +162,20 @@
 		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
 		50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25706228D713A001B3B96 /* Double+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B4A22938D18007C7E9E /* test.dict.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.dict.json; sourceTree = "<group>"; };
+		50FA2B4C22938D22007C7E9E /* test.dict.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = test.dict.plist; sourceTree = "<group>"; };
+		50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B522293A617007C7E9E /* LocaleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B562293A9E9007C7E9E /* UserDefaultsExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B592293C15D007C7E9E /* MKMapView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B5C2293C46B007C7E9E /* MKMapViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B5E2293C7EB007C7E9E /* UIStackView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B602293C994007C7E9E /* UIStackViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B622293D4BB007C7E9E /* UIViewController+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+JSSwifter.swift"; sourceTree = "<group>"; };
+		50FA2B642293DEC8007C7E9E /* UIViewControllerExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTest.swift; sourceTree = "<group>"; };
+		50FA2B662293E33E007C7E9E /* UIView+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+JSSwifter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +211,8 @@
 				505E5B54228BDC76009BB9EE /* test.txt.gz */,
 				505E5B56228C0AF1009BB9EE /* test.json */,
 				5032E70D22928EBA00CB40A6 /* test.plist */,
+				50FA2B4A22938D18007C7E9E /* test.dict.json */,
+				50FA2B4C22938D22007C7E9E /* test.dict.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -190,10 +220,11 @@
 		508A26C2228A4DFC009A94FB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5095481B228E775C00BCE2D0 /* CoreGraphics */,
 				5095483D228EF46E00BCE2D0 /* CoreLocation */,
 				508A26C7228A4E32009A94FB /* Foundation */,
+				50FA2B5B2293C44B007C7E9E /* MapKit */,
 				508A26C8228A4E3F009A94FB /* UIKit */,
-				5095481B228E775C00BCE2D0 /* CoreGraphics */,
 				505E5B51228BD9A0009BB9EE /* Resources */,
 				508A26C4228A4DFC009A94FB /* Info.plist */,
 			);
@@ -203,16 +234,19 @@
 		508A26C7228A4E32009A94FB /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */,
-				505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */,
-				50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */,
-				50954838228EBAF400BCE2D0 /* IntExtensionTest.swift */,
-				50317BBB228D920300808D1A /* FloatExtensionTest.swift */,
-				50317BBD228D921000808D1A /* DoubleExtensionTest.swift */,
+				5032E7092292407500CB40A6 /* ArrayExtensionTest.swift */,
 				50954816228DA4AF00BCE2D0 /* BoolExtensionTest.swift */,
 				5095482C228E9BD000BCE2D0 /* CalendarExtensionTest.swift */,
+				505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */,
+				50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */,
+				50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */,
+				508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */,
+				50317BBD228D921000808D1A /* DoubleExtensionTest.swift */,
 				50954842228F196D00BCE2D0 /* FileManagerExtensionTest.swift */,
-				5032E7092292407500CB40A6 /* ArrayExtensionTest.swift */,
+				50317BBB228D920300808D1A /* FloatExtensionTest.swift */,
+				50954838228EBAF400BCE2D0 /* IntExtensionTest.swift */,
+				50FA2B522293A617007C7E9E /* LocaleExtensionTest.swift */,
+				50FA2B562293A9E9007C7E9E /* UserDefaultsExtensionTest.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -220,10 +254,12 @@
 		508A26C8228A4E3F009A94FB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */,
 				508A26CE228AA547009A94FB /* UIColorExtensionTest.swift */,
 				50954830228EA23600BCE2D0 /* UIScrollViewExtensionTest.swift */,
 				505E5B58228C11AA009BB9EE /* UITableViewExtensionTest.swift */,
-				505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */,
+				50FA2B602293C994007C7E9E /* UIStackViewExtensionTest.swift */,
+				50FA2B642293DEC8007C7E9E /* UIViewControllerExtensionTest.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -361,10 +397,11 @@
 		509DF5832289677200C4B54F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				509DF5842289678200C4B54F /* Foundation */,
-				509DF5852289678D00C4B54F /* UIKit */,
 				50954818228E76FA00BCE2D0 /* CoreGraphics */,
 				5095483A228EE8F700BCE2D0 /* CoreLocation */,
+				509DF5842289678200C4B54F /* Foundation */,
+				50FA2B582293C145007C7E9E /* MapKit */,
+				509DF5852289678D00C4B54F /* UIKit */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -372,17 +409,19 @@
 		509DF5842289678200C4B54F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */,
-				505E5B3E228AECE5009BB9EE /* Data+JSSwifter.swift */,
-				505E5B40228B0D8E009BB9EE /* Date+JSSwifter.swift */,
-				50954836228EB6A100BCE2D0 /* Int+JSSwifter.swift */,
-				50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */,
-				50C25706228D713A001B3B96 /* Double+JSSwifter.swift */,
+				5032E7072292367B00CB40A6 /* Array+JSSwifter.swift */,
 				50954814228DA45B00BCE2D0 /* Bool+JSSwifter.swift */,
 				5095482A228E9B5700BCE2D0 /* Calendar+JSSwifter.swift */,
-				50954840228F17FB00BCE2D0 /* FileManager+JSSwifter.swift */,
-				5032E7072292367B00CB40A6 /* Array+JSSwifter.swift */,
+				505E5B3E228AECE5009BB9EE /* Data+JSSwifter.swift */,
+				505E5B40228B0D8E009BB9EE /* Date+JSSwifter.swift */,
 				5032E7102292A94C00CB40A6 /* Dictionary+JSSwifter.swift */,
+				509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */,
+				50C25706228D713A001B3B96 /* Double+JSSwifter.swift */,
+				50954840228F17FB00BCE2D0 /* FileManager+JSSwifter.swift */,
+				50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */,
+				50954836228EB6A100BCE2D0 /* Int+JSSwifter.swift */,
+				50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */,
+				50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -390,11 +429,14 @@
 		509DF5852289678D00C4B54F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				50954844228F1E8F00BCE2D0 /* UIApplication+JSSwifter.swift */,
+				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
 				508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */,
 				5095482E228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift */,
+				50FA2B5E2293C7EB007C7E9E /* UIStackView+JSSwifter.swift */,
 				505E5B44228B0DBF009BB9EE /* UITableView+JSSwifter.swift */,
-				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
-				50954844228F1E8F00BCE2D0 /* UIApplication+JSSwifter.swift */,
+				50FA2B622293D4BB007C7E9E /* UIViewController+JSSwifter.swift */,
+				50FA2B662293E33E007C7E9E /* UIView+JSSwifter.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -404,6 +446,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50FA2B582293C145007C7E9E /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				50FA2B592293C15D007C7E9E /* MKMapView+JSSwifter.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		50FA2B5B2293C44B007C7E9E /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				50FA2B5C2293C46B007C7E9E /* MKMapViewExtensionTest.swift */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,8 +581,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FA2B4E22938D26007C7E9E /* test.dict.json in Resources */,
 				5032E70F2292A84200CB40A6 /* test.plist in Resources */,
 				505E5B55228BDC76009BB9EE /* test.txt.gz in Resources */,
+				50FA2B4F22938D29007C7E9E /* test.dict.plist in Resources */,
 				505E5B57228C0AF1009BB9EE /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,8 +615,11 @@
 			files = (
 				508A26CB228A4E6D009A94FB /* DispatchQueueExtensionTest.swift in Sources */,
 				50954821228E7E1000BCE2D0 /* CGFloatExtensionTest.swift in Sources */,
+				50FA2B572293A9E9007C7E9E /* UserDefaultsExtensionTest.swift in Sources */,
 				5095481D228E779A00BCE2D0 /* CGColorExtensionTest.swift in Sources */,
+				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
+				50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */,
 				508A26CF228AA547009A94FB /* UIColorExtensionTest.swift in Sources */,
 				50317BBC228D920300808D1A /* FloatExtensionTest.swift in Sources */,
 				50954817228DA4AF00BCE2D0 /* BoolExtensionTest.swift in Sources */,
@@ -564,14 +627,17 @@
 				5095483F228EF48300BCE2D0 /* CLLocationExtensionTest.swift in Sources */,
 				50317BBE228D921000808D1A /* DoubleExtensionTest.swift in Sources */,
 				50954839228EBAF400BCE2D0 /* IntExtensionTest.swift in Sources */,
+				50FA2B612293C994007C7E9E /* UIStackViewExtensionTest.swift in Sources */,
 				5032E70A2292407500CB40A6 /* ArrayExtensionTest.swift in Sources */,
 				505E5B4F228BB353009BB9EE /* DataExtensionTest.swift in Sources */,
 				505E5B5B228C11BB009BB9EE /* UICollectionViewExtensionTest.swift in Sources */,
+				50FA2B5D2293C46B007C7E9E /* MKMapViewExtensionTest.swift in Sources */,
 				50954831228EA23600BCE2D0 /* UIScrollViewExtensionTest.swift in Sources */,
 				50954829228E970100BCE2D0 /* CGSizeExtensionTest.swift in Sources */,
 				50954843228F196D00BCE2D0 /* FileManagerExtensionTest.swift in Sources */,
 				50954825228E85F500BCE2D0 /* CGPointExtensionTest.swift in Sources */,
 				505E5B59228C11AA009BB9EE /* UITableViewExtensionTest.swift in Sources */,
+				50FA2B4922938CDD007C7E9E /* DictionaryExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,17 +653,23 @@
 				5095481F228E7C9700BCE2D0 /* CGFloat+JSSwifter.swift in Sources */,
 				50954837228EB6A100BCE2D0 /* Int+JSSwifter.swift in Sources */,
 				5032E7082292367B00CB40A6 /* Array+JSSwifter.swift in Sources */,
+				50FA2B552293A696007C7E9E /* UserDefaults+JSSwifter.swift in Sources */,
 				50954845228F1E8F00BCE2D0 /* UIApplication+JSSwifter.swift in Sources */,
 				5095481A228E771800BCE2D0 /* CGColor+JSSwifter.swift in Sources */,
 				505E5B41228B0D8E009BB9EE /* Date+JSSwifter.swift in Sources */,
+				50FA2B512293A564007C7E9E /* Locale+JSSwifter.swift in Sources */,
 				50954823228E837000BCE2D0 /* CGPoint+JSSwifter.swift in Sources */,
 				505E5B47228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift in Sources */,
 				5095483C228EE91700BCE2D0 /* CLLocation+JSSwifter.swift in Sources */,
+				50FA2B5F2293C7EB007C7E9E /* UIStackView+JSSwifter.swift in Sources */,
 				50954815228DA45B00BCE2D0 /* Bool+JSSwifter.swift in Sources */,
+				50FA2B632293D4BB007C7E9E /* UIViewController+JSSwifter.swift in Sources */,
+				50FA2B5A2293C15D007C7E9E /* MKMapView+JSSwifter.swift in Sources */,
 				505E5B45228B0DBF009BB9EE /* UITableView+JSSwifter.swift in Sources */,
 				505E5B3F228AECE5009BB9EE /* Data+JSSwifter.swift in Sources */,
 				5095482F228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift in Sources */,
 				508A26CD228A65B1009A94FB /* UIColor+JSSwifter.swift in Sources */,
+				50FA2B672293E33E007C7E9E /* UIView+JSSwifter.swift in Sources */,
 				5032E7112292A94C00CB40A6 /* Dictionary+JSSwifter.swift in Sources */,
 				5095482B228E9B5700BCE2D0 /* Calendar+JSSwifter.swift in Sources */,
 			);

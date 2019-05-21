@@ -15,35 +15,6 @@
 ## 基本使用
 
 <details>
-<summary>Foundation Extensions</summary>
-</br>
-<ul>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/DispatchQueue%2BJSSwifter.swift"><code>DispatchQueue Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Data%2BJSSwifter.swift"><code>Data Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Date%2BJSSwifter.swift"><code>Date Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Float%2BJSSwifter.swift"><code>Float Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Double%2BJSSwifter.swift"><code>Double Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Int%2BJSSwifter.swift"><code>Int Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Calendar%2BJSSwifter.swift"><code>Calendar Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/FileManager%2BJSSwifter.swift"><code>FileManager Extensions</code></a></li>
-
-</details>
-
-<details>
-<summary>UIKit Extensions</summary>
-</br>
-<ul>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UITableView%2BJSSwifter.swift"><code>UITableView Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIScrollView%2BJSSwifter.swift"><code>UIScrollView Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
-
-</details>
-
-<details>
 <summary>CoreGraphics Extensions</summary>
 </br>
 <ul>
@@ -51,7 +22,6 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGPoint%2BJSSwifter.swift"><code>CGPoint Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGSize%2BJSSwifter.swift"><code>CGSize Extensions</code></a></li>
-
 </details>
 
 <details>
@@ -59,9 +29,46 @@
 </br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreLocation/CLLocation%2BJSSwifter.swift"><code>CLLocation Extensions</code></a></li>
-
 </details>
-</p>
+
+<details>
+<summary>Foundation Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Calendar%2BJSSwifter.swift"><code>Calendar Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Data%2BJSSwifter.swift"><code>Data Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Date%2BJSSwifter.swift"><code>Date Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Dictionary%2BJSSwifter.swift"><code>Dictionary Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/DispatchQueue%2BJSSwifter.swift"><code>DispatchQueue Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Double%2BJSSwifter.swift"><code>Double Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/FileManager%2BJSSwifter.swift"><code>FileManager Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Float%2BJSSwifter.swift"><code>Float Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Int%2BJSSwifter.swift"><code>Int Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Locale%2BJSSwifter.swift"><code>Locale Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/UserDefaults%2BJSSwifter.swift"><code>UserDefaults Extensions</code></a></li>
+</details>
+
+<details>
+<summary>MapKit Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/MapKit/MKMapView%2BJSSwifter.swift"><code>MKMapView Extensions</code></a></li>
+</details>
+
+<details>
+<summary>UIKit Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIScrollView%2BJSSwifter.swift"><code>UIScrollView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIStackView%2BJSSwifter.swift"><code>UIStackView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UITableView%2BJSSwifter.swift"><code>UITableView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIViewController%2BJSSwifter.swift"><code>UIViewController Extensions</code></a></li>
+</details>
 
 基本使用方法请参考测试示例代码。
 
@@ -80,48 +87,10 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.6'
+pod 'JSSwifter', '~> 0.0.7'
 ```
 
 ## 更新计划
-### Foundation
-- [x] Array
-- [ ] Bundle
-- [x] Data
-- [x] Date
-- [ ] Dictionary
-- [ ] KeyedUnarchiver
-- [ ] NotificationCenter
-- [ ] Number
-- [ ] String
-- [ ] Thread
-- [ ] Timer
-- [x] DispatchQueue
-- [x] Int
-- [x] Float
-- [x] Double
-- [x] Bool
-- [x] Calendar
-- [x] FileManager
-
-### UIKit
-- [x] UIApplication
-- [ ] UIBarButtonItem
-- [ ] UIBezierPath
-- [x] UIColor
-- [ ] UIControl
-- [ ] UIDevice
-- [ ] UIFont
-- [ ] UIGestureRecognizer
-- [ ] UIImage
-- [ ] UIScreen
-- [x] UIScrollView
-- [x] UITableView
-- [x] UICollectionView
-- [ ] UITextField
-- [ ] UITextView
-- [ ] UIView
-
 ### CoreGraphics
 - [x] CGColor
 - [x] CGFloat
@@ -131,8 +100,54 @@ pod 'JSSwifter', '~> 0.0.6'
 ### CoreLocation
 - [x] CLLocation
 
+### Foundation
+- [x] Array
+- [x] Bool
+- [ ] Bundle
+- [x] Calendar
+- [x] Data
+- [x] Date
+- [x] Dictionary
+- [x] DispatchQueue
+- [x] Double
+- [x] FileManager
+- [x] Float
+- [x] Int
+- [ ] KeyedUnarchiver
+- [x] Locale
+- [ ] NotificationCenter
+- [ ] Number
+- [ ] String
+- [ ] Thread
+- [ ] Timer
+- [x] UserDefaults
+
+### MapKit
+- [x] MKMapView
+
 ### Quartz
 - [ ] CALayer
+
+### UIKit
+- [x] UIApplication
+- [ ] UIBarButtonItem
+- [ ] UIBezierPath
+- [x] UICollectionView
+- [x] UIColor
+- [ ] UIControl
+- [ ] UIDevice
+- [ ] UIFont
+- [ ] UIGestureRecognizer
+- [ ] UIImage
+- [ ] UIImageView
+- [ ] UIScreen
+- [x] UIScrollView
+- [x] UIStackView
+- [x] UITableView
+- [ ] UITextField
+- [ ] UITextView
+- [ ] UIView
+- [x] UIViewController
 
 ## 作者
 

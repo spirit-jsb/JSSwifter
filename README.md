@@ -16,7 +16,6 @@
 
 <details>
 <summary>CoreGraphics Extensions</summary>
-</br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGColor%2BJSSwifter.swift"><code>CGColor Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
@@ -26,14 +25,12 @@
 
 <details>
 <summary>CoreLocation Extensions</summary>
-</br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreLocation/CLLocation%2BJSSwifter.swift"><code>CLLocation Extensions</code></a></li>
 </details>
 
 <details>
 <summary>Foundation Extensions</summary>
-</br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
@@ -52,21 +49,23 @@
 
 <details>
 <summary>MapKit Extensions</summary>
-</br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/MapKit/MKMapView%2BJSSwifter.swift"><code>MKMapView Extensions</code></a></li>
 </details>
 
 <details>
 <summary>UIKit Extensions</summary>
-</br>
 <ul>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIButton%2BJSSwifter.swift"><code>UIButton Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIGestureRecognizer%2BJSSwifter.swift"><code>UIGestureRecognizer Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIImage%2BJSSwifter.swift"><code>UIImage Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIScrollView%2BJSSwifter.swift"><code>UIScrollView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIStackView%2BJSSwifter.swift"><code>UIStackView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UITableView%2BJSSwifter.swift"><code>UITableView Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIView%2BJSSwifter.swift"><code>UIView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIViewController%2BJSSwifter.swift"><code>UIViewController Extensions</code></a></li>
 </details>
 
@@ -87,7 +86,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.7'
+pod 'JSSwifter', '~> 0.0.8'
 ```
 
 ## 更新计划
@@ -103,8 +102,10 @@ pod 'JSSwifter', '~> 0.0.7'
 ### Foundation
 - [x] Array
 - [x] Bool
-- [ ] Bundle
 - [x] Calendar
+- [ ] Character
+- [ ] Collection
+- [ ] Comparable
 - [x] Data
 - [x] Date
 - [x] Dictionary
@@ -113,40 +114,30 @@ pod 'JSSwifter', '~> 0.0.7'
 - [x] FileManager
 - [x] Float
 - [x] Int
-- [ ] KeyedUnarchiver
 - [x] Locale
-- [ ] NotificationCenter
-- [ ] Number
+- [ ] NSAttributedString
 - [ ] String
-- [ ] Thread
-- [ ] Timer
 - [x] UserDefaults
 
 ### MapKit
 - [x] MKMapView
 
-### Quartz
+### QuartzCore
 - [ ] CALayer
 
 ### UIKit
 - [x] UIApplication
-- [ ] UIBarButtonItem
-- [ ] UIBezierPath
+- [x] UIButton
 - [x] UICollectionView
 - [x] UIColor
-- [ ] UIControl
 - [ ] UIDevice
 - [ ] UIFont
-- [ ] UIGestureRecognizer
-- [ ] UIImage
-- [ ] UIImageView
-- [ ] UIScreen
+- [x] UIGestureRecognizer
+- [x] UIImage
 - [x] UIScrollView
 - [x] UIStackView
 - [x] UITableView
-- [ ] UITextField
-- [ ] UITextView
-- [ ] UIView
+- [x] UIView
 - [x] UIViewController
 
 ## 作者

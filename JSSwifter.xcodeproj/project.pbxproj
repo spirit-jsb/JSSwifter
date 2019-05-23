@@ -19,6 +19,9 @@
 		50157FDC2296855E00BF69EE /* Comparable+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FDB2296855E00BF69EE /* Comparable+JSSwifter.swift */; };
 		50157FDE2296857800BF69EE /* String+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FDD2296857800BF69EE /* String+JSSwifter.swift */; };
 		50157FE12296873500BF69EE /* CALayer+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE02296873500BF69EE /* CALayer+JSSwifter.swift */; };
+		50157FE422968AA500BF69EE /* ComparableExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE322968AA500BF69EE /* ComparableExtensionTest.swift */; };
+		50157FE62296919600BF69EE /* CharacterExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE52296919600BF69EE /* CharacterExtensionTest.swift */; };
+		50157FE822969DD100BF69EE /* CollectionExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE722969DD100BF69EE /* CollectionExtensionTest.swift */; };
 		50317BBC228D920300808D1A /* FloatExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50317BBB228D920300808D1A /* FloatExtensionTest.swift */; };
 		50317BBE228D921000808D1A /* DoubleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50317BBD228D921000808D1A /* DoubleExtensionTest.swift */; };
 		5032E7082292367B00CB40A6 /* Array+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032E7072292367B00CB40A6 /* Array+JSSwifter.swift */; };
@@ -135,6 +138,9 @@
 		50157FDB2296855E00BF69EE /* Comparable+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FDD2296857800BF69EE /* String+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FE02296873500BF69EE /* CALayer+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+JSSwifter.swift"; sourceTree = "<group>"; };
+		50157FE322968AA500BF69EE /* ComparableExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableExtensionTest.swift; sourceTree = "<group>"; };
+		50157FE52296919600BF69EE /* CharacterExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExtensionTest.swift; sourceTree = "<group>"; };
+		50157FE722969DD100BF69EE /* CollectionExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionTest.swift; sourceTree = "<group>"; };
 		50317BBB228D920300808D1A /* FloatExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtensionTest.swift; sourceTree = "<group>"; };
 		50317BBD228D921000808D1A /* DoubleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionTest.swift; sourceTree = "<group>"; };
 		5032E7072292367B00CB40A6 /* Array+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+JSSwifter.swift"; sourceTree = "<group>"; };
@@ -278,6 +284,9 @@
 				5032E7092292407500CB40A6 /* ArrayExtensionTest.swift */,
 				50954816228DA4AF00BCE2D0 /* BoolExtensionTest.swift */,
 				5095482C228E9BD000BCE2D0 /* CalendarExtensionTest.swift */,
+				50157FE52296919600BF69EE /* CharacterExtensionTest.swift */,
+				50157FE722969DD100BF69EE /* CollectionExtensionTest.swift */,
+				50157FE322968AA500BF69EE /* ComparableExtensionTest.swift */,
 				505E5B4E228BB353009BB9EE /* DataExtensionTest.swift */,
 				50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */,
 				50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */,
@@ -671,9 +680,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				508A26CB228A4E6D009A94FB /* DispatchQueueExtensionTest.swift in Sources */,
+				50157FE822969DD100BF69EE /* CollectionExtensionTest.swift in Sources */,
+				50157FE422968AA500BF69EE /* ComparableExtensionTest.swift in Sources */,
 				50954821228E7E1000BCE2D0 /* CGFloatExtensionTest.swift in Sources */,
 				50FA2B572293A9E9007C7E9E /* UserDefaultsExtensionTest.swift in Sources */,
 				5095481D228E779A00BCE2D0 /* CGColorExtensionTest.swift in Sources */,
+				50157FE62296919600BF69EE /* CharacterExtensionTest.swift in Sources */,
 				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */,

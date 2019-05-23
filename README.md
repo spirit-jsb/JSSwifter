@@ -35,6 +35,9 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Calendar%2BJSSwifter.swift"><code>Calendar Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Character%2BJSSwifter.swift"><code>Character Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Collection%2BJSSwifter.swift"><code>Collection Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Comparable%2BJSSwifter.swift"><code>Comparable Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Data%2BJSSwifter.swift"><code>Data Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Date%2BJSSwifter.swift"><code>Date Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Dictionary%2BJSSwifter.swift"><code>Dictionary Extensions</code></a></li>
@@ -86,7 +89,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.8'
+pod 'JSSwifter', '~> 0.0.9'
 ```
 
 ## 更新计划
@@ -103,9 +106,9 @@ pod 'JSSwifter', '~> 0.0.8'
 - [x] Array
 - [x] Bool
 - [x] Calendar
-- [ ] Character
-- [ ] Collection
-- [ ] Comparable
+- [x] Character
+- [x] Collection
+- [x] Comparable
 - [x] Data
 - [x] Date
 - [x] Dictionary

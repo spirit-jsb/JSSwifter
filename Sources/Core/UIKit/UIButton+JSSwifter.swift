@@ -164,18 +164,6 @@ public extension UIButton {
         }
     }
     
-    var actionHandler: ((UIButton) -> Void)? {
-        set {
-            let target = JSUIButtonClosureTarget(actionHandler: newValue)
-            objc_setAssociatedObject(self, &key, target, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            self.addTarget(target, action: #selector(JSUIButtonClosureTarget.invoke(_:)), for: .touchUpInside)
-        }
-        get {
-            let target = objc_getAssociatedObject(self, &key) as! JSUIButtonClosureTarget
-            return target.actionHandler
-        }
-    }
-    
     // MARK:
     func setImage(_ image: UIImage?, for states: [UIControl.State] = [.normal, .selected, .highlighted, .disabled]) {
         states.forEach { self.setImage(image, for: $0) }
@@ -224,24 +212,5 @@ public extension UIButton {
         }
         self.imageEdgeInsets = imageEdgeInsets
         self.titleEdgeInsets = titleEdgeInsets
-    }
-}
-
-private class JSUIButtonClosureTarget: NSObject {
-    
-    // MARK:
-    var actionHandler: ((UIButton) -> Void)?
-    
-    // MARK:
-    init(actionHandler: ((UIButton) -> Void)?) {
-        super.init()
-        self.actionHandler = actionHandler
-    }
-    
-    // MARK:
-    @objc func invoke(_ sender: UIButton) {
-        if let actionHandler = self.actionHandler {
-            actionHandler(sender)
-        }
     }
 }

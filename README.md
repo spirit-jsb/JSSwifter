@@ -17,6 +17,7 @@
 <details>
 <summary>CoreGraphics Extensions</summary>
 <ul>
+</br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGColor%2BJSSwifter.swift"><code>CGColor Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGFloat%2BJSSwifter.swift"><code>CGFloat Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreGraphics/CGPoint%2BJSSwifter.swift"><code>CGPoint Extensions</code></a></li>
@@ -26,12 +27,14 @@
 <details>
 <summary>CoreLocation Extensions</summary>
 <ul>
+</br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/CoreLocation/CLLocation%2BJSSwifter.swift"><code>CLLocation Extensions</code></a></li>
 </details>
 
 <details>
 <summary>Foundation Extensions</summary>
 <ul>
+</br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Array%2BJSSwifter.swift"><code>Array Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Bool%2BJSSwifter.swift"><code>Bool Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Calendar%2BJSSwifter.swift"><code>Calendar Extensions</code></a></li>
@@ -53,12 +56,14 @@
 <details>
 <summary>MapKit Extensions</summary>
 <ul>
+</br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/MapKit/MKMapView%2BJSSwifter.swift"><code>MKMapView Extensions</code></a></li>
 </details>
 
 <details>
 <summary>UIKit Extensions</summary>
 <ul>
+</br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIButton%2BJSSwifter.swift"><code>UIButton Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>

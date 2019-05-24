@@ -73,6 +73,8 @@
 		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
 		50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */; };
 		50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25706228D713A001B3B96 /* Double+JSSwifter.swift */; };
+		50ED739D22980668002D53E0 /* String+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ED739C22980668002D53E0 /* String+JSSwifter.swift */; };
+		50ED739F22980698002D53E0 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ED739E22980698002D53E0 /* StringExtensionTest.swift */; };
 		50FA2B4922938CDD007C7E9E /* DictionaryExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */; };
 		50FA2B4E22938D26007C7E9E /* test.dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 50FA2B4A22938D18007C7E9E /* test.dict.json */; };
 		50FA2B4F22938D29007C7E9E /* test.dict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FA2B4C22938D22007C7E9E /* test.dict.plist */; };
@@ -190,6 +192,8 @@
 		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
 		50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25706228D713A001B3B96 /* Double+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+JSSwifter.swift"; sourceTree = "<group>"; };
+		50ED739C22980668002D53E0 /* String+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSSwifter.swift"; sourceTree = "<group>"; };
+		50ED739E22980698002D53E0 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		50FA2B4822938CDD007C7E9E /* DictionaryExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionTest.swift; sourceTree = "<group>"; };
 		50FA2B4A22938D18007C7E9E /* test.dict.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.dict.json; sourceTree = "<group>"; };
 		50FA2B4C22938D22007C7E9E /* test.dict.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = test.dict.plist; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 				50317BBB228D920300808D1A /* FloatExtensionTest.swift */,
 				50954838228EBAF400BCE2D0 /* IntExtensionTest.swift */,
 				50FA2B522293A617007C7E9E /* LocaleExtensionTest.swift */,
+				50ED739E22980698002D53E0 /* StringExtensionTest.swift */,
 				50FA2B562293A9E9007C7E9E /* UserDefaultsExtensionTest.swift */,
 			);
 			path = Foundation;
@@ -460,6 +465,7 @@
 				50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */,
 				50954836228EB6A100BCE2D0 /* Int+JSSwifter.swift */,
 				50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */,
+				50ED739C22980668002D53E0 /* String+JSSwifter.swift */,
 				50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */,
 			);
 			path = Foundation;
@@ -663,6 +669,7 @@
 				50FA2B572293A9E9007C7E9E /* UserDefaultsExtensionTest.swift in Sources */,
 				5095481D228E779A00BCE2D0 /* CGColorExtensionTest.swift in Sources */,
 				50157FE62296919600BF69EE /* CharacterExtensionTest.swift in Sources */,
+				50ED739F22980698002D53E0 /* StringExtensionTest.swift in Sources */,
 				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */,
@@ -723,6 +730,7 @@
 				505E5B3F228AECE5009BB9EE /* Data+JSSwifter.swift in Sources */,
 				5095482F228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift in Sources */,
 				508A26CD228A65B1009A94FB /* UIColor+JSSwifter.swift in Sources */,
+				50ED739D22980668002D53E0 /* String+JSSwifter.swift in Sources */,
 				50157FDC2296855E00BF69EE /* Comparable+JSSwifter.swift in Sources */,
 				50FA2B672293E33E007C7E9E /* UIView+JSSwifter.swift in Sources */,
 				5032E7112292A94C00CB40A6 /* Dictionary+JSSwifter.swift in Sources */,

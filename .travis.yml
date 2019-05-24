@@ -1,0 +1,13 @@
+os: osx
+language: swift
+osx_image: xcode10.2
+xcode_scheme: JSSwifter
+xcode_project: JSSwifter.xcodeproj
+xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone 6s
+
+script:
+  - xcodebuild -scheme JSSwifter -sdk iphonesimulator 0destination 'platform=iOS Simulator,OS=12.2,name=iPhone 6s' test
+
+notifications:
+  email:
+    - sibo_jian_29903549@163.com

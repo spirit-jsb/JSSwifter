@@ -38,11 +38,6 @@ class CharacterExtensionTest: XCTestCase {
         XCTAssertFalse(Character("s").isUppercased)
     }
     
-    func test_int() {
-        XCTAssertEqual(Character("1").int, 1)
-        XCTAssertNil(Character("s").int)
-    }
-    
     func test_string() {
         XCTAssertEqual(Character("S").string, String("S"))
     }

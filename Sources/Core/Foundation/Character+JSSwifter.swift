@@ -49,10 +49,6 @@ public extension Character {
         return String(self) == String(self).uppercased()
     }
     
-    var int: Int? {
-        return Int(String(self))
-    }
-    
     var string: String {
         return String(self)
     }

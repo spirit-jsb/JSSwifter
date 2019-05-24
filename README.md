@@ -7,7 +7,6 @@
 <a href="https://github.com/spirit-jsb/JSSwifter/blob/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/JSSwifter.svg?style=flat"></a>
 <a href="https://cocoapods.org/pods/JSSwifter"><img src="https://img.shields.io/cocoapods/p/JSSwifter.svg?style=flat"></a>
 <a href="https://travis-ci.com/spirit-jsb/JSSwifter"><img src="https://travis-ci.com/spirit-jsb/JSSwifter.svg?branch=master"></a>
-<a href="https://codecov.io/gh/spirit-jsb/JSSwifter"><img src="https://codecov.io/gh/spirit-jsb/JSSwifter/branch/master/graph/badge.svg" /></a>
 </p>
 
 ## 示例代码
@@ -52,7 +51,6 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Float%2BJSSwifter.swift"><code>Float Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Int%2BJSSwifter.swift"><code>Int Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Locale%2BJSSwifter.swift"><code>Locale Extensions</code></a></li>
-<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/String%2BJSSwifter.swift"><code>String Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/UserDefaults%2BJSSwifter.swift"><code>UserDefaults Extensions</code></a></li>
 </details>
 
@@ -97,7 +95,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.10'
+pod 'JSSwifter', '~> 0.0.9'
 ```
 
 ## 更新计划
@@ -127,7 +125,7 @@ pod 'JSSwifter', '~> 0.0.10'
 - [x] Int
 - [x] Locale
 - [ ] NSAttributedString
-- [x] String
+- [ ] String
 - [x] UserDefaults
 
 ### MapKit

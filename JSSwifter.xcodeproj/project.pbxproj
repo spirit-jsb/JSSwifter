@@ -11,14 +11,9 @@
 		50157FC92296365600BF69EE /* UIImage+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FC82296365600BF69EE /* UIImage+JSSwifter.swift */; };
 		50157FCB22964EAC00BF69EE /* UIImageExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FCA22964EAC00BF69EE /* UIImageExtensionTest.swift */; };
 		50157FCD229668A500BF69EE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 50157FCC229668A500BF69EE /* test.png */; };
-		50157FD22296846400BF69EE /* UIDevice+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FD12296846400BF69EE /* UIDevice+JSSwifter.swift */; };
-		50157FD42296849200BF69EE /* UIFont+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FD32296849200BF69EE /* UIFont+JSSwifter.swift */; };
-		50157FD6229684ED00BF69EE /* NSAttributedString+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FD5229684ED00BF69EE /* NSAttributedString+JSSwifter.swift */; };
 		50157FD82296850C00BF69EE /* Character+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FD72296850C00BF69EE /* Character+JSSwifter.swift */; };
 		50157FDA2296853E00BF69EE /* Collection+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FD92296853E00BF69EE /* Collection+JSSwifter.swift */; };
 		50157FDC2296855E00BF69EE /* Comparable+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FDB2296855E00BF69EE /* Comparable+JSSwifter.swift */; };
-		50157FDE2296857800BF69EE /* String+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FDD2296857800BF69EE /* String+JSSwifter.swift */; };
-		50157FE12296873500BF69EE /* CALayer+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE02296873500BF69EE /* CALayer+JSSwifter.swift */; };
 		50157FE422968AA500BF69EE /* ComparableExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE322968AA500BF69EE /* ComparableExtensionTest.swift */; };
 		50157FE62296919600BF69EE /* CharacterExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE52296919600BF69EE /* CharacterExtensionTest.swift */; };
 		50157FE822969DD100BF69EE /* CollectionExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50157FE722969DD100BF69EE /* CollectionExtensionTest.swift */; };
@@ -130,14 +125,9 @@
 		50157FC82296365600BF69EE /* UIImage+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FCA22964EAC00BF69EE /* UIImageExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTest.swift; sourceTree = "<group>"; };
 		50157FCC229668A500BF69EE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
-		50157FD12296846400BF69EE /* UIDevice+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+JSSwifter.swift"; sourceTree = "<group>"; };
-		50157FD32296849200BF69EE /* UIFont+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JSSwifter.swift"; sourceTree = "<group>"; };
-		50157FD5229684ED00BF69EE /* NSAttributedString+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FD72296850C00BF69EE /* Character+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FD92296853E00BF69EE /* Collection+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FDB2296855E00BF69EE /* Comparable+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+JSSwifter.swift"; sourceTree = "<group>"; };
-		50157FDD2296857800BF69EE /* String+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSSwifter.swift"; sourceTree = "<group>"; };
-		50157FE02296873500BF69EE /* CALayer+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+JSSwifter.swift"; sourceTree = "<group>"; };
 		50157FE322968AA500BF69EE /* ComparableExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableExtensionTest.swift; sourceTree = "<group>"; };
 		50157FE52296919600BF69EE /* CharacterExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExtensionTest.swift; sourceTree = "<group>"; };
 		50157FE722969DD100BF69EE /* CollectionExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionTest.swift; sourceTree = "<group>"; };
@@ -243,14 +233,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50157FDF2296865C00BF69EE /* QuartzCore */ = {
-			isa = PBXGroup;
-			children = (
-				50157FE02296873500BF69EE /* CALayer+JSSwifter.swift */,
-			);
-			path = QuartzCore;
-			sourceTree = "<group>";
-		};
 		505E5B51228BD9A0009BB9EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,7 +437,6 @@
 				5095483A228EE8F700BCE2D0 /* CoreLocation */,
 				509DF5842289678200C4B54F /* Foundation */,
 				50FA2B582293C145007C7E9E /* MapKit */,
-				50157FDF2296865C00BF69EE /* QuartzCore */,
 				509DF5852289678D00C4B54F /* UIKit */,
 			);
 			path = Core;
@@ -479,8 +460,6 @@
 				50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */,
 				50954836228EB6A100BCE2D0 /* Int+JSSwifter.swift */,
 				50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */,
-				50157FD5229684ED00BF69EE /* NSAttributedString+JSSwifter.swift */,
-				50157FDD2296857800BF69EE /* String+JSSwifter.swift */,
 				50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */,
 			);
 			path = Foundation;
@@ -493,8 +472,6 @@
 				50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */,
 				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
 				508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */,
-				50157FD12296846400BF69EE /* UIDevice+JSSwifter.swift */,
-				50157FD32296849200BF69EE /* UIFont+JSSwifter.swift */,
 				50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */,
 				50157FC82296365600BF69EE /* UIImage+JSSwifter.swift */,
 				5095482E228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift */,
@@ -719,7 +696,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */,
-				50157FE12296873500BF69EE /* CALayer+JSSwifter.swift in Sources */,
 				509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */,
 				50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */,
 				50B12E1B22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift in Sources */,
@@ -735,18 +711,14 @@
 				5095481A228E771800BCE2D0 /* CGColor+JSSwifter.swift in Sources */,
 				505E5B41228B0D8E009BB9EE /* Date+JSSwifter.swift in Sources */,
 				50FA2B512293A564007C7E9E /* Locale+JSSwifter.swift in Sources */,
-				50157FD6229684ED00BF69EE /* NSAttributedString+JSSwifter.swift in Sources */,
 				50954823228E837000BCE2D0 /* CGPoint+JSSwifter.swift in Sources */,
 				505E5B47228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift in Sources */,
 				5095483C228EE91700BCE2D0 /* CLLocation+JSSwifter.swift in Sources */,
-				50157FD42296849200BF69EE /* UIFont+JSSwifter.swift in Sources */,
 				50FA2B5F2293C7EB007C7E9E /* UIStackView+JSSwifter.swift in Sources */,
-				50157FD22296846400BF69EE /* UIDevice+JSSwifter.swift in Sources */,
 				50954815228DA45B00BCE2D0 /* Bool+JSSwifter.swift in Sources */,
 				50FA2B632293D4BB007C7E9E /* UIViewController+JSSwifter.swift in Sources */,
 				50157FC92296365600BF69EE /* UIImage+JSSwifter.swift in Sources */,
 				50FA2B5A2293C15D007C7E9E /* MKMapView+JSSwifter.swift in Sources */,
-				50157FDE2296857800BF69EE /* String+JSSwifter.swift in Sources */,
 				505E5B45228B0DBF009BB9EE /* UITableView+JSSwifter.swift in Sources */,
 				505E5B3F228AECE5009BB9EE /* Data+JSSwifter.swift in Sources */,
 				5095482F228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift in Sources */,

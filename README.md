@@ -82,11 +82,13 @@
 基本使用方法请参考测试示例代码。
 
 ## Swift 版本依赖
+
 | Swift | JSSwifter | 
 | ------| ----------|
 | 5.0   | >= 0.0.1  |
 
 ## 限制条件
+
 * **iOS 9.0** and Up
 * **Xcode 10.0** and Up
 * **Swift Version = 5.0**
@@ -100,6 +102,7 @@ pod 'JSSwifter', '~> 0.0.10'
 ```
 
 ## 更新计划
+
 ### CoreGraphics
 - [x] CGColor
 - [x] CGFloat

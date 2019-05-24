@@ -100,4 +100,81 @@ public extension String {
     var isValidFileURL: Bool {
         return URL(string: self)?.isFileURL ?? false
     }
+    
+    var isNumber: Bool {
+        let scanner = Scanner(string: self)
+        scanner.locale = Locale.current
+        return scanner.scanDecimal(nil) && scanner.isAtEnd
+    }
+    
+    var isDigits: Bool {
+        return CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: self))
+    }
+    
+    var firstCharacterAsString: String? {
+        guard let first = self.first else { return nil }
+        return String(first)
+    }
+    
+    var lastCharacterAsString: String? {
+        guard let last = self.last else { return nil }
+        return String(last)
+    }
+    
+    var bool: Bool? {
+        let lowercased = self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).lowercased()
+        switch lowercased {
+        case "true", "yes", "1":
+            return true
+        case "false", "no", "0":
+            return false
+        default:
+            return nil
+        }
+    }
+    
+    var int: Int? {
+        return Int(self)
+    }
+    
+    var float: Float? {
+        return Float(self)
+    }
+    
+    var double: Double? {
+        return Double(self)
+    }
+    
+    var url: URL? {
+        return URL(string: self)
+    }
+    
+    // MARK:
+    func int(locale: Locale = .current) -> Int? {
+        let formatter = NumberFormatter()
+        formatter.locale = locale
+        formatter.allowsFloats = false
+        return formatter.number(from: self)?.intValue
+    }
+    
+    func float(locale: Locale = .current) -> Float? {
+        let formatter = NumberFormatter()
+        formatter.locale = locale
+        formatter.allowsFloats = true
+        return formatter.number(from: self)?.floatValue
+    }
+    
+    func double(locale: Locale = .current) -> Double? {
+        let formatter = NumberFormatter()
+        formatter.locale = locale
+        formatter.allowsFloats = true
+        return formatter.number(from: self)?.doubleValue
+    }
+    
+    func cgFloat(locale: Locale = .current) -> CGFloat? {
+        let formatter = NumberFormatter()
+        formatter.locale = locale
+        formatter.allowsFloats = true
+        return formatter.number(from: self) as? CGFloat
+    }
 }

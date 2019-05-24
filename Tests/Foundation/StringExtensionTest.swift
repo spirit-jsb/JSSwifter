@@ -123,4 +123,70 @@ class StringExtensionTest: XCTestCase {
         XCTAssertTrue("file://var/folder/file.txt".isValidFileURL)
         XCTAssertFalse("https://baidu.com".isValidFileURL)
     }
+    
+    func test_is_number() {
+        XCTAssertTrue("123".isNumber)
+        XCTAssertTrue("123.4".isNumber)
+        XCTAssertTrue("1.25e2".isNumber)
+        XCTAssertTrue("1.25e-2".isNumber)
+        XCTAssertTrue("000123.456".isNumber)
+        XCTAssertFalse("123abc".isNumber)
+        XCTAssertFalse("abc".isNumber)
+        XCTAssertFalse("123.@.".isNumber)
+    }
+    
+    func test_is_digits() {
+        XCTAssertTrue("123".isDigits)
+        XCTAssertTrue("987654321".isDigits)
+        XCTAssertFalse("123.4".isDigits)
+        XCTAssertFalse("1.25e2".isDigits)
+        XCTAssertFalse("123abc".isDigits)
+    }
+    
+    func test_first_character_as_string() {
+        XCTAssertNotNil("Hello".firstCharacterAsString)
+        XCTAssertEqual("Hello".firstCharacterAsString, "H")
+        XCTAssertNil("".firstCharacterAsString)
+    }
+    
+    func test_last_character_as_string() {
+        XCTAssertNotNil("Hello".lastCharacterAsString)
+        XCTAssertEqual("Hello".lastCharacterAsString, "o")
+        XCTAssertNil("".lastCharacterAsString)
+    }
+    
+    func test_bool() {
+        XCTAssertTrue("1".bool!)
+        XCTAssertTrue("true".bool!)
+        XCTAssertTrue("Yes".bool!)
+        XCTAssertFalse("0".bool!)
+        XCTAssertFalse("FaLsE".bool!)
+        XCTAssertFalse("NO".bool!)
+        XCTAssertNil("".bool)
+    }
+    
+    func test_int() {
+        XCTAssertEqual("9".int, 9)
+        XCTAssertNil("0s".int)
+    }
+    
+    func test_float() {
+        XCTAssertEqual("9".float, Float(9.0))
+        XCTAssertNil("0s".float)
+    }
+    
+    func test_double() {
+        XCTAssertEqual("9.1".double, Double(9.1))
+        XCTAssertNil("0s".int)
+    }
+    
+    func test_cgfloat() {
+        XCTAssertEqual("2.12".cgFloat, CGFloat(2.12))
+        XCTAssertNil("0s".cgFloat)
+    }
+    
+    func test_url() {
+        XCTAssertNil("Hello World!".url)
+        XCTAssertEqual("www.baidu.com".url, URL(string: "www.baidu.com"))
+    }
 }

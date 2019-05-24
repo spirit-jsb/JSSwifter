@@ -6,7 +6,10 @@ xcode_project: JSSwifter.xcodeproj
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone 6s
 
 script:
-  - xcodebuild -scheme JSSwifter -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.2,name=iPhone 6s' test
+  - xcodebuild clean build test -scheme JSSwifter -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.2,name=iPhone 6s'\
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email:

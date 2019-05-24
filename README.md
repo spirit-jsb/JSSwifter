@@ -6,6 +6,7 @@
 <a href="https://github.com/spirit-jsb/JSSwifter/"><img src="https://img.shields.io/cocoapods/v/JSSwifter.svg?style=flat"></a>
 <a href="https://github.com/spirit-jsb/JSSwifter/blob/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/JSSwifter.svg?style=flat"></a>
 <a href="https://cocoapods.org/pods/JSSwifter"><img src="https://img.shields.io/cocoapods/p/JSSwifter.svg?style=flat"></a>
+<a href="https://travis-ci.com/spirit-jsb/JSSwifter"><img src="https://travis-ci.com/spirit-jsb/JSSwifter.svg?branch=master"></a>
 </p>
 
 ## 示例代码

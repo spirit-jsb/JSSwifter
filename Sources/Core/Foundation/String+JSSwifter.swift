@@ -21,6 +21,14 @@ public extension String {
         return String(data: decodedData, encoding: .utf8)
     }
     
+    var urlEncoded: String? {
+        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+    }
+    
+    var urlDecoded: String? {
+        return self.removingPercentEncoding
+    }
+    
     var charactersArray: [Character] {
         return Array(self)
     }
@@ -163,5 +171,199 @@ public extension String {
     
     var url: URL? {
         return URL(string: self)
+    }
+    
+    var trimmed: String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    var withoutSpacesAndNewLines: String {
+        return self.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "")
+    }
+    
+    // MARK:
+    subscript(safe index: Int) -> Character? {
+        guard index >= 0 && index < self.count else { return nil }
+        return self[self.index(self.startIndex, offsetBy: index)]
+    }
+    
+    subscript(safe range: CountableRange<Int>) -> String? {
+        guard let lowerIndex = self.index(self.startIndex, offsetBy: max(0, range.lowerBound), limitedBy: self.endIndex) else
+        {
+            return nil
+        }
+        guard let upperIndex = self.index(lowerIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: self.endIndex) else
+        {
+            return nil
+        }
+        return String(self[lowerIndex..<upperIndex])
+    }
+    
+    subscript(safe range: ClosedRange<Int>) -> String? {
+        guard let lowerIndex = self.index(self.startIndex, offsetBy: max(0, range.lowerBound), limitedBy: self.endIndex) else
+        {
+            return nil
+        }
+        guard let upperIndex = self.index(lowerIndex, offsetBy: range.upperBound - range.lowerBound + 1, limitedBy: self.endIndex) else
+        {
+            return nil
+        }
+        return String(self[lowerIndex..<upperIndex])
+    }
+    
+    static func random(ofLength length: Int) -> String {
+        guard length > 0 else { return "" }
+        let base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        var randomString: String = ""
+        for _ in 1...length {
+            randomString.append(base.randomElement()!)
+        }
+        return randomString
+    }
+    
+    func lines() -> [String] {
+        var result = [String]()
+        self.enumerateLines { (line, _) in
+            result.append(line)
+        }
+        return result
+    }
+    
+    func unicodesArray() -> [Int] {
+        return self.unicodeScalars.map { Int($0.value) }
+    }
+    
+    func words() -> [String] {
+        // https://stackoverflow.com/questions/42822838
+        let characterSet = CharacterSet.whitespacesAndNewlines.union(.punctuationCharacters)
+        let comps = self.components(separatedBy: characterSet)
+        return comps.filter { !$0.isEmpty }
+    }
+    
+    func matches(pattern: String) -> Bool {
+        return self.range(of: pattern, options: .regularExpression, range: nil, locale: nil) != nil
+    }
+    
+    func starts(with prefix: String, caseSensitive: Bool = true) -> Bool {
+        if !caseSensitive {
+            return self.lowercased().hasPrefix(prefix.lowercased())
+        }
+        return self.hasPrefix(prefix)
+    }
+    
+    func ends(with suffix: String, caseSensitive: Bool = true) -> Bool {
+        if !caseSensitive {
+            return self.lowercased().hasSuffix(suffix.lowercased())
+        }
+        return self.hasSuffix(suffix)
+    }
+    
+    func slicing(from index: Int, length: Int) -> String? {
+        guard length >= 0, index >= 0, index < self.count else { return nil }
+        guard length > 0 else { return "" }
+        guard index.advanced(by: length) <= self.count else { return self[safe: index..<self.count] }
+        return self[safe: index..<index.advanced(by: length)]
+    }
+    
+    @discardableResult
+    mutating func slice(from index: Int, length: Int) -> String {
+        if let str = self.slicing(from: index, length: length) {
+            self = str
+        }
+        return self
+    }
+    
+    @discardableResult
+    mutating func slice(from start: Int, to end: Int) -> String {
+        guard end >= start else { return self }
+        if let str = self[safe: start..<end] {
+            self = str
+        }
+        return self
+    }
+    
+    @discardableResult
+    mutating func slice(at index: Int) -> String {
+        guard index < self.count else { return self }
+        if let str = self[safe: index..<self.count] {
+            self = str
+        }
+        return self
+    }
+    
+    func truncated(toLength length: Int, trailing: String? = "...") -> String {
+        guard 1..<self.count ~= length else { return self }
+        return self[self.startIndex..<self.index(self.startIndex, offsetBy: length)] + (trailing ?? "")
+    }
+    
+    @discardableResult
+    mutating func truncate(toLength length: Int, trailing: String? = "...") -> String {
+        guard 1..<self.count ~= length else { return self }
+        self = self[self.startIndex..<self.index(self.startIndex, offsetBy: length)] + (trailing ?? "")
+        return self
+    }
+    
+    func removePrefix(_ prefix: String) -> String {
+        guard self.hasPrefix(prefix) else { return self }
+        return String(self.dropFirst(prefix.count))
+    }
+    
+    func removeSuffix(_ suffix: String) -> String {
+        guard self.hasSuffix(suffix) else { return self }
+        return String(self.dropLast(suffix.count))
+    }
+    
+    func paddingStart(_ length: Int, with string: String = " ") -> String {
+        guard length > self.count else { return self }
+        
+        let padLenght = length - self.count
+        if padLenght < string.count {
+            return string[string.startIndex..<string.index(string.startIndex, offsetBy: padLenght)] + self
+        }
+        else {
+            var padding = string
+            while padding.count < padLenght {
+                padding.append(string)
+            }
+            return padding[padding.startIndex..<padding.index(padding.startIndex, offsetBy: padLenght)] + self
+        }
+    }
+    
+    @discardableResult
+    mutating func padStart(_ length: Int, with string: String = " ") -> String {
+        self = self.paddingStart(length, with: string)
+        return self
+    }
+    
+    func paddingEnd(_ length: Int, with string: String = " ") -> String {
+        guard length > self.count else { return self }
+        
+        let padLenght = length - self.count
+        if padLenght < string.count {
+            return self + string[string.startIndex..<string.index(string.startIndex, offsetBy: padLenght)]
+        }
+        else {
+            var padding = string
+            while padding.count < padLenght {
+                padding.append(string)
+            }
+            return self + padding[padding.startIndex..<padding.index(padding.startIndex, offsetBy: padLenght)]
+        }
+    }
+    
+    @discardableResult
+    mutating func padEnd(_ length: Int, with string: String = " ") -> String {
+        self = self.paddingEnd(length, with: string)
+        return self
+    }
+    
+    static func * (lhs: String, rhs: Int) -> String {
+        guard rhs > 0 else { return "" }
+        return String(repeating: lhs, count: rhs)
+    }
+    
+    static func * (lhs: Int, rhs: String) -> String {
+        guard lhs > 0 else { return "" }
+        return String(repeating: rhs, count: lhs)
     }
 }

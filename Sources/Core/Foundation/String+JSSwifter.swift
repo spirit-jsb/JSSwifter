@@ -134,47 +134,34 @@ public extension String {
     }
     
     var int: Int? {
-        return Int(self)
-    }
-    
-    var float: Float? {
-        return Float(self)
-    }
-    
-    var double: Double? {
-        return Double(self)
-    }
-    
-    var url: URL? {
-        return URL(string: self)
-    }
-    
-    // MARK:
-    func int(locale: Locale = .current) -> Int? {
         let formatter = NumberFormatter()
-        formatter.locale = locale
+        formatter.locale = .current
         formatter.allowsFloats = false
         return formatter.number(from: self)?.intValue
     }
     
-    func float(locale: Locale = .current) -> Float? {
+    var float: Float? {
         let formatter = NumberFormatter()
-        formatter.locale = locale
+        formatter.locale = .current
         formatter.allowsFloats = true
         return formatter.number(from: self)?.floatValue
     }
     
-    func double(locale: Locale = .current) -> Double? {
+    var double: Double? {
         let formatter = NumberFormatter()
-        formatter.locale = locale
+        formatter.locale = .current
         formatter.allowsFloats = true
         return formatter.number(from: self)?.doubleValue
     }
     
-    func cgFloat(locale: Locale = .current) -> CGFloat? {
+    var cgFloat: CGFloat? {
         let formatter = NumberFormatter()
-        formatter.locale = locale
+        formatter.locale = .current
         formatter.allowsFloats = true
         return formatter.number(from: self) as? CGFloat
+    }
+    
+    var url: URL? {
+        return URL(string: self)
     }
 }

@@ -49,6 +49,18 @@ public extension Character {
         return String(self) == String(self).uppercased()
     }
     
+    var int: Int? {
+        return Int(String(self))
+    }
+    
+    var float: Float? {
+        return Float(String(self))
+    }
+    
+    var double: Double? {
+        return Double(String(self))
+    }
+    
     var string: String {
         return String(self)
     }

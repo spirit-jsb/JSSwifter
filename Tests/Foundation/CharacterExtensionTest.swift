@@ -43,16 +43,6 @@ class CharacterExtensionTest: XCTestCase {
         XCTAssertNil(Character("s").int)
     }
     
-    func test_float() {
-        XCTAssertEqual(Character("1").float, Float(1.0))
-        XCTAssertNil(Character("s").float)
-    }
-    
-    func test_double() {
-        XCTAssertEqual(Character("6").double, Double(6.0))
-        XCTAssertNil(Character("s").double)
-    }
-    
     func test_string() {
         XCTAssertEqual(Character("S").string, String("S"))
     }

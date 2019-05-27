@@ -34,6 +34,8 @@
 		505E5B5B228C11BB009BB9EE /* UICollectionViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */; };
 		507ADB612298CEE200169BF3 /* String+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB602298CEE200169BF3 /* String+JSSwifter.swift */; };
 		507ADB632298CF9400169BF3 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB622298CF9400169BF3 /* StringExtensionTest.swift */; };
+		507ADB6522998B7900169BF3 /* StringProtocol+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB6422998B7900169BF3 /* StringProtocol+JSSwifter.swift */; };
+		507ADB6722998B8A00169BF3 /* StringProtocolExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB6622998B8A00169BF3 /* StringProtocolExtensionTest.swift */; };
 		508A26BC228A4DD2009A94FB /* JSSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; };
 		508A26CB228A4E6D009A94FB /* DispatchQueueExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */; };
 		508A26CD228A65B1009A94FB /* UIColor+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */; };
@@ -150,6 +152,8 @@
 		505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensionTest.swift; sourceTree = "<group>"; };
 		507ADB602298CEE200169BF3 /* String+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSSwifter.swift"; sourceTree = "<group>"; };
 		507ADB622298CF9400169BF3 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
+		507ADB6422998B7900169BF3 /* StringProtocol+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+JSSwifter.swift"; sourceTree = "<group>"; };
+		507ADB6622998B8A00169BF3 /* StringProtocolExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocolExtensionTest.swift; sourceTree = "<group>"; };
 		508A26B7228A4DD2009A94FB /* JSSwifter-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JSSwifter-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		508A26C4228A4DFC009A94FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		508A26CA228A4E6D009A94FB /* DispatchQueueExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtensionTest.swift; sourceTree = "<group>"; };
@@ -283,6 +287,7 @@
 				50954838228EBAF400BCE2D0 /* IntExtensionTest.swift */,
 				50FA2B522293A617007C7E9E /* LocaleExtensionTest.swift */,
 				507ADB622298CF9400169BF3 /* StringExtensionTest.swift */,
+				507ADB6622998B8A00169BF3 /* StringProtocolExtensionTest.swift */,
 				50FA2B562293A9E9007C7E9E /* UserDefaultsExtensionTest.swift */,
 			);
 			path = Foundation;
@@ -466,6 +471,7 @@
 				50954836228EB6A100BCE2D0 /* Int+JSSwifter.swift */,
 				50FA2B502293A564007C7E9E /* Locale+JSSwifter.swift */,
 				507ADB602298CEE200169BF3 /* String+JSSwifter.swift */,
+				507ADB6422998B7900169BF3 /* StringProtocol+JSSwifter.swift */,
 				50FA2B542293A696007C7E9E /* UserDefaults+JSSwifter.swift */,
 			);
 			path = Foundation;
@@ -672,6 +678,7 @@
 				507ADB632298CF9400169BF3 /* StringExtensionTest.swift in Sources */,
 				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
+				507ADB6722998B8A00169BF3 /* StringProtocolExtensionTest.swift in Sources */,
 				50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */,
 				508A26CF228AA547009A94FB /* UIColorExtensionTest.swift in Sources */,
 				50317BBC228D920300808D1A /* FloatExtensionTest.swift in Sources */,
@@ -734,6 +741,7 @@
 				50157FDC2296855E00BF69EE /* Comparable+JSSwifter.swift in Sources */,
 				50FA2B672293E33E007C7E9E /* UIView+JSSwifter.swift in Sources */,
 				5032E7112292A94C00CB40A6 /* Dictionary+JSSwifter.swift in Sources */,
+				507ADB6522998B7900169BF3 /* StringProtocol+JSSwifter.swift in Sources */,
 				50157FDA2296853E00BF69EE /* Collection+JSSwifter.swift in Sources */,
 				5095482B228E9B5700BCE2D0 /* Calendar+JSSwifter.swift in Sources */,
 			);

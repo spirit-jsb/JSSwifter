@@ -74,6 +74,8 @@
 		50B12E1B22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */; };
 		50B12E212295465800474197 /* UIGestureRecognizerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E202295465800474197 /* UIGestureRecognizerExtensionTest.swift */; };
 		50B12E2322954E7100474197 /* UIButton+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */; };
+		50B2CCA6229B6E62009B4437 /* UIFont+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */; };
+		50B2CCA8229B6E74009B4437 /* UIFontExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2CCA7229B6E74009B4437 /* UIFontExtensionTest.swift */; };
 		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
 		50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */; };
 		50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25706228D713A001B3B96 /* Double+JSSwifter.swift */; };
@@ -195,6 +197,8 @@
 		50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+JSSwifter.swift"; sourceTree = "<group>"; };
 		50B12E202295465800474197 /* UIGestureRecognizerExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerExtensionTest.swift; sourceTree = "<group>"; };
 		50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+JSSwifter.swift"; sourceTree = "<group>"; };
+		50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JSSwifter.swift"; sourceTree = "<group>"; };
+		50B2CCA7229B6E74009B4437 /* UIFontExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionTest.swift; sourceTree = "<group>"; };
 		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
 		50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25706228D713A001B3B96 /* Double+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+JSSwifter.swift"; sourceTree = "<group>"; };
@@ -299,6 +303,7 @@
 				50157FB8229624B900BF69EE /* UIButtonExtensionTest.swift */,
 				505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */,
 				508A26CE228AA547009A94FB /* UIColorExtensionTest.swift */,
+				50B2CCA7229B6E74009B4437 /* UIFontExtensionTest.swift */,
 				50B12E202295465800474197 /* UIGestureRecognizerExtensionTest.swift */,
 				50157FCA22964EAC00BF69EE /* UIImageExtensionTest.swift */,
 				50954830228EA23600BCE2D0 /* UIScrollViewExtensionTest.swift */,
@@ -484,6 +489,7 @@
 				50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */,
 				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
 				508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */,
+				50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */,
 				50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */,
 				50157FC82296365600BF69EE /* UIImage+JSSwifter.swift */,
 				5095482E228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift */,
@@ -676,6 +682,7 @@
 				5095481D228E779A00BCE2D0 /* CGColorExtensionTest.swift in Sources */,
 				50157FE62296919600BF69EE /* CharacterExtensionTest.swift in Sources */,
 				507ADB632298CF9400169BF3 /* StringExtensionTest.swift in Sources */,
+				50B2CCA8229B6E74009B4437 /* UIFontExtensionTest.swift in Sources */,
 				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				507ADB6722998B8A00169BF3 /* StringProtocolExtensionTest.swift in Sources */,
@@ -743,6 +750,7 @@
 				5032E7112292A94C00CB40A6 /* Dictionary+JSSwifter.swift in Sources */,
 				507ADB6522998B7900169BF3 /* StringProtocol+JSSwifter.swift in Sources */,
 				50157FDA2296853E00BF69EE /* Collection+JSSwifter.swift in Sources */,
+				50B2CCA6229B6E62009B4437 /* UIFont+JSSwifter.swift in Sources */,
 				5095482B228E9B5700BCE2D0 /* Calendar+JSSwifter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

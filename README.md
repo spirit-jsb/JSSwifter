@@ -52,7 +52,9 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Float%2BJSSwifter.swift"><code>Float Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Int%2BJSSwifter.swift"><code>Int Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/Locale%2BJSSwifter.swift"><code>Locale Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/NSAttributedString%2BJSSwifter.swift"><code>NSAttributedString Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/String%2BJSSwifter.swift"><code>String Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/StringProtocol%2BJSSwifter.swift"><code>StringProtocol Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/Foundation/UserDefaults%2BJSSwifter.swift"><code>UserDefaults Extensions</code></a></li>
 </details>
 
@@ -68,9 +70,11 @@
 <ul>
 </br>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIApplication%2BJSSwifter.swift"><code>UIApplication Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIBezierPath%2BJSSwifter.swift"><code>UIBezierPath Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIButton%2BJSSwifter.swift"><code>UIButton Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIFont%2BJSSwifter.swift"><code>UIFont Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIGestureRecognizer%2BJSSwifter.swift"><code>UIGestureRecognizer Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIImage%2BJSSwifter.swift"><code>UIImage Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIScrollView%2BJSSwifter.swift"><code>UIScrollView Extensions</code></a></li>
@@ -99,7 +103,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.10'
+pod 'JSSwifter', '~> 0.0.11'
 ```
 
 ## 更新计划
@@ -129,8 +133,9 @@ pod 'JSSwifter', '~> 0.0.10'
 - [x] Float
 - [x] Int
 - [x] Locale
-- [ ] NSAttributedString
+- [x] NSAttributedString
 - [x] String
+- [x] StringProtocol
 - [x] UserDefaults
 
 ### MapKit
@@ -141,11 +146,12 @@ pod 'JSSwifter', '~> 0.0.10'
 
 ### UIKit
 - [x] UIApplication
+- [x] UIBezierPath
 - [x] UIButton
 - [x] UICollectionView
 - [x] UIColor
 - [ ] UIDevice
-- [ ] UIFont
+- [x] UIFont
 - [x] UIGestureRecognizer
 - [x] UIImage
 - [x] UIScrollView

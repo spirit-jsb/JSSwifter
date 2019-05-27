@@ -76,6 +76,7 @@
 		50B12E2322954E7100474197 /* UIButton+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */; };
 		50B2CCA6229B6E62009B4437 /* UIFont+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */; };
 		50B2CCA8229B6E74009B4437 /* UIFontExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2CCA7229B6E74009B4437 /* UIFontExtensionTest.swift */; };
+		50B2CCAA229BC77D009B4437 /* UIBezierPath+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2CCA9229BC77D009B4437 /* UIBezierPath+JSSwifter.swift */; };
 		50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */; };
 		50C25703228D6F1B001B3B96 /* Float+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */; };
 		50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C25706228D713A001B3B96 /* Double+JSSwifter.swift */; };
@@ -199,6 +200,7 @@
 		50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+JSSwifter.swift"; sourceTree = "<group>"; };
 		50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JSSwifter.swift"; sourceTree = "<group>"; };
 		50B2CCA7229B6E74009B4437 /* UIFontExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionTest.swift; sourceTree = "<group>"; };
+		50B2CCA9229BC77D009B4437 /* UIBezierPath+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25700228CEDCC001B3B96 /* DateExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTest.swift; sourceTree = "<group>"; };
 		50C25702228D6F1B001B3B96 /* Float+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+JSSwifter.swift"; sourceTree = "<group>"; };
 		50C25706228D713A001B3B96 /* Double+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+JSSwifter.swift"; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				50954844228F1E8F00BCE2D0 /* UIApplication+JSSwifter.swift */,
+				50B2CCA9229BC77D009B4437 /* UIBezierPath+JSSwifter.swift */,
 				50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */,
 				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
 				508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */,
@@ -720,6 +723,7 @@
 				509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */,
 				50C25707228D713A001B3B96 /* Double+JSSwifter.swift in Sources */,
 				50B12E1B22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift in Sources */,
+				50B2CCAA229BC77D009B4437 /* UIBezierPath+JSSwifter.swift in Sources */,
 				50954841228F17FB00BCE2D0 /* FileManager+JSSwifter.swift in Sources */,
 				50954827228E90BB00BCE2D0 /* CGSize+JSSwifter.swift in Sources */,
 				5095481F228E7C9700BCE2D0 /* CGFloat+JSSwifter.swift in Sources */,

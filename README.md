@@ -66,6 +66,13 @@
 </details>
 
 <details>
+<summary>QuartzCore Extensions</summary>
+<ul>
+</br>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/QuartzCore/CALayer%2BJSSwifter.swift"><code>CALayer Extensions</code></a></li>
+</details>
+
+<details>
 <summary>UIKit Extensions</summary>
 <ul>
 </br>
@@ -74,6 +81,7 @@
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIButton%2BJSSwifter.swift"><code>UIButton Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UICollectionView%2BJSSwifter.swift"><code>UICollectionView Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIColor%2BJSSwifter.swift"><code>UIColor Extensions</code></a></li>
+<li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIDevice%2BJSSwifter.swift"><code>UIDevice Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIFont%2BJSSwifter.swift"><code>UIFont Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIGestureRecognizer%2BJSSwifter.swift"><code>UIGestureRecognizer Extensions</code></a></li>
 <li><a href="https://github.com/spirit-jsb/JSSwifter/blob/master/Sources/Core/UIKit/UIImage%2BJSSwifter.swift"><code>UIImage Extensions</code></a></li>
@@ -103,7 +111,7 @@
 `JSSwifter` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSSwifter', '~> 0.0.11'
+pod 'JSSwifter', '~> 0.0.12'
 ```
 
 ## 更新计划
@@ -142,7 +150,7 @@ pod 'JSSwifter', '~> 0.0.11'
 - [x] MKMapView
 
 ### QuartzCore
-- [ ] CALayer
+- [x] CALayer
 
 ### UIKit
 - [x] UIApplication
@@ -150,7 +158,7 @@ pod 'JSSwifter', '~> 0.0.11'
 - [x] UIButton
 - [x] UICollectionView
 - [x] UIColor
-- [ ] UIDevice
+- [x] UIDevice
 - [x] UIFont
 - [x] UIGestureRecognizer
 - [x] UIImage

@@ -32,6 +32,8 @@
 		505E5B57228C0AF1009BB9EE /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 505E5B56228C0AF1009BB9EE /* test.json */; };
 		505E5B59228C11AA009BB9EE /* UITableViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B58228C11AA009BB9EE /* UITableViewExtensionTest.swift */; };
 		505E5B5B228C11BB009BB9EE /* UICollectionViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */; };
+		506F215C229CD17C0036B367 /* CALayer+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F215B229CD17C0036B367 /* CALayer+JSSwifter.swift */; };
+		506F215F229CD1A20036B367 /* CALayerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F215E229CD1A20036B367 /* CALayerExtensionTest.swift */; };
 		507ADB612298CEE200169BF3 /* String+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB602298CEE200169BF3 /* String+JSSwifter.swift */; };
 		507ADB632298CF9400169BF3 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB622298CF9400169BF3 /* StringExtensionTest.swift */; };
 		507ADB6522998B7900169BF3 /* StringProtocol+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507ADB6422998B7900169BF3 /* StringProtocol+JSSwifter.swift */; };
@@ -70,6 +72,7 @@
 		509DF57E2289670300C4B54F /* JSSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; };
 		509DF57F2289670300C4B54F /* JSSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 509DF543228965DA00C4B54F /* JSSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		509DF58C2289692B00C4B54F /* DispatchQueue+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */; };
+		50A9F22D229D0A0300820B0E /* UIDevice+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A9F22C229D0A0300820B0E /* UIDevice+JSSwifter.swift */; };
 		50B12E192294E81A00474197 /* UIViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E182294E81A00474197 /* UIViewExtensionTest.swift */; };
 		50B12E1B22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */; };
 		50B12E212295465800474197 /* UIGestureRecognizerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B12E202295465800474197 /* UIGestureRecognizerExtensionTest.swift */; };
@@ -155,6 +158,8 @@
 		505E5B56228C0AF1009BB9EE /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		505E5B58228C11AA009BB9EE /* UITableViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionTest.swift; sourceTree = "<group>"; };
 		505E5B5A228C11BB009BB9EE /* UICollectionViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensionTest.swift; sourceTree = "<group>"; };
+		506F215B229CD17C0036B367 /* CALayer+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+JSSwifter.swift"; sourceTree = "<group>"; };
+		506F215E229CD1A20036B367 /* CALayerExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensionTest.swift; sourceTree = "<group>"; };
 		507ADB602298CEE200169BF3 /* String+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSSwifter.swift"; sourceTree = "<group>"; };
 		507ADB622298CF9400169BF3 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		507ADB6422998B7900169BF3 /* StringProtocol+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+JSSwifter.swift"; sourceTree = "<group>"; };
@@ -196,6 +201,7 @@
 		509DF5752289666E00C4B54F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		509DF5772289666E00C4B54F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		509DF58B2289692B00C4B54F /* DispatchQueue+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+JSSwifter.swift"; sourceTree = "<group>"; };
+		50A9F22C229D0A0300820B0E /* UIDevice+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+JSSwifter.swift"; sourceTree = "<group>"; };
 		50B12E182294E81A00474197 /* UIViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTest.swift; sourceTree = "<group>"; };
 		50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+JSSwifter.swift"; sourceTree = "<group>"; };
 		50B12E202295465800474197 /* UIGestureRecognizerExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerExtensionTest.swift; sourceTree = "<group>"; };
@@ -264,6 +270,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		506F215A229CD16B0036B367 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				506F215B229CD17C0036B367 /* CALayer+JSSwifter.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		506F215D229CD18D0036B367 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				506F215E229CD1A20036B367 /* CALayerExtensionTest.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
 		508A26C2228A4DFC009A94FB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +293,7 @@
 				5095483D228EF46E00BCE2D0 /* CoreLocation */,
 				508A26C7228A4E32009A94FB /* Foundation */,
 				50FA2B5B2293C44B007C7E9E /* MapKit */,
+				506F215D229CD18D0036B367 /* QuartzCore */,
 				508A26C8228A4E3F009A94FB /* UIKit */,
 				505E5B51228BD9A0009BB9EE /* Resources */,
 				508A26C4228A4DFC009A94FB /* Info.plist */,
@@ -459,6 +482,7 @@
 				5095483A228EE8F700BCE2D0 /* CoreLocation */,
 				509DF5842289678200C4B54F /* Foundation */,
 				50FA2B582293C145007C7E9E /* MapKit */,
+				506F215A229CD16B0036B367 /* QuartzCore */,
 				509DF5852289678D00C4B54F /* UIKit */,
 			);
 			path = Core;
@@ -498,6 +522,7 @@
 				50B12E2222954E7100474197 /* UIButton+JSSwifter.swift */,
 				505E5B46228B0DD2009BB9EE /* UICollectionView+JSSwifter.swift */,
 				508A26CC228A65B1009A94FB /* UIColor+JSSwifter.swift */,
+				50A9F22C229D0A0300820B0E /* UIDevice+JSSwifter.swift */,
 				50B2CCA5229B6E62009B4437 /* UIFont+JSSwifter.swift */,
 				50B12E1A22953A5C00474197 /* UIGestureRecognizer+JSSwifter.swift */,
 				50157FC82296365600BF69EE /* UIImage+JSSwifter.swift */,
@@ -693,6 +718,7 @@
 				507ADB632298CF9400169BF3 /* StringExtensionTest.swift in Sources */,
 				50B2CCA8229B6E74009B4437 /* UIFontExtensionTest.swift in Sources */,
 				50FA2B652293DEC8007C7E9E /* UIViewControllerExtensionTest.swift in Sources */,
+				506F215F229CD1A20036B367 /* CALayerExtensionTest.swift in Sources */,
 				50C25701228CEDCC001B3B96 /* DateExtensionTest.swift in Sources */,
 				507ADB6722998B8A00169BF3 /* StringProtocolExtensionTest.swift in Sources */,
 				50FA2B532293A617007C7E9E /* LocaleExtensionTest.swift in Sources */,
@@ -755,10 +781,12 @@
 				505E5B45228B0DBF009BB9EE /* UITableView+JSSwifter.swift in Sources */,
 				505E5B3F228AECE5009BB9EE /* Data+JSSwifter.swift in Sources */,
 				5095482F228E9F5A00BCE2D0 /* UIScrollView+JSSwifter.swift in Sources */,
+				50A9F22D229D0A0300820B0E /* UIDevice+JSSwifter.swift in Sources */,
 				508A26CD228A65B1009A94FB /* UIColor+JSSwifter.swift in Sources */,
 				507ADB612298CEE200169BF3 /* String+JSSwifter.swift in Sources */,
 				50157FDC2296855E00BF69EE /* Comparable+JSSwifter.swift in Sources */,
 				50FA2B672293E33E007C7E9E /* UIView+JSSwifter.swift in Sources */,
+				506F215C229CD17C0036B367 /* CALayer+JSSwifter.swift in Sources */,
 				5032E7112292A94C00CB40A6 /* Dictionary+JSSwifter.swift in Sources */,
 				507ADB6522998B7900169BF3 /* StringProtocol+JSSwifter.swift in Sources */,
 				50157FDA2296853E00BF69EE /* Collection+JSSwifter.swift in Sources */,

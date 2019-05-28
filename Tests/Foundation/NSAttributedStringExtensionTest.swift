@@ -109,6 +109,86 @@ class NSAttributedStringExtensionTest: XCTestCase {
         XCTAssertNotEqual(attributes[NSAttributedString.Key.foregroundColor] as? UIColor, UIColor.red)
     }
     
+    func test_applying_attributes_to_ranges_matching() {
+        let email = "max.jian@baokuchina.com"
+        let testString = NSAttributedString(string: "Your Email is \(email)").bolded
+        let attributes: [NSAttributedString.Key: Any] = [.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.blue]
+        let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let attrTestString = testString.applying(attributes: attributes, toRangesMatching: pattern)
+        
+        let attrAtBeginning = attrTestString.attributes(at: 0, effectiveRange: nil)
+        XCTAssertEqual(attrAtBeginning.count, 1)
+        
+        var passed = false
+        attrTestString.enumerateAttributes(in: NSRange(0..<attrTestString.length), options: .longestEffectiveRangeNotRequired) { (attrs, range, _) in
+            // exit if there are not more attributes for the subsequence than what was there originally
+            guard attrs.count > attrAtBeginning.count else { return }
+            
+            let emailFromRange = attrTestString.attributedSubstring(from: range).string
+            // confirm that the string with the applied attributes is the email
+            XCTAssertEqual(emailFromRange, email)
+            // the range contains the email, check to make sure the attributes are there and correct
+            for attr in attrs {
+                switch attr.key {
+                case .underlineStyle:
+                    XCTAssertEqual(attr.value as? NSUnderlineStyle.RawValue, NSUnderlineStyle.single.rawValue)
+                    passed = true
+                case .foregroundColor:
+                    XCTAssertEqual(attr.value as? UIColor, UIColor.blue)
+                    passed = true
+                case .font:
+                    XCTAssertEqual(attr.value as? UIFont, UIFont.boldSystemFont(ofSize: UIFont.systemFontSize))
+                    passed = true
+                default:
+                    passed = false
+                }
+            }
+            XCTAssertTrue(passed)
+        }
+    }
+    
+    func test_applying_attributes_to_occurrences() {
+        let name = "Max Jian"
+        let greeting = "Hello, \(name)."
+        let attrGreeting = NSAttributedString(string: greeting).italicized.strikethrough.applying(
+            attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue,
+                         .foregroundColor: UIColor.black], toOccurrencesOf: name)
+        
+        let attrAtBeginning = attrGreeting.attributes(at: 0, effectiveRange: nil)
+        XCTAssertEqual(attrAtBeginning.count, 2)
+        
+        var passed = false
+        attrGreeting.enumerateAttributes(in: NSRange(0..<attrGreeting.length), options: .longestEffectiveRangeNotRequired) { (attrs, range, _) in
+            // exit if there are not more attributes for the subsequence than what was there originally
+            guard attrs.count > attrAtBeginning.count else { return }
+            
+            let stringAtRange = attrGreeting.attributedSubstring(from: range).string
+            // confirm that the string with the applied attributes is the name
+            XCTAssertEqual(stringAtRange, name)
+            // the range contains the name, check to make sure the attributes are there and correct
+            for attr in attrs {
+                switch attr.key {
+                case .underlineStyle:
+                    XCTAssertEqual(attr.value as? NSUnderlineStyle.RawValue, NSUnderlineStyle.single.rawValue)
+                    passed = true
+                case .foregroundColor:
+                    XCTAssertEqual(attr.value as? UIColor, UIColor.black)
+                    passed = true
+                case .font:
+                    XCTAssertEqual(attr.value as? UIFont, UIFont.italicSystemFont(ofSize: UIFont.systemFontSize))
+                    passed = true
+                case .strikethroughStyle:
+                    XCTAssertEqual(attr.value as? NSUnderlineStyle.RawValue, NSUnderlineStyle.single.rawValue)
+                    passed = true
+                default:
+                    passed = false
+                }
+            }
+            XCTAssertTrue(passed)
+        }
+    }
+    
     func test_operators() {
         var string1 = NSAttributedString(string: "Test").italicized.underlined.strikethrough
         let string2 = NSAttributedString(string: " Appending").bolded

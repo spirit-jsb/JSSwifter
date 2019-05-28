@@ -74,42 +74,42 @@ class UIViewExtensionTest: XCTestCase {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.left, 50.0)
         view.left = 100.0
-        XCTAssertEqual(view.origin.x, 100.0)
+        XCTAssertEqual(view.frame.origin.x, 100.0)
     }
     
     func test_top() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.top, 20.0)
         view.top = 100.0
-        XCTAssertEqual(view.origin.y, 100.0)
+        XCTAssertEqual(view.frame.origin.y, 100.0)
     }
     
     func test_right() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.right, 150.0)
         view.right = 100.0
-        XCTAssertEqual(view.origin.x, 0.0)
+        XCTAssertEqual(view.frame.origin.x, 0.0)
     }
     
     func test_bottom() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.bottom, 120.0)
         view.bottom = 80.0
-        XCTAssertEqual(view.origin.y, -20.0)
+        XCTAssertEqual(view.frame.origin.y, -20.0)
     }
     
     func test_width() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.width, 100.0)
         view.width = 60.0
-        XCTAssertEqual(view.size.width, 60.0)
+        XCTAssertEqual(view.frame.size.width, 60.0)
     }
     
     func test_height() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.height, 100.0)
         view.height = 80.0
-        XCTAssertEqual(view.size.height, 80.0)
+        XCTAssertEqual(view.frame.size.height, 80.0)
     }
     
     func test_center_x() {
@@ -130,14 +130,14 @@ class UIViewExtensionTest: XCTestCase {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.origin, CGPoint(x: 50.0, y: 20.0))
         view.origin = CGPoint(x: 20.0, y: 30.0)
-        XCTAssertEqual(view.origin, CGPoint(x: 20.0, y: 30.0))
+        XCTAssertEqual(view.frame.origin, CGPoint(x: 20.0, y: 30.0))
     }
     
     func test_size() {
         let view = UIView(frame: CGRect(origin: CGPoint(x: 50.0, y: 20.0), size: CGSize(width: 100.0, height: 100.0)))
         XCTAssertEqual(view.size, CGSize(width: 100.0, height: 100.0))
         view.size = CGSize(width: 80.0, height: 120.0)
-        XCTAssertEqual(view.size, CGSize(width: 80.0, height: 120.0))
+        XCTAssertEqual(view.frame.size, CGSize(width: 80.0, height: 120.0))
     }
     
     func test_snapshot_image() {

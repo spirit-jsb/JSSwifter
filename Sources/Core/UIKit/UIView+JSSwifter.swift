@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView {
     
-    enum AngleAnimationType {
+    enum AngleUnit {
         case degrees
         case radians
     }
@@ -277,7 +277,7 @@ public extension UIView {
         }, completion: completion)
     }
     
-    func rotate(byAngle angle: CGFloat, ofType type: AngleAnimationType, animated: Bool = false, duration: TimeInterval = 1.0, completion: ((Bool) -> Void)? = nil)
+    func rotate(byAngle angle: CGFloat, ofType type: AngleUnit, animated: Bool = false, duration: TimeInterval = 1.0, completion: ((Bool) -> Void)? = nil)
     {
         let angleWithType: CGFloat = (type == .degrees) ? .pi * angle / 180.0 : angle
         let aDuration: TimeInterval = animated ? duration : 0.0
@@ -286,7 +286,7 @@ public extension UIView {
         }, completion: completion)
     }
     
-    func rotate(toAngle angle: CGFloat, ofType type: AngleAnimationType, animated: Bool = false, duration: TimeInterval = 1.0, completion: ((Bool) -> Void)? = nil)
+    func rotate(toAngle angle: CGFloat, ofType type: AngleUnit, animated: Bool = false, duration: TimeInterval = 1.0, completion: ((Bool) -> Void)? = nil)
     {
         let angleWithType: CGFloat = (type == .degrees) ? .pi * angle / 180.0 : angle
         let aDuration: TimeInterval = animated ? duration : 0.0

@@ -11,6 +11,7 @@ import CoreGraphics
 public extension CGPoint {
     
     // MARK:
+    
     /// 计算指定 CGPoint 到另一给定 CGPoint 间的距离
     ///
     ///     let point1 = CGPoint(x: 10.0, y: 10.0)

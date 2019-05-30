@@ -11,6 +11,7 @@ import CoreGraphics
 public extension CGSize {
     
     // MARK:
+    
     /// 返回纵横比例
     var aspectRatio: CGFloat {
         return self.height == 0.0 ? 0.0 : self.width / self.height
@@ -27,6 +28,7 @@ public extension CGSize {
     }
     
     // MARK:
+    
     /// 自适应调整指定 CGSize 至给定的边界范围
     ///
     ///     let rect = CGSize(width: 120, height: 80)

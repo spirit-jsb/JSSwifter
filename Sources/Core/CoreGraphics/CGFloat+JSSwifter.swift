@@ -11,6 +11,7 @@ import CoreGraphics
 public extension CGFloat {
     
     // MARK:
+    
     /// 返回指定 CGFloat 的绝对值
     var abs: CGFloat {
         return Swift.abs(self)

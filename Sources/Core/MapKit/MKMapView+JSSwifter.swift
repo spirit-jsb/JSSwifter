@@ -18,12 +18,19 @@ public extension MKMapView {
     }
     
     // MARK:
+    
+    /// 使用 MKAnnotationView 的子类注册 MKAnnotationView
+    ///
+    /// - Parameter viewClass: 在 map 视图上使用的 annotation 视图的类，该类必须为 MKAnnotationView 的子类。
     @available(iOS 11.0, *)
     func register<T: MKAnnotationView>(viewClass: T.Type) {
         let reusable = ReusableIdentifier<T>()
         self.register(viewClass.self, forAnnotationViewWithReuseIdentifier: reusable.identifier)
     }
     
+    /// 移除可重用的 MKAnnotationView
+    ///
+    /// - Returns: 返回具有指定 identifier 的 annotation 视图，如果重用队列中不存在此类对象则抛出异常
     func dequeueReusableAnnotationView<T: MKAnnotationView>() -> T {
         let reusable = ReusableIdentifier<T>()
         guard let annotationView = self.dequeueReusableAnnotationView(withIdentifier: reusable.identifier) as? T else {
@@ -32,6 +39,10 @@ public extension MKMapView {
         return annotationView
     }
     
+    /// 移除可重用的 MKAnnotationView
+    ///
+    /// - Parameter annotation: 一个显式的 MKAnnotation 对象，用于分配给移除的 MKAnnotationView 对象
+    /// - Returns: 返回具有指定 identifier 的 annotation 视图，如果重用队列中不存在此类对象则抛出异常
     @available(iOS 11.0, *)
     func dequeueReusableAnnotationView<T: MKAnnotationView>(for annotation: MKAnnotation) -> T {
         let reusable = ReusableIdentifier<T>()

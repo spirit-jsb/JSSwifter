@@ -11,10 +11,28 @@ import CoreLocation
 public extension CLLocation {
     
     // MARK:
+    
+    /// 计算指定 CLLocation 到另一给定 CLLocation 间的中间坐标点
+    ///
+    ///     let aLoc = CLLocation(latitude: -15.822877, longitude: -47.941839)
+    ///     let bLoc = CLLocation(latitude: -15.692030, longitude: -47.594397)
+    ///     let mid = aLoc.midLocation(to: bLoc)
+    ///     // mid.coordinate.latitude = -15.7575223324019, mid.coordinate.longitude = -47.7680620274339
+    ///
+    /// - Parameter point: 用于计算中间坐标点的另一给定 CLLocation
+    /// - Returns: 返回指定 CLLocation 到另一给定 CLLocation 间的中间坐标点
     func midLocation(to point: CLLocation) -> CLLocation {
         return CLLocation.midLocation(start: self, end: point)
     }
     
+    /// 计算指定 CLLocation 到另一给定 CLLocation 间的方位
+    ///
+    ///     let aLoc = CLLocation(latitude: 38.6318909290283, longitude: -90.2828979492187)
+    ///     let bLoc = CLLocation(latitude: 38.5352759115441, longitude: -89.8448181152343)
+    ///     let bearing = aLoc.bearing(to: bLoc)
+    ///     // bearing = 105.619
+    /// - Parameter destination: 用于计算方位的另一给定 CLLocation
+    /// - Returns: 返回指定 CLLocation 到另一给定 CLLocation 间的方位(0˚～360˚)
     func bearing(to destination: CLLocation) -> Double {
         // http://stackoverflow.com/questions/3925942/cllocation-category-for-calculating-bearing-w-haversine-function
         let lat1 = Double.pi * self.coordinate.latitude / 180.0
@@ -33,6 +51,17 @@ public extension CLLocation {
         return (degrees + 360.0).truncatingRemainder(dividingBy: 360.0)
     }
     
+    /// 计算两给定 CLLocation 间的中间坐标点
+    ///
+    ///     let aLoc = CLLocation(latitude: -15.822877, longitude: -47.941839)
+    ///     let bLoc = CLLocation(latitude: -15.692030, longitude: -47.594397)
+    ///     let mid = CLLocation.midLocation(start: aLoc, end: bLoc)
+    ///     // mid.coordinate.latitude = -15.7575223324019, mid.coordinate.longitude = -47.7680620274339
+    ///
+    /// - Parameters:
+    ///   - start: 第一个给定 CLLocation
+    ///   - end: 第二个给定 CLLocation
+    /// - Returns: 返回两给定 CLLocation 间的中间坐标点
     static func midLocation(start: CLLocation, end: CLLocation) -> CLLocation {
         let lat1 = Double.pi * start.coordinate.latitude / 180.0
         let long1 = Double.pi * start.coordinate.longitude / 180.0

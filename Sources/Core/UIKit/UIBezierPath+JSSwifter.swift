@@ -11,6 +11,15 @@ import UIKit
 public extension UIBezierPath {
     
     // MARK:
+    
+    /// 创建并返回一个由指定文本符号和指定字体初始化并生成的 UIBezierPath 对象
+    ///
+    /// - Discussion: 不支持 Apple Emoji 符号
+    ///
+    /// - Parameters:
+    ///   - text: 用于生成 Path 的文本符号
+    ///   - font: 用于生成 Path 的字体
+    /// - Returns: 返回一个由指定文本符号和指定字体初始化并生成的 UIBezierPath 对象
     static func bezierPath(with text: String, font: UIFont) -> UIBezierPath {
         let cgPath = CGMutablePath()
         

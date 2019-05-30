@@ -124,14 +124,18 @@ private let machineDictionary = ["Watch1,1": "Apple Watch 1st 38mm",
 public extension UIDevice {
     
     // MARK:
+    
+    /// 运行设备是否为 simulator
     var isSimulator: Bool {
         return self.model.contains("Simulator")
     }
     
+    /// 运行设备是否为 iPad
     var isPad: Bool {
         return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad
     }
     
+    /// 运行设备是否为越狱设备
     var isJailbroken: Bool {
         if self.isSimulator {
             return false
@@ -164,6 +168,7 @@ public extension UIDevice {
         return false
     }
     
+    /// 运行设备的机器型号，例如：iPhone11,6
     var machineModel: String? {
         var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
@@ -175,6 +180,7 @@ public extension UIDevice {
         return String(cString: machine)
     }
     
+    /// 运行设备的机器名称，例如：iPhone XS Max
     var machineModelName: String? {
         guard let model = self.machineModel else {
             return nil
@@ -182,6 +188,7 @@ public extension UIDevice {
         return machineDictionary[model]
     }
     
+    /// 系统上一次启动时间
     var systemUptime: Date? {
         let time = ProcessInfo().systemUptime
         return Date(timeIntervalSinceNow: -time)

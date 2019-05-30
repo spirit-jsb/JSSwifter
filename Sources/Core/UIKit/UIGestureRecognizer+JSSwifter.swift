@@ -11,6 +11,8 @@ import UIKit
 public extension UIGestureRecognizer {
     
     // MAKR:
+    
+    /// 将 Gesture Recognizer 从视图上移除
     func removeFromView() {
         self.view?.removeGestureRecognizer(self)
     }

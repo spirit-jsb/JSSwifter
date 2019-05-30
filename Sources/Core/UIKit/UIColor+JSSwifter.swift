@@ -11,6 +11,8 @@ import UIKit
 public extension UIColor {
     
     // MARK:
+    
+    /// 随机颜色
     static var random: UIColor {
         let red = Int.random(in: 0...255)
         let green = Int.random(in: 0...255)
@@ -18,6 +20,10 @@ public extension UIColor {
         return UIColor(red: red, green: green, blue: blue)!
     }
     
+    /// RGBA 颜色组件，(0.0~1.0)
+    ///
+    /// http://colorizer.org/
+    ///
     var rgbaComponents: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var red: CGFloat = 0.0
         var green: CGFloat = 0.0
@@ -29,6 +35,10 @@ public extension UIColor {
         return (red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    /// HSBA 颜色组件，(0.0~1.0)
+    ///
+    /// http://colorizer.org/
+    ///
     var hsbaComponents: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) {
         var hue: CGFloat = 0.0
         var saturation: CGFloat = 0.0
@@ -40,6 +50,10 @@ public extension UIColor {
         return (hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
+    /// CMKYA 颜色组件，(0.0~1.0)
+    ///
+    /// http://colorizer.org/
+    ///
     var cmykaComponents: (cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat) {
         var cyan: CGFloat = 0.0
         var magenta: CGFloat = 0.0
@@ -52,6 +66,7 @@ public extension UIColor {
         return (cyan: cyan, magenta: magenta, yellow: yellow, black: black, alpha: alpha)
     }
     
+    /// 指定 UIColor 的十六进制字符串
     var hexString: String {
         let components: [Int] = {
             let comps = self.cgColor.components!
@@ -61,6 +76,7 @@ public extension UIColor {
         return String(format: "#%02X%02X%02X", components[0], components[1], components[2])
     }
     
+    /// 指定 UIColor 的短十六进制字符串
     var shortHexString: String? {
         let string = self.hexString.replacingOccurrences(of: "#", with: "")
         let chrs = Array(string)
@@ -70,10 +86,12 @@ public extension UIColor {
         return "#\(chrs[0])\(chrs[2])\(chrs[4])"
     }
     
+    /// 指定 UIColor 的透明度
     var alpha: CGFloat {
         return self.cgColor.alpha
     }
     
+    /// 指定 UIColor 的 UInt 值
     var uInt: UInt {
         let components: [CGFloat] = {
             let comps = self.cgColor.components!
@@ -88,6 +106,7 @@ public extension UIColor {
         return UInt(colorAsUInt32)
     }
     
+    /// 指定 UIColor 的互补颜色
     var complementary: UIColor? {
         let colorSpaceRGB = CGColorSpaceCreateDeviceRGB()
         let convertColorToRGBSpace: ((_ color: UIColor) -> UIColor?) = { (color) -> UIColor? in
@@ -114,6 +133,14 @@ public extension UIColor {
     }
     
     // MARK:
+    
+    /// 依照 RGB 颜色空间和可选透明度数值初始化可选颜色
+    ///
+    /// - Parameters:
+    ///   - red: Red 组件(0~255)
+    ///   - green: Green 组件(0~255)
+    ///   - blue: Blue 组件(0~255)
+    ///   - transparency: 可选透明度，默认值为 1.0
     convenience init?(red: Int, green: Int, blue: Int, transparency: CGFloat = 1.0) {
         guard red >= 0 && red <= 255 else { return nil }
         guard green >= 0 && green <= 255 else { return nil }
@@ -126,6 +153,14 @@ public extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: trans)
     }
     
+    /// 依照 CMYB 颜色空间和可选透明度数值初始化可选颜色
+    ///
+    /// - Parameters:
+    ///   - cyan: Cyan 组件(0.0~1.0)
+    ///   - magenta: Magenta 组件(0.0~1.0)
+    ///   - yellow: Yellow 组件(0.0~1.0)
+    ///   - black: Black 组件(0.0~1.0)
+    ///   - transparency: 可选透明度，默认值为 1.0
     convenience init?(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, transparency: CGFloat = 1.0) {
         guard cyan >= 0.0 && cyan <= 1.0 else { return nil }
         guard magenta >= 0.0 && magenta <= 1.0 else { return nil }
@@ -143,6 +178,11 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: trans)
     }
     
+    /// 依照十六进制数字和可选透明度数值初始化可选颜色
+    ///
+    /// - Parameters:
+    ///   - hex: 十六进制数字，例如：0xDECEB5
+    ///   - transparency: 可选透明度，默认值为 1.0
     convenience init?(hex: Int, transparency: CGFloat = 1.0) {
         var trans = transparency
         if trans < 0.0 { trans = 0.0 }
@@ -155,6 +195,11 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, transparency: trans)
     }
     
+    /// 依照十六进制字符串和可选透明度数值初始化可选颜色
+    ///
+    /// - Parameters:
+    ///   - hexString: 十六进制字符串，例如："0xDECEB5"
+    ///   - transparency: 可选透明度，默认值为 1.0
     convenience init?(hexString: String, transparency: CGFloat = 1.0) {
         var string = ""
         if hexString.lowercased().hasPrefix("0x") {
@@ -188,6 +233,7 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, transparency: trans)
     }
     
+    /// 依据给定 UIColor 初始化可选互补颜色
     convenience init?(complementaryFor color: UIColor) {
         let colorSpaceRGB = CGColorSpaceCreateDeviceRGB()
         let convertColorToRGBSpace: ((_ color: UIColor) -> UIColor?) = { (color) -> UIColor? in
@@ -214,6 +260,15 @@ public extension UIColor {
     }
     
     // MARK:
+    
+    /// 将两给定 UIColor 混合
+    ///
+    /// - Parameters:
+    ///   - color1: 第一个混合颜色
+    ///   - intensity1: 第一个混合颜色所占比重，默认值为 0.5
+    ///   - color2: 第二个混合颜色
+    ///   - intensity2: 第二个混合颜色所占比重，默认值为 0.5
+    /// - Returns: 返回混合后的颜色
     static func blend(_ color1: UIColor, intensity1: CGFloat = 0.5, with color2: UIColor, intensity2: CGFloat = 0.5) -> UIColor {
         let total = intensity1 + intensity2
         let level1 = intensity1 / total
@@ -251,6 +306,10 @@ public extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    /// 将指定 UIColor 变亮
+    ///
+    /// - Parameter percentage: 增亮程度，默认值为 0.2
+    /// - Returns: 返回增亮后的颜色
     func lighten(by percentage: CGFloat = 0.2) -> UIColor {
         var red: CGFloat = 0.0, green: CGFloat = 0.0, blue: CGFloat = 0.0, alpha: CGFloat = 0.0
         self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
@@ -260,6 +319,10 @@ public extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    /// 将指定 UIColor 变暗
+    ///
+    /// - Parameter percentage: 增暗程度，默认值为 0.2
+    /// - Returns: 返回增暗后的颜色
     func darken(by percentage: CGFloat = 0.2) -> UIColor {
         var red: CGFloat = 0.0, green: CGFloat = 0.0, blue: CGFloat = 0.0, alpha: CGFloat = 0.0
         self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
@@ -269,6 +332,7 @@ public extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    /// 返回 CMKY 颜色空间中的颜色组件
     @discardableResult
     func getCyan(_ cyan: UnsafeMutablePointer<CGFloat>?, magenta: UnsafeMutablePointer<CGFloat>?, yellow: UnsafeMutablePointer<CGFloat>?, black: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool {
         var r: CGFloat = 0.0

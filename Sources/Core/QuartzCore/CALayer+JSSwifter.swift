@@ -11,6 +11,8 @@ import QuartzCore
 public extension CALayer {
     
     // MAKR:
+    
+    /// frame.origin.x 的快捷方法
     var left: CGFloat {
         set {
             self.frame.origin.x = newValue
@@ -20,6 +22,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.origin.y 的快捷方法
     var top: CGFloat {
         set {
             self.frame.origin.y = newValue
@@ -29,6 +32,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.origin.x + frame.size.width 的快捷方法
     var right: CGFloat {
         set {
             self.frame.origin.x = newValue - self.frame.size.width
@@ -38,6 +42,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.origin.y + frame.size.height 的快捷方法
     var bottom: CGFloat {
         set {
             self.frame.origin.y = newValue - self.frame.size.height
@@ -47,6 +52,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.size.width 的快捷方法
     var width: CGFloat {
         set {
             self.frame.size.width = newValue
@@ -56,6 +62,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.size.height 的快捷方法
     var height: CGFloat {
         set {
             self.frame.size.height = newValue
@@ -65,6 +72,7 @@ public extension CALayer {
         }
     }
     
+    /// center.x 的快捷方法
     var centerX: CGFloat {
         set {
             self.frame.origin.x = newValue - self.frame.size.width * 0.5
@@ -74,6 +82,7 @@ public extension CALayer {
         }
     }
     
+    /// center.y 的快捷方法
     var centerY: CGFloat {
         set {
             self.frame.origin.y = newValue - self.frame.size.height * 0.5
@@ -83,6 +92,7 @@ public extension CALayer {
         }
     }
     
+    /// center 的快捷方法
     var center: CGPoint {
         set {
             self.frame.origin.x = newValue.x - self.frame.size.width * 0.5
@@ -94,6 +104,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.origin 的快捷方法
     var origin: CGPoint {
         set {
             self.frame.origin = newValue
@@ -103,6 +114,7 @@ public extension CALayer {
         }
     }
     
+    /// frame.size 的快捷方法
     var size: CGSize {
         set {
             self.frame.size = newValue
@@ -112,6 +124,7 @@ public extension CALayer {
         }
     }
     
+    /// contentsGravity 属性的包装属性
     var contentMode: UIView.ContentMode {
         set {
             switch newValue {
@@ -177,6 +190,7 @@ public extension CALayer {
         }
     }
     
+    /// 快照图像，图像尺寸与 CALayer 尺寸一致
     var snapshotImage: UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0)
         defer {
@@ -188,6 +202,12 @@ public extension CALayer {
     }
     
     // MARK:
+    
+    /// 设置指定 CALayer 视图圆角
+    ///
+    /// - Parameters:
+    ///   - corners: 需设置圆角的角数组，例如：[.topLeft, .topRight]
+    ///   - radius: 圆角半径
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let shape = CAShapeLayer()
@@ -195,6 +215,13 @@ public extension CALayer {
         self.mask = shape
     }
 
+    /// 设置指定 CALayer 视图阴影
+    ///
+    /// - Parameters:
+    ///   - color: 阴影颜色，默认值为 #137992
+    ///   - radius: 阴影模糊半径，默认值为 3.0
+    ///   - offset: 阴影偏移量，默认值为 .zero
+    ///   - opacity: 阴影不透明度，默认值为 0.5
     func addShadow(ofColor color: UIColor = UIColor(red: 0.07, green: 0.47, blue: 0.57, alpha: 1.0), radius: CGFloat = 3.0, offset: CGSize = .zero, opacity: Float = 0.5) {
         self.shadowColor = color.cgColor
         self.shadowRadius = radius
@@ -203,10 +230,14 @@ public extension CALayer {
         self.masksToBounds = false
     }
 
+    /// 向指定 CALayer 添加子 CALayer 数组
+    ///
+    /// - Parameter sublayers: 需要添加的子 CALayer 数组
     func addSublayers(_ sublayers: [CALayer]) {
         sublayers.forEach { self.addSublayer($0) }
     }
 
+    /// 移除指定 CALayer 上的所有子 CALayer
     func removeSublayers() {
         self.sublayers?.forEach { $0.removeFromSuperlayer() }
     }

@@ -8,8 +8,6 @@
 
 import UIKit
 
-private var key: String = "com.sibo.jian.JSSwifter.button.action"
-
 public extension UIButton {
     
     enum TitleImageAlignment {

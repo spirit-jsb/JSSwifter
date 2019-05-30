@@ -11,6 +11,7 @@ import CoreGraphics
 public extension CGColor {
     
     // MARK:
+    /// 返回指定 CGColor 所对应的 UIColor
     var uiColor: UIColor? {
         return UIColor(cgColor: self)
     }

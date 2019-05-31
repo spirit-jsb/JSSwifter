@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Array" class="dashAnchor"></a>
+    <a title="Array Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">JSSwifter Docs</a> (68% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">JSSwifter Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Array Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Aes256Error.html">Aes256Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ArrayError.html">ArrayError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BundleError.html">BundleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DictionaryError.html">DictionaryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HmacError.html">HmacError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGColor.html">CGColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGSize.html">CGSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CLLocation.html">CLLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Character.html">Character</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/CryptoAlgorithm.html">– CryptoAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/HmacAlgorithm.html">– HmacAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/Aes256Algorithm.html">– Aes256Algorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/CompressionLevel.html">– CompressionLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/FileManager.html">FileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Locale.html">Locale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MKMapView.html">MKMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/StringProtocol.html">StringProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication/Environment.html">– Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIBezierPath.html">UIBezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton/TitleImageAlignment.html">– TitleImageAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIScrollView.html">UIScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIStackView.html">UIStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/AngleUnit.html">– AngleUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/ShakeDirection.html">– ShakeDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/ShakeAnimationType.html">– ShakeAnimationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003obaopySi_SitSiF">±(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopyS2dF">√(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopyS2fF">√(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopySdSiF">√(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:9JSSwifter9GzipErrorV">GzipError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Array</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">_DestructorSafeContainer</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE4safexSgSi_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(safe:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE4safexSgSi_tcip">subscript(safe:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>使用索引从 Array 中获取可选元素</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="k">var</span> <span class="nv">element</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">3</span><span class="p">]</span>
+<span class="c1">// element, 3</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">5</span><span class="p">]</span>
+<span class="c1">// element, nil</span>
+
+<span class="n">array</span><span class="p">[</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">2</span><span class="p">]</span>
+<span class="c1">// element, 10</span>
+<span class="n">array</span><span class="p">[</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="c1">// array, [0, 1, 10, 3, 100]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>下标索引位置</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE7prependyyxF"></a>
+                    <a name="//apple_ref/swift/Method/prepend(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE7prependyyxF">prepend(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>在指定 Array 头部插入一个元素</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">prepend</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1">// array, [1, 2, 3, 4, 5]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">prepend</span><span class="p">(</span><span class="n">_</span> <span class="nv">newElement</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于插入的元素</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE8safeSwap4from2toySi_SitF"></a>
+                    <a name="//apple_ref/swift/Method/safeSwap(from:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE8safeSwap4from2toySi_SitF">safeSwap(from:to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>对指定 Array 在给定下标索引位置安全的交换元素</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">safeSwap</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">// array[3], 1</span>
+<span class="c1">// array[0], 4</span>
+
+<span class="k">var</span> <span class="nv">newArray</span> <span class="o">=</span> <span class="n">array</span>
+<span class="n">newArray</span><span class="o">.</span><span class="nf">safeSwap</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1">// newArray, array</span>
+
+<span class="n">newArray</span> <span class="o">=</span> <span class="n">array</span>
+<span class="n">newArray</span><span class="o">.</span><span class="nf">safeSwap</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">12</span><span class="p">)</span>
+<span class="c1">// newArray, array</span>
+
+<span class="k">let</span> <span class="nv">emptyArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">var</span> <span class="nv">swappedEmptyArray</span> <span class="o">=</span> <span class="n">emptyArray</span>
+<span class="n">swappedEmptyArray</span><span class="o">.</span><span class="nf">safeSwap</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>
+<span class="c1">// swappedEmptyArray, emptyArray</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safeSwap</span><span class="p">(</span><span class="n">from</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Index</span><span class="p">,</span> <span class="n">to</span> <span class="nv">otherIndex</span><span class="p">:</span> <span class="kt">Index</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>下标索引位置</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>otherIndex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于交换的元素</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE7divided2bySayxG8matching_AD11nonMatchingtSbxKXE_tKF"></a>
+                    <a name="//apple_ref/swift/Method/divided(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE7divided2bySayxG8matching_AD11nonMatchingtSbxKXE_tKF">divided(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>依据给定断言将指定 Array 分割为两部分</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">input</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nf">let</span> <span class="p">(</span><span class="n">even</span><span class="p">,</span> <span class="n">odd</span><span class="p">)</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="n">divided</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span>
+<span class="c1">// even, [0, 2, 4]</span>
+<span class="c1">// odd, [1, 3, 5]</span>
+
+<span class="k">let</span> <span class="nv">tuple</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="n">divided</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span>
+<span class="c1">// tuple.matching, [0, 2, 4]</span>
+<span class="c1">// tuple.nonMatching, [1, 3, 5]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">divided</span><span class="p">(</span><span class="n">by</span> <span class="nv">condition</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">matching</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">],</span> <span class="nv">nonMatching</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>condition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>断言条件</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>两个数组，第一个数组包含断言条件为 true 的元素，第二个数组包含剩余的其他元素</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE6sorted2by9ascendingSayxGs7KeyPathCyxqd__SgG_SbtSLRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/sorted(by:ascending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE6sorted2by9ascendingSayxGs7KeyPathCyxqd__SgG_SbtSLRd__lF">sorted(by:ascending:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>基于可选键值路径排序数组</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Jame"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Wade"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">36</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Rose"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">29</span><span class="p">)]</span>
+<span class="k">var</span> <span class="nv">sort</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">age</span><span class="p">),</span>
+<span class="c1">// sort, [Person(name: "Jame", age: 23), Person(name: "Rose", age: 29), Person(name: "Wade", age: 36)]</span>
+<span class="n">sort</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kc">false</span><span class="p">),</span>
+<span class="c1">// sort, [Person(name: "Wade", age: 36), Person(name: "Rose", age: 29), Person(name: "Jame", age: 23)])</span>
+</code></pre>
+
+                        <a href="../Extensions/Array/sorted(by:ascending:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">sorted</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="p">?</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>可选键值路径，类型必须是可比较的</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>是否顺序，默认值为 true</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>基于可选键值路径的排序数组</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE6sorted2by9ascendingSayxGs7KeyPathCyxqd__G_SbtSLRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/sorted(by:ascending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE6sorted2by9ascendingSayxGs7KeyPathCyxqd__G_SbtSLRd__lF">sorted(by:ascending:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>基于键值路径排序数组</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Jame"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Wade"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">36</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Rose"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">29</span><span class="p">)]</span>
+<span class="k">var</span> <span class="nv">sort</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+<span class="c1">// sort, [Person(name: "Jame", age: 23), Person(name: "Rose", age: 29), Person(name: "Wade", age: 36)]</span>
+<span class="n">sort</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kc">false</span><span class="p">),</span>
+<span class="c1">// sort, [Person(name: "Wade", age: 36), Person(name: "Rose", age: 29), Person(name: "Jame", age: 23)]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">sorted</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>键值路径，类型必须是可比较的</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>是否顺序，默认值为 true</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>基于键值路径的排序数组</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE4sort2by9ascendingSayxGs7KeyPathCyxqd__SgG_SbtSLRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/sort(by:ascending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE4sort2by9ascendingSayxGs7KeyPathCyxqd__SgG_SbtSLRd__lF">sort(by:ascending:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>基于可选键值路径对数组排序</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Jame"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Wade"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">36</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Rose"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">29</span><span class="p">)]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">sort</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">age</span><span class="p">),</span>
+<span class="c1">// array, [Person(name: "Jame", age: 23), Person(name: "Rose", age: 29), Person(name: "Wade", age: 36)]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">sort</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kc">false</span><span class="p">),</span>
+<span class="c1">// array, [Person(name: "Wade", age: 36), Person(name: "Rose", age: 29), Person(name: "Jame", age: 23)])</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="n">sort</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="p">?</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>可选键值路径，类型必须是可比较的</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>是否顺序，默认值为 true</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>基于可选键值路径对数组排序</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE4sort2by9ascendingSayxGs7KeyPathCyxqd__G_SbtSLRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/sort(by:ascending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE4sort2by9ascendingSayxGs7KeyPathCyxqd__G_SbtSLRd__lF">sort(by:ascending:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>基于键值路径对数组排序</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Jame"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Wade"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">36</span><span class="p">),</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Rose"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">29</span><span class="p">)]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">sort</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+<span class="c1">// array, [Person(name: "Jame", age: 23), Person(name: "Rose", age: 29), Person(name: "Wade", age: 36)]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">sort</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="err">\</span><span class="kt">Person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kc">false</span><span class="p">),</span>
+<span class="c1">// array, [Person(name: "Wade", age: 36), Person(name: "Rose", age: 29), Person(name: "Jame", age: 23)]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="n">sort</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>键值路径，类型必须是可比较的</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>是否顺序，默认值为 true</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>基于键值路径对数组排序</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE8jsonDatay10Foundation0C0VSo20NSJSONWritingOptionsVKF"></a>
+                    <a name="//apple_ref/swift/Method/jsonData(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE8jsonDatay10Foundation0C0VSo20NSJSONWritingOptionsVKF">jsonData(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Array 格式化为 JSON Data</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">jsonArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span> <span class="n">jsonArray</span><span class="o">.</span><span class="nf">jsonData</span><span class="p">()</span>
+<span class="c1">// data.isEmpty, false</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    抛出 ArrayError 异常信息
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">jsonData</span><span class="p">(</span><span class="n">_</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="kt">WritingOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options for writing JSON data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回格式化后的 JSON Data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE9plistDatay10Foundation0C0VSiKF"></a>
+                    <a name="//apple_ref/swift/Method/plistData(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE9plistDatay10Foundation0C0VSiKF">plistData(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Array 格式化为 Plist Data</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">plistArray</span> <span class="o">=</span> <span class="p">[</span><span class="s">"1"</span><span class="p">,</span> <span class="s">"2"</span><span class="p">,</span> <span class="s">"3"</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span> <span class="n">plistArray</span><span class="o">.</span><span class="nf">plistData</span><span class="p">()</span>
+<span class="c1">// data.isEmpty, false</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    抛出 ArrayError 异常信息
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">plistData</span><span class="p">(</span><span class="n">_</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">PropertyListSerialization</span><span class="o">.</span><span class="kt">WriteOptions</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options for writing Plist data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回格式化后的 Plist Data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE9jsonArray4with7optionsSayxG10Foundation4DataVSg_So20NSJSONReadingOptionsVtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/jsonArray(with:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE9jsonArray4with7optionsSayxG10Foundation4DataVSg_So20NSJSONReadingOptionsVtKFZ">jsonArray(with:options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将给定的 JSON Data 解析为 Array 类型</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    抛出 ArrayError 异常信息
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">jsonArray</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="kt">ReadingOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要解析的 JSON Data</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used when creating Foundation objects from JSON data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回解析后的 Array</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterE10plistArray4with7optionsSayxG10Foundation4DataVSg_So31NSPropertyListMutabilityOptionsVtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/plistArray(with:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterE10plistArray4with7optionsSayxG10Foundation4DataVSg_So31NSPropertyListMutabilityOptionsVtKFZ">plistArray(with:options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将给定的 Plist Data 解析为 Array 类型</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    抛出 ArrayError 异常信息
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">plistArray</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">PropertyListSerialization</span><span class="o">.</span><span class="kt">ReadOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要解析的 Plist Data</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used when creating Foundation objects from Plist data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回解析后的 Array</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterSQRzlE9removeAllySayxGxF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterSQRzlE9removeAllySayxGxF">removeAll(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从指定 Array 中删除所有的给定 Element 项</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">// array, [1, 2, 3, 4, 5]</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">// array, [Int]()</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">_</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>item</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要删除的 Element 项</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterSQRzlE9removeAllySayxGACF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterSQRzlE9removeAllySayxGACF">removeAll(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从指定 Array 中删除所有的给定 [Element] 项</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="c1">// array, [1, 3, 4, 5]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">([])</span>
+<span class="c1">// array, [1, 3, 4, 5]</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="c1">// array, [Int]()</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要删除的 [Element] 项</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterSQRzlE16removeDuplicatesSayxGyF"></a>
+                    <a name="//apple_ref/swift/Method/removeDuplicates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterSQRzlE16removeDuplicatesSayxGyF">removeDuplicates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从指定 Array 中删除所有重复项目</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">array</span><span class="o">.</span><span class="nf">removeDuplicates</span><span class="p">()</span>
+<span class="c1">// array, [1, 2, 3, 4, 5]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeDuplicates</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回删除所有重复项目后的结果</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa9JSSwifterSQRzlE17withoutDuplicatesSayxGyF"></a>
+                    <a name="//apple_ref/swift/Method/withoutDuplicates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa9JSSwifterSQRzlE17withoutDuplicatesSayxGyF">withoutDuplicates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从指定 Array 中删除所有重复项目</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">(</span><span class="n">array</span> <span class="k">as!</span> <span class="p">[</span><span class="kt">Int</span><span class="p">])</span><span class="o">.</span><span class="nf">withoutDuplicates</span><span class="p">()</span>
+<span class="c1">// (array as! [Int]), [1, 2, 3, 4, 5]</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">(</span><span class="n">array</span> <span class="k">as!</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span><span class="o">.</span><span class="nf">withoutDuplicates</span><span class="p">()</span>
+<span class="c1">// (array as! [String]), ["h", "e", "l", "o"]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">withoutDuplicates</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回删除所有重复项目后的结果</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/spirit-jsb/JSSwifter" target="_blank" rel="external">spirit-jsb</a>. All rights reserved. (Last updated: 2019-05-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

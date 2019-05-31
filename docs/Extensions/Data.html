@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Data Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Data" class="dashAnchor"></a>
+    <a title="Data Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">JSSwifter Docs</a> (68% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">JSSwifter Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Data Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Aes256Error.html">Aes256Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ArrayError.html">ArrayError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BundleError.html">BundleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DictionaryError.html">DictionaryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HmacError.html">HmacError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGColor.html">CGColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGSize.html">CGSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CLLocation.html">CLLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Character.html">Character</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/CryptoAlgorithm.html">– CryptoAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/HmacAlgorithm.html">– HmacAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/Aes256Algorithm.html">– Aes256Algorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/CompressionLevel.html">– CompressionLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/FileManager.html">FileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Locale.html">Locale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MKMapView.html">MKMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/StringProtocol.html">StringProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication/Environment.html">– Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIBezierPath.html">UIBezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton/TitleImageAlignment.html">– TitleImageAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIScrollView.html">UIScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIStackView.html">UIStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/AngleUnit.html">– AngleUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/ShakeDirection.html">– ShakeDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView/ShakeAnimationType.html">– ShakeAnimationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003obaopySi_SitSiF">±(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopyS2dF">√(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopyS2fF">√(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9JSSwifter003BJgopySdSiF">√(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:9JSSwifter9GzipErrorV">GzipError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Data</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Data</span> <span class="p">:</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">RandomAccessCollection</span><span class="p">,</span> <span class="kt">MutableCollection</span><span class="p">,</span> <span class="kt">RangeReplaceableCollection</span><span class="p">,</span> <span class="kt">MutableDataProtocol</span><span class="p">,</span> <span class="kt">ContiguousBytes</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE15CryptoAlgorithmO"></a>
+                    <a name="//apple_ref/swift/Enum/CryptoAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE15CryptoAlgorithmO">CryptoAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加密算法类型</p>
+
+<ul>
+<li>md2: md2</li>
+<li>md4: md4</li>
+<li>md5: md5</li>
+<li>sha1: sha1</li>
+<li>sha224: sha224</li>
+<li>sha256: sha256</li>
+<li>sha384: sha384</li>
+<li>sha512: sha512</li>
+</ul>
+
+                        <a href="../Extensions/Data/CryptoAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">CryptoAlgorithm</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE13HmacAlgorithmO"></a>
+                    <a name="//apple_ref/swift/Enum/HmacAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE13HmacAlgorithmO">HmacAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hmac 算法</p>
+
+<ul>
+<li>md5: md5</li>
+<li>sha1: sha1</li>
+<li>sha224: sha224</li>
+<li>sha256: sha256</li>
+<li>sha384: sha384</li>
+<li>sha512: sha512</li>
+</ul>
+
+                        <a href="../Extensions/Data/HmacAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">HmacAlgorithm</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE15Aes256AlgorithmO"></a>
+                    <a name="//apple_ref/swift/Enum/Aes256Algorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE15Aes256AlgorithmO">Aes256Algorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Aes256 算法</p>
+
+<ul>
+<li>encrypt: 加密</li>
+<li>decrypt: 解密</li>
+</ul>
+
+                        <a href="../Extensions/Data/Aes256Algorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Aes256Algorithm</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE16CompressionLevelO"></a>
+                    <a name="//apple_ref/swift/Enum/CompressionLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE16CompressionLevelO">CompressionLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gzip 算法压缩等级</p>
+
+<ul>
+<li>no: 无压缩效果</li>
+<li>bestSpeed: 压缩速度有限</li>
+<li><code>default</code>: 默认压缩效果</li>
+<li>best: 压缩质量优先</li>
+</ul>
+
+                        <a href="../Extensions/Data/CompressionLevel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">CompressionLevel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE12CryptoDigesta"></a>
+                    <a name="//apple_ref/swift/Alias/CryptoDigest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE12CryptoDigesta">CryptoDigest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加密算法配置函数闭包，用于导入加密算法中 data\len\md 等配置</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">CryptoDigest</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">UnsafeRawPointer</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">len</span><span class="p">:</span> <span class="kt">CC_LONG</span><span class="p">,</span> <span class="n">_</span> <span class="nv">md</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">UInt8</span><span class="o">&gt;</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">UInt8</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE5bytesSays5UInt8VGvp"></a>
+                    <a name="//apple_ref/swift/Property/bytes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE5bytesSays5UInt8VGvp">bytes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回指定 Data 的字节数组</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bytes</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE9isGzippedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isGzipped" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE9isGzippedSbvp">isGzipped</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>指定 Data 是否为 Gzip 算法压缩数据</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isGzipped</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE06cryptoB014usingAlgorithmA2cDE06CryptoF0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/cryptoData(usingAlgorithm:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE06cryptoB014usingAlgorithmA2cDE06CryptoF0O_tF">cryptoData(usingAlgorithm:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依照 algorithm 配置对应的加密算法，生成并返回加密后的 Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cryptoData</span><span class="p">(</span><span class="n">usingAlgorithm</span> <span class="nv">algorithm</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/CryptoAlgorithm.html">CryptoAlgorithm</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>algorithm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于配置加密算法的函数闭包</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回生成的加密 Data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE12cryptoString14usingAlgorithmSSAcDE06CryptoG0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/cryptoString(usingAlgorithm:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE12cryptoString14usingAlgorithmSSAcDE06CryptoG0O_tF">cryptoString(usingAlgorithm:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依照 algorithm 配置对应的加密算法，生成并返回加密后的 String</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cryptoString</span><span class="p">(</span><span class="n">usingAlgorithm</span> <span class="nv">algorithm</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/CryptoAlgorithm.html">CryptoAlgorithm</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>algorithm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于配置加密算法的函数闭包</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回生成的加密 String</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE04hmacB014usingAlgorithm7withKeyA2cDE04HmacF0O_ACtF"></a>
+                    <a name="//apple_ref/swift/Method/hmacData(usingAlgorithm:withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE04hmacB014usingAlgorithm7withKeyA2cDE04HmacF0O_ACtF">hmacData(usingAlgorithm:withKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依照 algorithm\key 配置对应的 Hmac 加密算法，生成并返回加密后的 Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hmacData</span><span class="p">(</span><span class="n">usingAlgorithm</span> <span class="nv">algorithm</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/HmacAlgorithm.html">HmacAlgorithm</a></span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>algorithm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于配置 Hmac 加密算法的枚举类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hmac 算法密钥</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回生成的加密 Data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE10hmacString14usingAlgorithm7withKeySSAcDE04HmacG0O_SStKF"></a>
+                    <a name="//apple_ref/swift/Method/hmacString(usingAlgorithm:withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE10hmacString14usingAlgorithm7withKeySSAcDE04HmacG0O_SStKF">hmacString(usingAlgorithm:withKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依照 algorithm\key 配置对应的 Hmac 加密算法，生成并返回加密后的 String</p>
+
+                        <a href="../Extensions/Data/hmacString(usingAlgorithm:withKey:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hmacString</span><span class="p">(</span><span class="n">usingAlgorithm</span> <span class="nv">algorithm</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/HmacAlgorithm.html">HmacAlgorithm</a></span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>algorithm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于配置 Hmac 加密算法的枚举类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hmac 算法密钥</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回生成的加密 String</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE5crc32s6UInt32VyF"></a>
+                    <a name="//apple_ref/swift/Method/crc32()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE5crc32s6UInt32VyF">crc32()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回指定 Data crc32 效验结果</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">crc32</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE11crc32StringSSyF"></a>
+                    <a name="//apple_ref/swift/Method/crc32String()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE11crc32StringSSyF">crc32String()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回指定 Data crc32 效验结果</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">crc32String</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE6aes25614usingAlgorithm7withKey0G6VectorA2cDE06Aes256F0O_A2CtKF"></a>
+                    <a name="//apple_ref/swift/Method/aes256(usingAlgorithm:withKey:withVector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE6aes25614usingAlgorithm7withKey0G6VectorA2cDE06Aes256F0O_A2CtKF">aes256(usingAlgorithm:withKey:withVector:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依照 algorithm\key\iv 配置对应的 Aes256 加密算法，生成并返回加密/解密后的 Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">aes256</span><span class="p">(</span><span class="n">usingAlgorithm</span> <span class="nv">algorithm</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/Aes256Algorithm.html">Aes256Algorithm</a></span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">withVector</span> <span class="nv">iv</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>algorithm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>用于配置 Aes256 加密算法的枚举类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Aes256 算法密钥</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>iv</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Aes256 算法向量</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回生成的加密/解密 Data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE6string8encodingSSSgSSAAE8EncodingV_tF"></a>
+                    <a name="//apple_ref/swift/Method/string(encoding:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE6string8encodingSSSgSSAAE8EncodingV_tF">string(encoding:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回指定 Data 依据给定 encoding 编码后生成的可选字符串</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="nv">encoding</span><span class="p">:</span> <span class="kt">String</span><span class="o">.</span><span class="kt">Encoding</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>encoding</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回指定 Data 依据给定 encoding 编码后生成的可选字符串</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE9hexStringSSyF"></a>
+                    <a name="//apple_ref/swift/Method/hexString()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE9hexStringSSyF">hexString()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回指定 Data 生成的十六进制字符串</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hexString</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>返回指定 Data 生成的十六进制字符串</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE16jsonValueDecoded7optionsypSo20NSJSONReadingOptionsV_tKF"></a>
+                    <a name="//apple_ref/swift/Method/jsonValueDecoded(options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE16jsonValueDecoded7optionsypSo20NSJSONReadingOptionsV_tKF">jsonValueDecoded(options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依据给定 options 解码为 JSON Value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">jsonValueDecoded</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="kt">ReadingOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Any</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used when creating Foundation objects from JSON data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE17plistValueDecoded7optionsypSo31NSPropertyListMutabilityOptionsV_tKF"></a>
+                    <a name="//apple_ref/swift/Method/plistValueDecoded(options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE17plistValueDecoded7optionsypSo31NSPropertyListMutabilityOptionsV_tKF">plistValueDecoded(options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依据给定 options 解码为 Plist Value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">plistValueDecoded</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="kt">PropertyListSerialization</span><span class="o">.</span><span class="kt">ReadOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Any</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The only read options supported are described in PropertyListSerialization.MutabilityOptions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE11gzipDeflate5levelA2cDE16CompressionLevelO_tKF"></a>
+                    <a name="//apple_ref/swift/Method/gzipDeflate(level:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE11gzipDeflate5levelA2cDE16CompressionLevelO_tKF">gzipDeflate(level:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 依据给定 level 压缩，并返回压缩后的 Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">gzipDeflate</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Extensions/Data/CompressionLevel.html">CompressionLevel</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>level</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>压缩等级，默认值为 .default</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE11gzipInflateACyKF"></a>
+                    <a name="//apple_ref/swift/Method/gzipInflate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE11gzipInflateACyKF">gzipInflate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>将指定 Data 解压缩，并返回解压缩后的 Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">gzipInflate</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV9JSSwifterE19dataForResourceNameyACSSKFZ"></a>
+                    <a name="//apple_ref/swift/Method/dataForResourceName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV9JSSwifterE19dataForResourceNameyACSSKFZ">dataForResourceName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>依据资源名称，返回从 Main Bundle 中查找到的资源数据</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">dataForResourceName</span><span class="p">(</span><span class="n">_</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>资源名称</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/spirit-jsb/JSSwifter" target="_blank" rel="external">spirit-jsb</a>. All rights reserved. (Last updated: 2019-05-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

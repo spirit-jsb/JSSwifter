@@ -1,0 +1,1125 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Array+JSSwifter.swift",
+      "line": 18,
+      "symbol": "ArrayError.invalidData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Array+JSSwifter.swift",
+      "line": 19,
+      "symbol": "ArrayError.invalidString",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Array+JSSwifter.swift",
+      "line": 20,
+      "symbol": "ArrayError.invalidType",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Array+JSSwifter.swift",
+      "line": 21,
+      "symbol": "ArrayError.invalidJSONObject",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 75,
+      "symbol": "HmacError.invalidKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 84,
+      "symbol": "Aes256Error.invalidKeySize",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 85,
+      "symbol": "Aes256Error.invalidVectorSize",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 86,
+      "symbol": "Aes256Error.unknown(code:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 93,
+      "symbol": "BundleError.invalidPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 111,
+      "symbol": "Data.CryptoAlgorithm.md2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 112,
+      "symbol": "Data.CryptoAlgorithm.md4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 113,
+      "symbol": "Data.CryptoAlgorithm.md5",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 114,
+      "symbol": "Data.CryptoAlgorithm.sha1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 115,
+      "symbol": "Data.CryptoAlgorithm.sha224",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 116,
+      "symbol": "Data.CryptoAlgorithm.sha256",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 117,
+      "symbol": "Data.CryptoAlgorithm.sha384",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 118,
+      "symbol": "Data.CryptoAlgorithm.sha512",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 158,
+      "symbol": "Data.HmacAlgorithm.md5",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 159,
+      "symbol": "Data.HmacAlgorithm.sha1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 160,
+      "symbol": "Data.HmacAlgorithm.sha224",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 161,
+      "symbol": "Data.HmacAlgorithm.sha256",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 162,
+      "symbol": "Data.HmacAlgorithm.sha384",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 163,
+      "symbol": "Data.HmacAlgorithm.sha512",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 195,
+      "symbol": "Data.Aes256Algorithm.encrypt",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 196,
+      "symbol": "Data.Aes256Algorithm.decrypt",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 214,
+      "symbol": "Data.CompressionLevel.no",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 215,
+      "symbol": "Data.CompressionLevel.bestSpeed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 216,
+      "symbol": "Data.CompressionLevel.default",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Data+JSSwifter.swift",
+      "line": 217,
+      "symbol": "Data.CompressionLevel.best",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 14,
+      "symbol": "Date.year",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 28,
+      "symbol": "Date.month",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 43,
+      "symbol": "Date.day",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 58,
+      "symbol": "Date.hour",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 73,
+      "symbol": "Date.minute",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 88,
+      "symbol": "Date.second",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 103,
+      "symbol": "Date.nanosecond",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 118,
+      "symbol": "Date.quarter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 125,
+      "symbol": "Date.weekday",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 129,
+      "symbol": "Date.weekOfYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 133,
+      "symbol": "Date.weekOfMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 137,
+      "symbol": "Date.isLeapMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 142,
+      "symbol": "Date.isLeapYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 147,
+      "symbol": "Date.isFuture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 151,
+      "symbol": "Date.isPast",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 155,
+      "symbol": "Date.isToday",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 159,
+      "symbol": "Date.isYesterday",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 163,
+      "symbol": "Date.isTomorrow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 167,
+      "symbol": "Date.isWeekend",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 171,
+      "symbol": "Date.isWorkday",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 175,
+      "symbol": "Date.isCurrentWeek",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 179,
+      "symbol": "Date.isCurrentMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 183,
+      "symbol": "Date.isCurrentYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 187,
+      "symbol": "Date.iso8601String",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 196,
+      "symbol": "Date.yesterday",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 200,
+      "symbol": "Date.tomorrow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 204,
+      "symbol": "Date.unixTimestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 214,
+      "symbol": "Date.init(unixTimestamp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 218,
+      "symbol": "Date.init(iso8601String:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 228,
+      "symbol": "Date.init(dateString:format:timeZone:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 237,
+      "symbol": "Date.adding(_:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 241,
+      "symbol": "Date.changing(_:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 291,
+      "symbol": "Date.isCurrent(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 295,
+      "symbol": "Date.string(withFormat:timeZone:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 302,
+      "symbol": "Date.dateString(withStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 309,
+      "symbol": "Date.dateTimeString(withStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 316,
+      "symbol": "Date.timeString(withStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 323,
+      "symbol": "Date.secondsSince(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 327,
+      "symbol": "Date.minutesSince(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 331,
+      "symbol": "Date.hoursSince(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 335,
+      "symbol": "Date.daysSince(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 339,
+      "symbol": "Date.isBetween(_:_:includeBounds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 346,
+      "symbol": "Date.random(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 350,
+      "symbol": "Date.random(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 354,
+      "symbol": "Date.random(in:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Date+JSSwifter.swift",
+      "line": 358,
+      "symbol": "Date.random(in:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 18,
+      "symbol": "DictionaryError.invalidData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 19,
+      "symbol": "DictionaryError.invalidString",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 20,
+      "symbol": "DictionaryError.invalidType",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 21,
+      "symbol": "DictionaryError.invalidJSONObject",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 57,
+      "symbol": "Dictionary.mapKeysAndValues(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 61,
+      "symbol": "Dictionary.compactMapKeysAndValues(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 65,
+      "symbol": "Dictionary.jsonData(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 72,
+      "symbol": "Dictionary.plistData(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 76,
+      "symbol": "Dictionary.jsonDictionary(with:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 87,
+      "symbol": "Dictionary.plistDictionary(with:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 102,
+      "symbol": "Dictionary.keys(forValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 110,
+      "symbol": "Dictionary.lowercaseAllKeys()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 122,
+      "symbol": "Dictionary.subscript(path:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 153,
+      "symbol": "Dictionary.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 159,
+      "symbol": "Dictionary.+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 163,
+      "symbol": "Dictionary.-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/Dictionary+JSSwifter.swift",
+      "line": 169,
+      "symbol": "Dictionary.-=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 14,
+      "symbol": "String.base64Encoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 19,
+      "symbol": "String.base64Decoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 24,
+      "symbol": "String.urlEncoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 28,
+      "symbol": "String.urlDecoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 32,
+      "symbol": "String.charactersArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 36,
+      "symbol": "String.containsEmoji",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 60,
+      "symbol": "String.hasNumbers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 64,
+      "symbol": "String.hasLetters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 68,
+      "symbol": "String.isAlphabetic",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 74,
+      "symbol": "String.isPalindrome",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 83,
+      "symbol": "String.isValidEmail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 89,
+      "symbol": "String.isValidURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 93,
+      "symbol": "String.isValidSchemedURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 98,
+      "symbol": "String.isValidHTTPsURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 103,
+      "symbol": "String.isValidHTTPURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 108,
+      "symbol": "String.isValidFileURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 112,
+      "symbol": "String.isNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 118,
+      "symbol": "String.isDigits",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 122,
+      "symbol": "String.firstCharacterAsString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 127,
+      "symbol": "String.lastCharacterAsString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 132,
+      "symbol": "String.bool",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 144,
+      "symbol": "String.int",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 151,
+      "symbol": "String.float",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 158,
+      "symbol": "String.double",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 165,
+      "symbol": "String.cgFloat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 172,
+      "symbol": "String.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 176,
+      "symbol": "String.trimmed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 180,
+      "symbol": "String.withoutSpacesAndNewLines",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 185,
+      "symbol": "String.subscript(safe:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 190,
+      "symbol": "String.subscript(safe:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 202,
+      "symbol": "String.subscript(safe:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 214,
+      "symbol": "String.random(ofLength:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 224,
+      "symbol": "String.lines()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 232,
+      "symbol": "String.unicodesArray()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 236,
+      "symbol": "String.words()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 243,
+      "symbol": "String.matches(pattern:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 247,
+      "symbol": "String.starts(with:caseSensitive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 254,
+      "symbol": "String.ends(with:caseSensitive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 261,
+      "symbol": "String.slicing(from:length:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 269,
+      "symbol": "String.slice(from:length:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 277,
+      "symbol": "String.slice(from:to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 286,
+      "symbol": "String.slice(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 294,
+      "symbol": "String.truncated(toLength:trailing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 300,
+      "symbol": "String.truncate(toLength:trailing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 306,
+      "symbol": "String.removePrefix(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 311,
+      "symbol": "String.removeSuffix(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 316,
+      "symbol": "String.paddingStart(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 333,
+      "symbol": "String.padStart(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 338,
+      "symbol": "String.paddingEnd(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 355,
+      "symbol": "String.padEnd(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 360,
+      "symbol": "String.*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/Foundation/String+JSSwifter.swift",
+      "line": 365,
+      "symbol": "String.*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIApplication+JSSwifter.swift",
+      "line": 19,
+      "symbol": "UIApplication.Environment.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIApplication+JSSwifter.swift",
+      "line": 20,
+      "symbol": "UIApplication.Environment.testFlight",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIApplication+JSSwifter.swift",
+      "line": 21,
+      "symbol": "UIApplication.Environment.appStore",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIButton+JSSwifter.swift",
+      "line": 13,
+      "symbol": "UIButton.TitleImageAlignment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIButton+JSSwifter.swift",
+      "line": 14,
+      "symbol": "UIButton.TitleImageAlignment.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIButton+JSSwifter.swift",
+      "line": 15,
+      "symbol": "UIButton.TitleImageAlignment.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIButton+JSSwifter.swift",
+      "line": 16,
+      "symbol": "UIButton.TitleImageAlignment.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIButton+JSSwifter.swift",
+      "line": 17,
+      "symbol": "UIButton.TitleImageAlignment.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 18,
+      "symbol": "UIView.AngleUnit.degrees",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 19,
+      "symbol": "UIView.AngleUnit.radians",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 27,
+      "symbol": "UIView.ShakeDirection.horizontal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 28,
+      "symbol": "UIView.ShakeDirection.vertical",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 33,
+      "symbol": "UIView.ShakeAnimationType.linear",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 34,
+      "symbol": "UIView.ShakeAnimationType.easeIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 35,
+      "symbol": "UIView.ShakeAnimationType.easeOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/max/Desktop/Cocoapods/JSSwifter/Sources/Core/UIKit/UIView+JSSwifter.swift",
+      "line": 36,
+      "symbol": "UIView.ShakeAnimationType.easeInOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/max/Desktop/Cocoapods/JSSwifter"
+}

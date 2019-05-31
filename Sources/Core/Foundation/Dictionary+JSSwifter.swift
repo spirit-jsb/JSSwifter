@@ -8,6 +8,12 @@
 
 import Foundation
 
+/// Dictionary Decoder/Encoder Error
+///
+/// - invalidData: 无效的 Data
+/// - invalidString: 无效的 String
+/// - invalidType: 无效的解析类型
+/// - invalidJSONObject: 无效的 JSON Object
 public enum DictionaryError: Swift.Error {
     case invalidData
     case invalidString
@@ -18,14 +24,30 @@ public enum DictionaryError: Swift.Error {
 public extension Dictionary {
     
     // MARK:
+    
+    /// 检查指定 Dictionary 中是否包含给定 key
+    ///
+    ///     let testDict: [String: Any] = ["testKey": "testValue", "testArrayKey": [1, 2, 3, 4, 5]]
+    ///     self.testDict.has(key: "testKey") -> true
+    ///     self.testDict.has(key: "otherKey") -> false
+    ///
     func has(key: Key) -> Bool {
         return self.index(forKey: key) != nil
     }
     
+    /// 从指定 Dictionary 中移除给定 keys 中所包含的有所 key
+    ///
+    ///     var dict: [String: String] = ["key1": "value1", "key2": "value2", "key3": "value3"]
+    ///     dict.removeAll(keys: ["key1", "key3"])
+    ///     dict.keys.contains("key2") -> true
+    ///     dict.keys.contains("key1") -> false
+    ///
+    /// - Parameter keys: 需要移除的 keys
     mutating func removeAll<S: Sequence>(keys: S) where S.Element == Key {
         keys.forEach { self.removeValue(forKey: $0) }
     }
     
+    /// 从指定 Dictionary 随机移除 key
     @discardableResult
     mutating func removeValueForRandomKey() -> Value? {
         guard let randomKey = self.keys.randomElement() else { return nil }

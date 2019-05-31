@@ -11,6 +11,11 @@ import Foundation
 public extension Character {
     
     // MARK:
+    
+    /// 检查指定 Character 是否为 Emoji
+    ///
+    ///     // Character("😢").isEmoji, true
+    ///
     var isEmoji: Bool {
         // http://stackoverflow.com/questions/30757193/find-out-if-character-in-string-is-emoji
         let scalarValue = String(self).unicodeScalars.first!.value
@@ -33,56 +38,123 @@ public extension Character {
         }
     }
     
+    /// 检查指定 Character 是否为数字
+    ///
+    ///     "1".isNumber -> true
+    ///     "a".isNumber -> false
+    ///
     var isNumber: Bool {
         return Int(String(self)) != nil
     }
     
+    /// 检查指定 Character 是否为字母
+    ///
+    ///     "1".isLetter -> false
+    ///     "a".isLetter -> true
+    ///
     var isLetter: Bool {
         return String(self).rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
     }
     
+    /// 检查指定 Character 是否为小写
+    ///
+    ///     "A".isLowercased -> false
+    ///     "a".isLowercased -> true
+    ///
     var isLowercased: Bool {
         return String(self) == String(self).lowercased()
     }
     
+    /// 检查指定 Character 是否为大写
+    ///
+    ///     "A".isUppercased -> true
+    ///     "a".isUppercased -> fasle
+    ///
     var isUppercased: Bool {
         return String(self) == String(self).uppercased()
     }
     
+    /// Optional Int
+    ///
+    ///     "1".int -> 1
+    ///     "a".int -> nil
+    ///
     var int: Int? {
         return Int(String(self))
     }
     
+    /// Optional Float
+    ///
+    ///     "1".float -> Float(1)
+    ///     "a".float -> nil
+    ///
     var float: Float? {
         return Float(String(self))
     }
     
+    /// Optional Double
+    ///
+    ///     "1".double -> Double(1)
+    ///     "a".double -> nil
+    ///
     var double: Double? {
         return Double(String(self))
     }
     
+    /// String
+    ///
+    ///     Character("a").string -> "a"
+    ///
     var string: String {
         return String(self)
     }
     
+    /// 返回小写字符
+    ///
+    ///     Character("A").lowercased -> Character("a")
+    ///
     var lowercased: Character {
         return String(self).lowercased().first!
     }
     
+    /// 返回大写字符
+    ///
+    ///     Character("a").lowercased -> Character("A")
+    ///
     var uppercased: Character {
         return String(self).uppercased().first!
     }
     
     // MARK:
+    
+    /// 生成随机字符
+    ///
+    ///     Character.randomAlphanumeric() -> "a"
+    ///
+    /// - Returns: 返回随机字符
     static func randomAlphanumeric() -> Character {
         return "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".randomElement()!
     }
     
+    /// 生成多次重复的字符串
+    ///
+    ///     Character("-") * 5 -> "-----"
+    ///
+    /// - Parameters:
+    ///   - lhs: 用于重复的字符
+    ///   - rhs: 重复次数
     static func * (lhs: Character, rhs: Int) -> String {
         guard rhs > 0 else { return "" }
         return String(repeating: lhs, count: rhs)
     }
     
+    /// 生成多次重复的字符串
+    ///
+    ///     Character("a") * 5 -> "aaaaa"
+    ///
+    /// - Parameters:
+    ///   - lhs: 重复次数
+    ///   - rhs: 用于重复的字符
     static func * (lhs: Int, rhs: Character) -> String {
         guard lhs > 0 else { return "" }
         return String(repeating: rhs, count: lhs)

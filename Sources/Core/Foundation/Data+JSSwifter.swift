@@ -10,8 +10,17 @@ import Foundation
 import CommonCrypto
 import zlib
 
+/// Gzip Error
 public struct GzipError: Swift.Error {
     
+    /// Gzip Error 类型
+    ///
+    /// - stream: stream
+    /// - data: data
+    /// - memory: memory
+    /// - buffer: buffer
+    /// - version: version
+    /// - unknown: unknown
     enum Kind: Equatable {
         case stream
         case data
@@ -21,13 +30,18 @@ public struct GzipError: Swift.Error {
         case unknown(code: Int)
     }
     
+    /// Gzip Error 类型
     let kind: Kind
+    
+    /// Gzip Error 信息
     let message: String
     
+    /// Gzip Error 信息描述
     var description: String {
         return self.message
     }
     
+    /// 依据错误 code 和 msg 初始化并生成 GzipError 实例
     init(code: Int32, msg: UnsafePointer<CChar>?) {
         self.message = {
             guard let msg = msg, let message = String.init(validatingUTF8: msg) else {
@@ -54,16 +68,27 @@ public struct GzipError: Swift.Error {
     }
 }
 
+/// Hmac Error
+///
+/// - invalidKey: 无效的 Key
 public enum HmacError: Swift.Error {
     case invalidKey
 }
 
+/// Aes 256 Error
+///
+/// - invalidKeySize: 无效长度的 Key
+/// - invalidVectorSize: 无效长度的 Vector
+/// - unknown: 未知错误
 public enum Aes256Error: Swift.Error {
     case invalidKeySize
     case invalidVectorSize
     case unknown(code: Int32)
 }
 
+/// Bundle Error
+///
+/// - invalidPath: 无效的文件路径
 public enum BundleError: Swift.Error {
     case invalidPath
 }
@@ -71,6 +96,17 @@ public enum BundleError: Swift.Error {
 public extension Data {
     
     // MARK:
+    
+    /// 加密算法类型
+    ///
+    /// - md2: md2
+    /// - md4: md4
+    /// - md5: md5
+    /// - sha1: sha1
+    /// - sha224: sha224
+    /// - sha256: sha256
+    /// - sha384: sha384
+    /// - sha512: sha512
     enum CryptoAlgorithm {
         case md2
         case md4
@@ -81,6 +117,7 @@ public extension Data {
         case sha384
         case sha512
         
+        /// 各类型加密算法 length 参数
         var length: Int {
             switch self {
             case .md2: return Int(CC_MD2_DIGEST_LENGTH)
@@ -94,6 +131,7 @@ public extension Data {
             }
         }
         
+        /// 各类型加密算法 digest 参数
         var digest: CryptoDigest {
             switch self {
             case .md2: return CC_MD2
@@ -108,6 +146,14 @@ public extension Data {
         }
     }
     
+    /// Hmac 算法
+    ///
+    /// - md5: md5
+    /// - sha1: sha1
+    /// - sha224: sha224
+    /// - sha256: sha256
+    /// - sha384: sha384
+    /// - sha512: sha512
     enum HmacAlgorithm {
         case md5
         case sha1
@@ -116,6 +162,7 @@ public extension Data {
         case sha384
         case sha512
         
+        /// 各类型 Hmac 算法 algorithm 参数
         var algorithm: CCHmacAlgorithm {
             switch self {
             case .md5: return UInt32(kCCHmacAlgMD5)
@@ -127,6 +174,7 @@ public extension Data {
             }
         }
         
+        /// 各类型 Hmac 算法 length 参数
         var length: Int {
             switch self {
             case .md5: return Int(CC_MD5_DIGEST_LENGTH)
@@ -139,10 +187,15 @@ public extension Data {
         }
     }
     
+    /// Aes256 算法
+    ///
+    /// - encrypt: 加密
+    /// - decrypt: 解密
     enum Aes256Algorithm {
         case encrypt
         case decrypt
         
+        /// 各 Aes256 算法 op 参数
         var op: CCOperation {
             switch self {
             case .encrypt: return CCOperation(kCCEncrypt)
@@ -151,6 +204,12 @@ public extension Data {
         }
     }
     
+    /// Gzip 算法压缩等级
+    ///
+    /// - no: 无压缩效果
+    /// - bestSpeed: 压缩速度有限
+    /// - `default`: 默认压缩效果
+    /// - best: 压缩质量优先
     enum CompressionLevel {
         case no
         case bestSpeed
@@ -167,24 +226,36 @@ public extension Data {
         }
     }
     
+    /// 加密算法配置函数闭包，用于导入加密算法中 data\len\md 等配置
     typealias CryptoDigest = (
         _ data: UnsafeRawPointer?,
         _ len: CC_LONG,
         _ md: UnsafeMutablePointer<UInt8>?) -> UnsafeMutablePointer<UInt8>?
     
+    /// 返回指定 Data 的字节数组
     var bytes: [UInt8] {
         return [UInt8](self)
     }
     
+    /// 指定 Data 是否为 Gzip 算法压缩数据
     var isGzipped: Bool {
         return self.starts(with: [0x1f, 0x8b])
     }
     
     // MARK:
+    
+    /// 将指定 Data 依照 algorithm 配置对应的加密算法，生成并返回加密后的 Data
+    ///
+    /// - Parameter algorithm: 用于配置加密算法的函数闭包
+    /// - Returns: 返回生成的加密 Data
     func cryptoData(usingAlgorithm algorithm: CryptoAlgorithm) -> Data {
         return self.cryptoDigest(usingAlgorithm: algorithm)
     }
     
+    /// 将指定 Data 依照 algorithm 配置对应的加密算法，生成并返回加密后的 String
+    ///
+    /// - Parameter algorithm: 用于配置加密算法的函数闭包
+    /// - Returns: 返回生成的加密 String
     func cryptoString(usingAlgorithm algorithm: CryptoAlgorithm) -> String {
         let cryptoData = self.cryptoDigest(usingAlgorithm: algorithm)
         
@@ -196,10 +267,22 @@ public extension Data {
         return cryptoString
     }
     
+    /// 将指定 Data 依照 algorithm\key 配置对应的 Hmac 加密算法，生成并返回加密后的 Data
+    ///
+    /// - Parameters:
+    ///   - algorithm: 用于配置 Hmac 加密算法的枚举类型
+    ///   - key: Hmac 算法密钥
+    /// - Returns: 返回生成的加密 Data
     func hmacData(usingAlgorithm algorithm: HmacAlgorithm, withKey key: Data) -> Data {
         return self.hmacDigest(usingAlgorithm: algorithm, withKey: key)
     }
     
+    /// 将指定 Data 依照 algorithm\key 配置对应的 Hmac 加密算法，生成并返回加密后的 String
+    ///
+    /// - Parameters:
+    ///   - algorithm: 用于配置 Hmac 加密算法的枚举类型
+    ///   - key: Hmac 算法密钥
+    /// - Returns: 返回生成的加密 String
     func hmacString(usingAlgorithm algorithm: HmacAlgorithm, withKey key: String) throws -> String {
         guard let dataKey = key.data(using: .utf8) else {
             throw HmacError.invalidKey
@@ -215,6 +298,7 @@ public extension Data {
         return hmacString
     }
     
+    /// 返回指定 Data crc32 效验结果
     func crc32() -> UInt32 {
         let dataBytes = self.bytes
         let len = uInt(self.count)
@@ -224,6 +308,7 @@ public extension Data {
         return UInt32(result)
     }
     
+    /// 返回指定 Data crc32 效验结果
     func crc32String() -> String {
         let dataBytes = self.bytes
         let len = uInt(self.count)
@@ -233,6 +318,13 @@ public extension Data {
         return String(format: "%08x", UInt32(result))
     }
     
+    /// 将指定 Data 依照 algorithm\key\iv 配置对应的 Aes256 加密算法，生成并返回加密/解密后的 Data
+    ///
+    /// - Parameters:
+    ///   - algorithm: 用于配置 Aes256 加密算法的枚举类型
+    ///   - key: Aes256 算法密钥
+    ///   - iv: Aes256 算法向量
+    /// - Returns: 返回生成的加密/解密 Data
     func aes256(usingAlgorithm algorithm: Aes256Algorithm, withKey key: Data, withVector iv: Data) throws -> Data {
         if key.count != 16 && key.count != 24 && key.count != 32 {
             throw Aes256Error.invalidKeySize
@@ -266,10 +358,17 @@ public extension Data {
         return Data(bytes: bufferBytes, count: encryptedSize)
     }
     
+    /// 返回指定 Data 依据给定 encoding 编码后生成的可选字符串
+    ///
+    /// - Parameter encoding: encoding
+    /// - Returns: 返回指定 Data 依据给定 encoding 编码后生成的可选字符串
     func string(encoding: String.Encoding) -> String? {
         return String(data: self, encoding: encoding)
     }
     
+    /// 返回指定 Data 生成的十六进制字符串
+    ///
+    /// - Returns: 返回指定 Data 生成的十六进制字符串
     func hexString() -> String {
         let dataBytes = self.bytes
         
@@ -281,14 +380,23 @@ public extension Data {
         return hexString
     }
     
+    /// 将指定 Data 依据给定 options 解码为 JSON Value
+    ///
+    /// - Parameter options: Options used when creating Foundation objects from JSON data
     func jsonValueDecoded(options: JSONSerialization.ReadingOptions = []) throws -> Any {
         return try JSONSerialization.jsonObject(with: self, options: options)
     }
     
+    /// 将指定 Data 依据给定 options 解码为 Plist Value
+    ///
+    /// - Parameter options: The only read options supported are described in PropertyListSerialization.MutabilityOptions.
     func plistValueDecoded(options: PropertyListSerialization.ReadOptions = []) throws -> Any {
         return try PropertyListSerialization.propertyList(from: self, options: options, format: nil)
     }
     
+    /// 将指定 Data 依据给定 level 压缩，并返回压缩后的 Data
+    ///
+    /// - Parameter level: 压缩等级，默认值为 .default
     func gzipDeflate(level: CompressionLevel = .default) throws -> Data {
         guard !self.isEmpty else {
             return self
@@ -341,6 +449,7 @@ public extension Data {
         return compressed
     }
     
+    /// 将指定 Data 解压缩，并返回解压缩后的 Data
     func gzipInflate() throws -> Data {
         guard !self.isEmpty else {
             return self
@@ -393,6 +502,9 @@ public extension Data {
         return uncompressed
     }
     
+    /// 依据资源名称，返回从 Main Bundle 中查找到的资源数据
+    ///
+    /// - Parameter name: 资源名称
     static func dataForResourceName(_ name: String) throws -> Data {
         guard let path = Bundle.main.path(forResource: name, ofType: "") else {
             throw BundleError.invalidPath

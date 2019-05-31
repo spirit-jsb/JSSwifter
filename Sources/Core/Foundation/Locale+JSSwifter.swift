@@ -11,6 +11,8 @@ import Foundation
 public extension Locale {
     
     // MARK
+    
+    /// 当前语言环境中的 UNIX，通常用于标准化
     static var posix: Locale {
         return Locale(identifier: "en_US_POSIX")
     }

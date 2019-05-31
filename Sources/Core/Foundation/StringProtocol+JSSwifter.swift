@@ -11,6 +11,19 @@ import Foundation
 public extension StringProtocol {
     
     // MARK:
+    
+    /// 返回指定 StringProtocol 与给定 StringProtocol 后缀比较结果
+    ///
+    ///     let string1 = "Hello world!"
+    ///     // "".commonSuffix(with: "It's cold!").isEmpty, true
+    ///     // string1.commonSuffix(with: "").isEmpty, true
+    ///     // string1.commonSuffix(with: "It's cold!"), "ld!"
+    ///     // string1.commonSuffix(with: "Not Common"), ""
+    ///
+    /// - Parameters:
+    ///   - aString: 给定 StringProtocol 实例
+    ///   - options: 比较选项
+    /// - Returns: 返回指定 StringProtocol 与给定 StringProtocol 后缀比较结果
     func commonSuffix<T: StringProtocol>(with aString: T, options: String.CompareOptions = []) -> String {
         guard !self.isEmpty && !aString.isEmpty else { return "" }
         
